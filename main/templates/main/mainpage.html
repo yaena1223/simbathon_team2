@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="main">
+    <h1>CLUB</h1>
+    <div class="main-content floor1">
+        <div class="main-content-class">
+            <a href="{% url 'academic'%}">
+                <p class="main-content-class-icon"><i class="fas fa-plus"></i></p>
+                <img src="{% static 'images/학술분과.jpg'%}" class="main-content-image" width=100% height=80%/>
+            </a>
+            <h2>학술분과</h2>
+        </div>
+        <div class="main-content-class">
+            <a href="{%url 'research'%}">
+                <p class="main-content-class-icon"><i class="fas fa-plus"></i></p>
+                <img src="{% static 'images/연구분과.jpg'%}" class="main-content-image" width=100% height=80%/>
+            </a>
+            <h2>연구분과</h2>
+        </div>
+        <div class="main-content-class">
+            <a href="{% url 'volunteer'%}">
+                <p class="main-content-class-icon"><i class="fas fa-plus"></i></p>
+                <img src="{% static 'images/봉사분과.jpg'%}" class="main-content-image" width=100% height=80%/>
+            </a>
+            <h2>봉사분과</h2>
+        </div>
+    </div>
+    <div class="main-content floor2">
+        <div class="main-content-class">
+            <a href="{% url 'social'%}">
+                <p class="main-content-class-icon"><i class="fas fa-plus"></i></p>
+                <img src="{% static 'images/사회분과.jpg'%}" class="main-content-image" width=100% height=80%/>
+            </a>
+            <h2>사회분과</h2>
+        </div>
+        <div class="main-content-class">
+            <a href="{% url 'atheletic'%}">
+                <p class="main-content-class-icon"><i class="fas fa-plus"></i></p>
+                <img src="{% static 'images/체육분과.jpg'%}" class="main-content-image" width=100% height=80%/>
+            </a>
+            <h2>체육분과</h2>
+        </div>
+        <div class="main-content-class">
+            <a href="{% url 'performance'%}">
+                <p class="main-content-class-icon"><i class="fas fa-plus"></i></p>
+                <img src="{% static 'images/공연분과.jpg'%}" class="main-content-image" width=100% height=80%/>
+            </a>
+            <h2>공연분과</h2>
+        </div>
+    </div>
+    <div class="main-content floor4">
+        <div class="main-content-class">
+            <a href="{% url 'art' %}">
+                <p class="main-content-class-icon"><i class="fas fa-plus"></i></p>
+                <img src="{% static 'images/예창분과.jpg'%}" class="main-content-image" width=100% height=80%/>
+            </a>
+            <h2>예창분과</h2>
+        </div>
+        <div class="main-content-class">
+            <a href="{% url 'fresh'%}">
+                <p class="main-content-class-icon"><i class="fas fa-plus"></i></p>
+                <img src="{% static 'images/신규분과.jpg'%}" class="main-content-image" width=100% height=80%/>
+            </a>
+            <h2>신규분과</h2>
+        </div>
+        <div class="main-content-class">
+            <h3>오광혁</h3><h3>이건회</h3><h3>허윤회</h3><h3>이예나</h3>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
