@@ -1,0 +1,245 @@
+body{
+  margin: 0;
+  background-color: rgba(240, 248, 255, 0.918);
+}
+
+.navbar a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a:visited{
+  color:white;
+}
+
+.navbar{
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  border: 1px solid black;
+  height: 70px;
+  background-color: black;
+  padding-left: 60%;
+  padding-top: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar-menu{
+  color:white;
+  font-size: 18px;
+  margin: 0px 10px;
+  padding: 15px;
+}
+
+.navbar-menu > a:hover{
+  color: orange;
+}
+
+.banner{
+  border: 1px dotted black;
+  height: 500px;
+  background-color: black;
+}
+
+.banner > p{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.main{
+  height: 1000px;
+}
+
+.main > h1{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.main-content{
+  font-family: 'Do Hyeon', sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.main-content-class{
+  width: 24%;
+  height : 657.72px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  margin: 1%;
+  background-color: white;
+}
+
+.main-content-class > h2{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.main-content-class > h3{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.main-content-class:hover{
+  opacity: 0.5;
+  transition: ease-in 0.5s;
+}
+
+.main-content-class:hover p{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.main-content-class-icon{
+  position: absolute;
+  font-size: 150px;
+  display: none;
+  color: orange;
+  width: 24%;
+}
+
+.container > h1{
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 3rem;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.container-floor1{
+  padding: 10px;
+  display : flex;
+  justify-content: center;
+}
+
+.container-floor1-content{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size : 12px;
+  width: 15%;
+  height: 280px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 1.5%;
+  margin: 15px;
+  padding-bottom: 2%;
+}
+
+.container-floor1-content-image{
+  border-radius: 1.5%;
+}
+
+.container-floor1-content > h2{
+  text-align: center
+}
+
+.container-floor1-content-icon{
+  display: none;
+  font-size: 80px;
+  width : 15%;
+  color: orange;
+}
+
+.container-floor1-content:hover{
+  opacity: 0.5;
+  transition: ease-in 0.5s;
+}
+
+.container-floor1-content:hover p{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.table {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  margin-left:330px;
+}
+
+.table thead th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #369;
+  border-bottom: 3px solid #036;
+}
+
+.table tbody th {
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #f3f6f7;
+}
+
+.table td {
+  width: 350px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+
+.num{
+  text-align:center;
+  margin-top: 50px;
+}
+
+.post ,.post_a:visited{
+  color:black;
+}
+
+.club{
+  padding-top: 50px;
+  display: flex;
+}
+.club_left{
+  width:25%;
+}
+.club_center{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.club_right{
+  width: 25%;
+}
+.club_activity{
+  padding: 5% 10%;
+  border: 1px solid black;
+  border-bottom-width: 0;
+}
+.club_activity_head_2{
+  display: flex;
+  border: 0px dotted black;
+  border-bottom-width:1px;
+}
+.club_activity_head_2 > h4{
+  margin-right: 40px;
+}
+.club_activity_body{
+  display: flex;
+  padding-top: 50px;
+}
+.club_activity_body_image{
+  width: 50%;
+  height: 300px;
+  text-align: center;
+}
+.club_activity_body_image > img{
+  border: 1px solid black;
+}
+.club_activity_body_info{
+  width: 50%;
+  border:1px solid black;
+}
+.club_activity_body_info > h4{
+  padding: 1% 5%;
+}
