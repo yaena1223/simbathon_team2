@@ -27,3 +27,6 @@ def social(request):
 
 def volunteer(request):
     return render(request, 'main/volunteer.html')
+
+def contact(request):
+    return render(request, 'main/contact.html')

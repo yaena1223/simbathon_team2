@@ -28,4 +28,5 @@ urlpatterns = [
     path('performance/', views.performance, name="performance"),
     path('atheletic/', views.atheletic, name="atheletic"),
     path('social/',views.social,name='social'),
+    path('contact/',views.contact,name='contact'),
 ]

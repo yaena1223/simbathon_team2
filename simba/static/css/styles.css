@@ -88,6 +88,7 @@ a:visited{
   display: none;
   color: orange;
   width: 15%;
+  margin-left: 80px;
 }
 
 
@@ -133,4 +134,40 @@ a:visited{
   display: flex;
   justify-content: center;
   position: absolute;
+}
+
+.table {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  margin-left:330px;
+}
+
+.table thead th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #369;
+  border-bottom: 3px solid #036;
+}
+
+.table tbody th {
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #f3f6f7;
+}
+
+.table td {
+  width: 350px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+
+.num{
+  text-align:center;
+  margin-top: 50px;
 }
