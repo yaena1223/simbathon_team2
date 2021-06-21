@@ -2,11 +2,11 @@ body{
   margin: 0;
   background-color: rgba(240, 248, 255, 0.918);
 }
-a{
+.navbar a{
   text-decoration: none;
   color: white;
 }
-a:visited{
+.navbar a:visited{
   color:white;
 }
 .navbar{
@@ -27,14 +27,17 @@ a:visited{
   margin: 0px 10px;
   padding: 15px;
 }
+
 .navbar-menu > a:hover{
   color: orange;
 }
+
 .banner{
   border: 1px dotted black;
   height: 500px;
   background-color: black;
 }
+
 .banner > p{
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -42,21 +45,25 @@ a:visited{
   text-align: center;
   padding-top: 150px;
 }
+
 .main{
   height: 1000px;
 }
+
 .main > h1{
   margin-top: 50px;
   text-align: center;
 }
+
 .main-content{
   font-family: 'Do Hyeon', sans-serif;
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
 }
+
 .main-content-class{
-  width: 420px;
+  width: 24%;
   height : 657.72px;
   margin-left: auto;
   margin-right: auto;
@@ -64,6 +71,7 @@ a:visited{
   margin: 1%;
   background-color: white;
 }
+
 .main-content-class > h2{
   text-align: center;
   padding-top: 10px;
@@ -73,23 +81,25 @@ a:visited{
   text-align: center;
   padding-top: 10px;
 }
+
 .main-content-class:hover{
   opacity: 0.5;
   transition: ease-in 0.5s;
 }
+
 .main-content-class:hover p{
   display: flex;
   justify-content: center;
   position: absolute;
 }
+
 .main-content-class-icon{
   position: absolute;
   font-size: 150px;
   display: none;
   color: orange;
-  width: 15%;
+  width: 24%;
 }
-
 
 .container > h1{
   font-family: 'Do Hyeon', sans-serif;
@@ -97,11 +107,13 @@ a:visited{
   padding-top: 50px;
   text-align: center;
 }
+
 .container-floor1{
   padding: 10px;
   display : flex;
   justify-content: center;
 }
+
 .container-floor1-content{
   font-family: 'Noto Sans KR', sans-serif;
   font-size : 12px;
@@ -111,26 +123,156 @@ a:visited{
   border-radius: 1.5%;
   margin: 15px;
   padding-bottom: 2%;
- 
 }
+
 .container-floor1-content-image{
   border-radius: 1.5%;
 }
+
 .container-floor1-content > h2{
   text-align: center
 }
+
 .container-floor1-content-icon{
   display: none;
   font-size: 80px;
   width : 15%;
   color: orange;
 }
+
 .container-floor1-content:hover{
   opacity: 0.5;
   transition: ease-in 0.5s;
 }
+
 .container-floor1-content:hover p{
   display: flex;
   justify-content: center;
   position: absolute;
+}
+
+.table {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  margin-left:330px;
+}
+
+.table thead th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #369;
+  border-bottom: 3px solid #036;
+}
+
+.table tbody th {
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #f3f6f7;
+}
+
+.table td {
+  width: 350px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+
+.num{
+  text-align: center;
+  margin-top: 50px;
+}
+.club_activity_body_info_more{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: black;
+}
+.post, .post_a, .post_a:visited{
+  color:black;
+}
+.fa-edit{
+  color: black;
+}
+.fa-edit:hover{
+  color: orange;
+}
+
+.club{
+  padding-top: 50px;
+  display: flex;
+}
+.club_left{
+  width:25%;
+}
+.club_center{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.club_right{
+  width: 25%;
+}
+.club_activity{
+  padding: 5% 10%;
+  border: 1px solid black;
+  border-bottom-width: 0;
+}
+.club_activity_head_2{
+  display: flex;
+  border: 0px dotted black;
+  border-bottom-width:1px;
+}
+.club_activity_head_2 > h4{
+  margin-right: 40px;
+}
+.club_activity_body{
+  display: flex;
+  padding-top: 50px;
+}
+.club_activity_body_image{
+  width: 50%;
+  height: 300px;
+  text-align: center;
+  border: 1px solid violet;
+}
+.club_activity_body_image > img{
+  border: 1px solid black;
+}
+.club_activity_body_info{
+  width: 50%;
+  height: 300px;
+  border:1px solid black;
+  position: relative;
+}
+.club_activity_body_info > h4{
+  padding: 1% 5%;
+}
+
+.detail{
+  padding: 0% 10%;
+}
+.detail_info_second > p{
+  text-align: center;
+}
+.detail_image{
+  width:50%;
+  height:50%;
+}
+.detail_post{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 10%;
+}
+
+.detail_post a{
+  margin:0px 10px;
+  margin-bottom:50px;
 }

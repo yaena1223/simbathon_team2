@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="detail">
+    <div class="detail_info">
+        <div class="detail_info_first">
+            <h1>제목: {{post.title}}</h1>
+            <h3>작성자: {{post.writer}}</h3>
+            <h3>날짜: {{post.date}}</h3>
+        </div>
+        <div class="detail_info_second">
+            {% if post.image %}
+                <p><img class="detail_image" src = "{{post.image.url}}" alt='사진' ></p>
+            {% endif %}
+            <h3>{{post.body}}</h3>
+        </div>
+    </div>
+    <div class = 'post detail_post'>
+        <a class = 'post_a' href = "{% url 'main:edit' post.id%}">수정하기</a>
+        <a class = 'post_a' href = "{% url 'main:delete' post.id%}">삭제하기</a>
+        <a class = 'post_a' href = "{% url 'main:likelion'%}">돌아가기</a>
+    </div>
+</div>
+{% endblock %}
