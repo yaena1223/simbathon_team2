@@ -1,17 +1,18 @@
+h1{
+  font-family: 'Do Hyeon', sans-serif;
+}
+
 body{
   margin: 0;
   background-color: rgba(240, 248, 255, 0.918);
 }
-
 .navbar a{
   text-decoration: none;
   color: white;
 }
-
 .navbar a:visited{
   color:white;
 }
-
 .navbar{
   font-family: 'Lato', sans-serif;
   display: flex;
@@ -24,7 +25,6 @@ body{
   width: 100%;
   z-index: 1;
 }
-
 .navbar-menu{
   color:white;
   font-size: 18px;
@@ -34,6 +34,28 @@ body{
 
 .navbar-menu > a:hover{
   color: orange;
+}
+
+.dropdown {
+ 
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-list{
+  display: none;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.dropdown-list > a:hover{
+  color: orange;
+}
+
+
+.dropdown:hover .dropdown-list{
+  display: block;
 }
 
 .banner{
@@ -159,7 +181,8 @@ body{
   border-collapse: collapse;
   text-align: left;
   line-height: 1.5;
-  margin-left:330px;
+  width : 60%;
+  margin : auto;
 }
 
 .table thead th {
@@ -187,12 +210,24 @@ body{
 }
 
 .num{
-  text-align:center;
+  text-align: center;
   margin-top: 50px;
 }
-
-.post ,.post_a:visited{
+.club_activity_body_info_more{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: black;
+}
+.post, .post_a, .post_a:visited{
   color:black;
+}
+.fa-edit{
+  color: black;
+}
+.fa-edit:hover{
+  color: orange;
 }
 
 .club{
@@ -232,14 +267,78 @@ body{
   width: 50%;
   height: 300px;
   text-align: center;
+
 }
 .club_activity_body_image > img{
   border: 1px solid black;
 }
 .club_activity_body_info{
   width: 50%;
+  height: 300px;
   border:1px solid black;
+  position: relative;
 }
 .club_activity_body_info > h4{
   padding: 1% 5%;
+}
+
+.detail{
+  padding: 0% 10%;
+}
+.detail_info_second > p{
+  text-align: center;
+}
+.detail_image{
+  width:50%;
+  height:50%;
+}
+.detail_post{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 10%;
+}
+
+.detail_post a{
+  margin:0px 10px;
+  margin-bottom:50px;
+}
+
+#clubcontainer{
+  border: black thin solid;
+}
+
+
+#faq{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  height: 100vh;
+  margin-bottom : 100px;
+}
+#faqh1 {
+  font-size: clamp(20px, 4vw, 30px);
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 40px;
+
+}
+#faqmain {
+  max-width: 700px;
+  margin: 0 auto;
+}
+summary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #fafafa;
+  background-image: radial-gradient(circle at 40% 91%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 50%,rgba(229, 229, 229,0.04) 50%, rgba(229, 229, 229,0.04) 100%),radial-gradient(circle at 66% 97%, rgba(36, 36, 36,0.04) 0%, rgba(36, 36, 36,0.04) 50%,rgba(46, 46, 46,0.04) 50%, rgba(46, 46, 46,0.04) 100%),radial-gradient(circle at 86% 7%, rgba(40, 40, 40,0.04) 0%, rgba(40, 40, 40,0.04) 50%,rgba(200, 200, 200,0.04) 50%, rgba(200, 200, 200,0.04) 100%),radial-gradient(circle at 15% 16%, rgba(99, 99, 99,0.04) 0%, rgba(99, 99, 99,0.04) 50%,rgba(45, 45, 45,0.04) 50%, rgba(45, 45, 45,0.04) 100%),radial-gradient(circle at 75% 99%, rgba(243, 243, 243,0.04) 0%, rgba(243, 243, 243,0.04) 50%,rgba(37, 37, 37,0.04) 50%, rgba(37, 37, 37,0.04) 100%),linear-gradient(90deg, rgb(34, 222, 237),rgb(135, 89, 215));
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
 }

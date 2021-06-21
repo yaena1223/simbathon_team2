@@ -1,3 +1,7 @@
+h1{
+  font-family: 'Do Hyeon', sans-serif;
+}
+
 body{
   margin: 0;
   background-color: rgba(240, 248, 255, 0.918);
@@ -30,6 +34,28 @@ body{
 
 .navbar-menu > a:hover{
   color: orange;
+}
+
+.dropdown {
+ 
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-list{
+  display: none;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.dropdown-list > a:hover{
+  color: orange;
+}
+
+
+.dropdown:hover .dropdown-list{
+  display: block;
 }
 
 .banner{
@@ -155,7 +181,8 @@ body{
   border-collapse: collapse;
   text-align: left;
   line-height: 1.5;
-  margin-left:330px;
+  width : 60%;
+  margin : auto;
 }
 
 .table thead th {
@@ -240,7 +267,7 @@ body{
   width: 50%;
   height: 300px;
   text-align: center;
-  border: 1px solid violet;
+
 }
 .club_activity_body_image > img{
   border: 1px solid black;
@@ -276,3 +303,9 @@ body{
   margin:0px 10px;
   margin-bottom:50px;
 }
+
+#clubcontainer{
+  border: black thin solid;
+}
+
+
