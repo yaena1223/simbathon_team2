@@ -276,3 +276,7 @@ body{
   margin:0px 10px;
   margin-bottom:50px;
 }
+
+#clubcontainer{
+  border: black thin solid;
+}
