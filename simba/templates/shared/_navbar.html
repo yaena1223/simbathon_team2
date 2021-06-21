@@ -2,13 +2,36 @@
   <div class="navbar-menu home">
       <a href="{% url 'main:showmain'%} ">HOME</a>
   </div>
-  <div class="navbar-menu information">
-      <a href="#">INFORMATION</a>
-  </div>
+  <div class="navbar-menu faq">
+    <a href="{% url 'main:faq'%} ">FAQ</a>
+</div>
   <div class="navbar-menu contact">
       <a href="{% url 'main:contact'%}">CONTACT</a>
+  </div>
+  <div class="navbar-menu dropdown">
+    
+    {% if user.is_authenticated %}
+    <a href="#">MYPAGE/LOGOUT</a>
+    <div class="dropdown-list">
+      <a href="{% url 'users:mypage'%}">MYPAGE</a>
+    </div>
+    <div class="dropdown-list">
+      <a href="{% url 'account_logout'%}">LOGOUT</a>
+    </div>
+    {% else %}
+    <a href="#">LOGIN/SIGN UP</a>
+    <div class="dropdown-list">
+      <a href="{% url 'account_login'%}">LOGIN</a>
+    </div>
+    <div class="dropdown-list">
+      <a href="{% url 'account_signup'%}">SIGN UP</a>
+    </div>
+    {% endif %}
   </div>
 </div>
 <div class="banner">
   <p>DONGGUK CLUB</p>
 </div>
+
+
+

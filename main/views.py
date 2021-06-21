@@ -1,10 +1,16 @@
 from django.shortcuts import render,redirect,get_object_or_404
-from .models import Post
+from .models import *
 from django.utils import timezone
 
 # Create your views here.
 def showmain(request):
     return render(request, 'main/mainpage.html')
+
+def faq(request):
+    return render(request, 'main/faq.html')
+
+def contact(request):
+    return render(request, 'main/contact.html')
 
 def academic(request):
     return render(request, 'main/academic.html')
@@ -30,57 +36,93 @@ def social(request):
 def volunteer(request):
     return render(request, 'main/volunteer.html')
 
-def contact(request):
-    return render(request, 'main/contact.html')
-
-def information(request):
-    return render(request, 'main/information.html')
 
 
+# 멋사
 def likelion(request):
-    posts = Post.objects.all().order_by('-date')
-    return render(request,'club/likelion.html',{'posts':posts})
+    likelion_posts = likelion_Post.objects.all().order_by('-date')
+    return render(request,'club/likelion.html',{'posts':likelion_posts})
 
-def detail(request,id):
-    post = get_object_or_404(Post, pk = id)
-    return render(request,'main/detail.html',{'post':post})
+def likelion_detail(request,id):
+    likelion_post = get_object_or_404(likelion_Post, pk = id)
+    return render(request,'main/likelion_detail.html',{'post':likelion_post})
 
-def new(request):
-    return render(request,'main/new.html')
+def likelion_new(request):
+    return render(request,'main/likelion_new.html')
 
-def create(request):
-    new_post = Post()
-    new_post.title = request.POST['title']
-    new_post.writer = request.POST['writer']
-    new_post.date = timezone.now()
-    new_post.body = request.POST['body']
-    new_post.image = request.FILES.get('image')
-    new_post.save()
-    return redirect('main:detail',new_post.id)
+def likelion_create(request):
+    likelion_new_post = likelion_Post()
+    likelion_new_post.title = request.POST['title']
+    likelion_new_post.writer = request.user
+    likelion_new_post.date = timezone.now()
+    likelion_new_post.body = request.POST['body']
+    likelion_new_post.image = request.FILES.get('image')
+    likelion_new_post.save()
+    return redirect('main:likelion_detail',likelion_new_post.id)
 
-def edit(request,id):
-    edit_post = Post.objects.get(id = id)
-    return render(request, 'main/edit.html', {'post':edit_post})
+def likelion_edit(request,id):
+    likelion_edit_post = likelion_Post.objects.get(id = id)
+    return render(request, 'main/likelion_edit.html', {'post':likelion_edit_post})
 
-def update(request,id):
-    update_post = Post()
-    update_post.title = request.POST['title']
-    update_post.writer = request.POST['writer']
-    update_post.date = timezone.now()
-    update_post.body = request.POST['body']
-    update_post.save()
-    return redirect('main:detail',update_post.id)
+def likelion_update(request,id):
+    likelion_update_post = get_object_or_404(likelion_Post, id = id)
+    likelion_update_post.title = request.POST['title']
+    likelion_update_post.writer = request.user
+    likelion_update_post.date = timezone.now()
+    likelion_update_post.body = request.POST['body']
+    likelion_update_post.image = request.FILES.get('image')
+    likelion_update_post.save()
+    return redirect('main:likelion_detail',likelion_update_post.id)
 
-def delete(request,id):
-    delete_post = Post.objects.get(id = id)
-    delete_post.delete()
+def likelion_delete(request,id):
+    likelion_delete_post = likelion_Post.objects.get(id = id)
+    likelion_delete_post.delete()
     return redirect('main:likelion')
 
 #학술분과
 
 def cafein(request):
-    posts = Post.objects.all()
+    posts = cafein_Post.objects.all().order_by('-date')
     return render(request,'club/cafein.html',{'posts':posts})
+
+def cafein_detail(request,id):
+    cafein_post = get_object_or_404(cafein_Post, pk = id)
+    return render(request,'main/cafein_detail.html',{'post':cafein_post})
+
+def cafein_new(request):
+    return render(request,'main/cafein_new.html')
+
+def cafein_create(request):
+    cafein_new_post = cafein_Post()
+    cafein_new_post.title = request.POST['title']
+    cafein_new_post.writer = request.user
+    cafein_new_post.date = timezone.now()
+    cafein_new_post.body = request.POST['body']
+    cafein_new_post.image = request.FILES.get('image')
+    cafein_new_post.save()
+    return redirect('main:cafein_detail',cafein_new_post.id)
+
+def cafein_edit(request,id):
+    cafein_edit_post = cafein_Post.objects.get(id = id)
+    return render(request, 'main/cafein_edit.html', {'post':cafein_edit_post})
+
+def cafein_update(request,id):
+    cafein_update_post = get_object_or_404(cafein_Post, id = id)
+    cafein_update_post.title = request.POST['title']
+    cafein_update_post.writer = request.user
+    cafein_update_post.date = timezone.now()
+    cafein_update_post.body = request.POST['body']
+    cafein_update_post.image = request.FILES.get('image')
+    cafein_update_post.save()
+    return redirect('main:cafein_detail',cafein_update_post.id)
+
+def cafein_delete(request,id):
+    cafein_delete_post = cafein_Post.objects.get(id = id)
+    cafein_delete_post.delete()
+    return redirect('main:cafein')
+
+
+
 
 def dna(request):
     posts = Post.objects.all()
@@ -290,9 +332,48 @@ def yeoul(request):
     return render(request,'club/현여울.html',{'posts':posts})
 
 # 예창분과
+
+#draw
 def draw(request):
-    posts = Post.objects.all()
+    posts = draw_Post.objects.all()
     return render(request,'club/그리고그림.html',{'posts':posts})
+
+
+def draw_detail(request,id):
+    draw_post = get_object_or_404(draw_Post, pk = id)
+    return render(request,'main/draw_detail.html',{'post':draw_post})
+
+def draw_new(request):
+    return render(request,'main/draw_new.html')
+
+def draw_create(request):
+    draw_new_post = draw_Post()
+    draw_new_post.title = request.POST['title']
+    draw_new_post.writer = request.user
+    draw_new_post.date = timezone.now()
+    draw_new_post.body = request.POST['body']
+    draw_new_post.image = request.FILES.get('image')
+    draw_new_post.save()
+    return redirect('main:draw_detail',draw_new_post.id)
+
+def draw_edit(request,id):
+    draw_edit_post = draw_Post.objects.get(id = id)
+    return render(request, 'main/draw_edit.html', {'post':draw_edit_post})
+
+def draw_update(request,id):
+    draw_update_post = get_object_or_404(draw_Post, id = id)
+    draw_update_post.title = request.POST['title']
+    draw_update_post.writer = request.user
+    draw_update_post.date = timezone.now()
+    draw_update_post.body = request.POST['body']
+    draw_update_post.image = request.FILES.get('image')
+    draw_update_post.save()
+    return redirect('main:draw_detail',draw_update_post.id)
+
+def draw_delete(request,id):
+    draw_delete_post = draw_Post.objects.get(id = id)
+    draw_delete_post.delete()
+    return redirect('main:draw')
 
 def literal(request):
     posts = Post.objects.all()

@@ -3,7 +3,9 @@ from .views import *
 
 app_name="main"
 urlpatterns = [
-    path('', showmain, name="showmain"),
+    path('', showmain, name="showmain"),   
+    path('faq/',faq,name = 'faq'),
+    path('contact/',contact,name='contact'),
     path('academic/', academic, name="academic"),
     path('volunteer/', volunteer, name="volunteer"),
     path('research/', research, name="research"),
@@ -12,15 +14,25 @@ urlpatterns = [
     path('performance/', performance, name="performance"),
     path('atheletic/', atheletic, name="atheletic"),
     path('social/',social,name='social'),
-    path('information/',information,name='information'),
-    path('contact/',contact,name='contact'),
+
+    # 멋사
     path('likelion/',likelion,name='likelion'),
-    path('<str:id>',detail,name='detail'),
-    path('new/',new,name='new'),
-    path('create/',create,name='create'),
-    path('edit/',edit,name='edit'),
-    
+    path('likelion/<str:id>',likelion_detail,name='likelion_detail'),
+    path('likelion/new/',likelion_new,name='likelion_new'),
+    path('likelion/create/',likelion_create,name='likelion_create'),
+    path('likelion/edit/<str:id>',likelion_edit,name='likelion_edit'),
+    path('likelion/update/<str:id>',likelion_update,name='likelion_update'),
+    path('likelion/delete/<str:id>',likelion_delete,name='likelion_delete'),
+   
+    # cafein
     path('cafein/',cafein,name='cafein'),
+    path('cafein/<str:id>',cafein_detail,name='cafein_detail'),
+    path('cafein/new/',cafein_new,name='cafein_new'),
+    path('cafein/create/',cafein_create,name='cafein_create'),
+    path('cafein/edit/<str:id>',cafein_edit,name='cafein_edit'),
+    path('cafein/update/<str:id>',cafein_update,name='cafein_update'),
+    path('cafein/delete/<str:id>',cafein_delete,name='cafein_delete'),
+
     path('dna/',dna,name='dna'),
     path('dussa/',dussa,name='dussa'),
     path('kcc/',kcc,name='kcc'),
@@ -76,7 +88,15 @@ urlpatterns = [
     path('fearless/',fearless,name='fearless'),
     path('yeoul/',yeoul,name='yeoul'),
 
-     path('draw/',draw,name='draw'),
+    path('draw/',draw,name='draw'),
+     path('draw/<str:id>',draw_detail,name='draw_detail'),
+    path('draw/new/',draw_new,name='draw_new'),
+    path('draw/create/',draw_create,name='draw_create'),
+    path('draw/edit/<str:id>',draw_edit,name='draw_edit'),
+    path('draw/update/<str:id>',draw_update,name='draw_update'),
+    path('draw/delete/<str:id>',draw_delete,name='draw_delete'),
+
+
     path('literal/',literal,name='literal'),
     path('calligraphy/',calligraphy,name='calligraphy'),
     path('circle/',circle,name='circle'),
