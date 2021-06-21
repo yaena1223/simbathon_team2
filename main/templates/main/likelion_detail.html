@@ -5,9 +5,11 @@
 <div class="detail">
     <div class="detail_info">
         <div class="detail_info_first">
-            <h1>제목: {{post.title}}</h1>
-            <h3>작성자: {{post.writer}}</h3>
-            <h3>날짜: {{post.date}}</h3>
+            <h1>{{post.title}}</h1>
+            <i class="fas fa-calendar-alt fa-lg"style= float:left;></i>
+            <h3>&nbsp;&nbsp;{{post.date}}</h3>
+            <i class="fas fa-user fa-lg" style= float:left;></i> 
+            <h3>&nbsp;&nbsp;{{post.writer}}</h3>
         </div>
         <div class="detail_info_second">
             {% if post.image %}
@@ -17,8 +19,8 @@
         </div>
     </div>
     <div class = 'post detail_post'>
-        <a class = 'post_a' href = "{% url 'main:edit' post.id%}">수정하기</a>
-        <a class = 'post_a' href = "{% url 'main:delete' post.id%}">삭제하기</a>
+        <a class = 'post_a' href = "{% url 'main:likelion_edit' post.id%}">수정하기</a>
+        <a class = 'post_a' href = "{% url 'main:likelion_delete' post.id%}">삭제하기</a>
         <a class = 'post_a' href = "{% url 'main:likelion'%}">돌아가기</a>
     </div>
 </div>
