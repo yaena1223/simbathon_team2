@@ -486,4 +486,142 @@ urlpatterns = [
     path('rush/update/<str:id>',rush_update,name='rush_update'),
     path('rush/delete/<str:id>',rush_delete,name='rush_delete'),
 
+# dust
+    path('dust/',dust,name='dust'),
+    path('dust/<str:id>',dust_detail,name='dust_detail'),
+    path('dust/new/',dust_new,name='dust_new'),
+    path('dust/create/',dust_create,name='dust_create'),
+    path('dust/edit/<str:id>',dust_edit,name='dust_edit'),
+    path('dust/update/<str:id>',dust_update,name='dust_update'),
+    path('dust/delete/<str:id>',dust_delete,name='dust_delete'),
+
+# cave
+    path('cave/',cave,name='cave'),
+    path('cave/<str:id>',cave_detail,name='cave_detail'),
+    path('cave/new/',cave_new,name='cave_new'),
+    path('cave/create/',cave_create,name='cave_create'),
+    path('cave/edit/<str:id>',cave_edit,name='cave_edit'),
+    path('cave/update/<str:id>',cave_update,name='cave_update'),
+    path('cave/delete/<str:id>',cave_delete,name='cave_delete'),
+
+# action
+    path('action/',action,name='action'),
+    path('action/<str:id>',action_detail,name='action_detail'),
+    path('action/new/',action_new,name='action_new'),
+    path('action/create/',action_create,name='action_create'),
+    path('action/edit/<str:id>',action_edit,name='action_edit'),
+    path('action/update/<str:id>',action_update,name='action_update'),
+    path('action/delete/<str:id>',action_delete,name='action_delete'),
+
+
+# wind
+    path('wind/',wind,name='wind'),
+    path('wind/<str:id>',wind_detail,name='wind_detail'),
+    path('wind/new/',wind_new,name='wind_new'),
+    path('wind/create/',wind_create,name='wind_create'),
+    path('wind/edit/<str:id>',wind_edit,name='wind_edit'),
+    path('wind/update/<str:id>',wind_update,name='wind_update'),
+    path('wind/delete/<str:id>',wind_delete,name='wind_delete'),
+
+# mountain
+    path('mountain/',mountain,name='mountain'),
+    path('mountain/<str:id>',mountain_detail,name='mountain_detail'),
+    path('mountain/new/',mountain_new,name='mountain_new'),
+    path('mountain/create/',mountain_create,name='mountain_create'),
+    path('mountain/edit/<str:id>',mountain_edit,name='mountain_edit'),
+    path('mountain/update/<str:id>',mountain_update,name='mountain_update'),
+    path('mountain/delete/<str:id>',mountain_delete,name='mountain_delete'),
+
+# water
+    path('water/',water,name='water'),
+    path('water/<str:id>',water_detail,name='water_detail'),
+    path('water/new/',water_new,name='water_new'),
+    path('water/create/',water_create,name='water_create'),
+    path('water/edit/<str:id>',water_edit,name='water_edit'),
+    path('water/update/<str:id>',water_update,name='water_update'),
+    path('water/delete/<str:id>',water_delete,name='water_delete'),
+
+# courtist
+    path('courtist/',courtist,name='courtist'),
+    path('courtist/<str:id>',courtist_detail,name='courtist_detail'),
+    path('courtist/new/',courtist_new,name='courtist_new'),
+    path('courtist/create/',courtist_create,name='courtist_create'),
+    path('courtist/edit/<str:id>',courtist_edit,name='courtist_edit'),
+    path('courtist/update/<str:id>',courtist_update,name='courtist_update'),
+    path('courtist/delete/<str:id>',courtist_delete,name='courtist_delete'),
+
+
+# dutc
+    path('dutc/',dutc,name='dutc'),
+    path('dutc/<str:id>',dutc_detail,name='dutc_detail'),
+    path('dutc/new/',dutc_new,name='dutc_new'),
+    path('dutc/create/',dutc_create,name='dutc_create'),
+    path('dutc/edit/<str:id>',dutc_edit,name='dutc_edit'),
+    path('dutc/update/<str:id>',dutc_update,name='dutc_update'),
+    path('dutc/delete/<str:id>',dutc_delete,name='dutc_delete'),
+
+
+# fctoto
+    path('fctoto/',fctoto,name='fctoto'),
+    path('fctoto/<str:id>',fctoto_detail,name='fctoto_detail'),
+    path('fctoto/new/',fctoto_new,name='fctoto_new'),
+    path('fctoto/create/',fctoto_create,name='fctoto_create'),
+    path('fctoto/edit/<str:id>',fctoto_edit,name='fctoto_edit'),
+    path('fctoto/update/<str:id>',fctoto_update,name='fctoto_update'),
+    path('fctoto/delete/<str:id>',fctoto_delete,name='fctoto_delete'),
+
+# kendo
+    path('kendo/',kendo,name='kendo'),
+    path('kendo/<str:id>',kendo_detail,name='kendo_detail'),
+    path('kendo/new/',kendo_new,name='kendo_new'),
+    path('kendo/create/',kendo_create,name='kendo_create'),
+    path('kendo/edit/<str:id>',kendo_edit,name='kendo_edit'),
+    path('kendo/update/<str:id>',kendo_update,name='kendo_update'),
+    path('kendo/delete/<str:id>',kendo_delete,name='kendo_delete'),
+
+# lae
+    path('lae/',lae,name='lae'),
+    path('lae/<str:id>',lae_detail,name='lae_detail'),
+    path('lae/new/',lae_new,name='lae_new'),
+    path('lae/create/',lae_create,name='lae_create'),
+    path('lae/edit/<str:id>',lae_edit,name='lae_edit'),
+    path('lae/update/<str:id>',lae_update,name='lae_update'),
+    path('lae/delete/<str:id>',lae_delete,name='lae_delete'),
+
+# baduk
+    path('baduk/',baduk,name='baduk'),
+    path('baduk/<str:id>',baduk_detail,name='baduk_detail'),
+    path('baduk/new/',baduk_new,name='baduk_new'),
+    path('baduk/create/',baduk_create,name='baduk_create'),
+    path('baduk/edit/<str:id>',baduk_edit,name='baduk_edit'),
+    path('baduk/update/<str:id>',baduk_update,name='baduk_update'),
+    path('baduk/delete/<str:id>',baduk_delete,name='baduk_delete'),
+
+# arrow
+    path('arrow/',arrow,name='arrow'),
+    path('arrow/<str:id>',arrow_detail,name='arrow_detail'),
+    path('arrow/new/',arrow_new,name='arrow_new'),
+    path('arrow/create/',arrow_create,name='arrow_create'),
+    path('arrow/edit/<str:id>',arrow_edit,name='arrow_edit'),
+    path('arrow/update/<str:id>',arrow_update,name='arrow_update'),
+    path('arrow/delete/<str:id>',arrow_delete,name='arrow_delete'),
+
+# taekwondo
+    path('taekwondo/',taekwondo,name='taekwondo'),
+    path('taekwondo/<str:id>',taekwondo_detail,name='taekwondo_detail'),
+    path('taekwondo/new/',taekwondo_new,name='taekwondo_new'),
+    path('taekwondo/create/',taekwondo_create,name='taekwondo_create'),
+    path('taekwondo/edit/<str:id>',taekwondo_edit,name='taekwondo_edit'),
+    path('taekwondo/update/<str:id>',taekwondo_update,name='taekwondo_update'),
+    path('taekwondo/delete/<str:id>',taekwondo_delete,name='taekwondo_delete'),
+
+# tuskers
+    path('tuskers/',tuskers,name='tuskers'),
+    path('tuskers/<str:id>',tuskers_detail,name='tuskers_detail'),
+    path('tuskers/new/',tuskers_new,name='tuskers_new'),
+    path('tuskers/create/',tuskers_create,name='tuskers_create'),
+    path('tuskers/edit/<str:id>',tuskers_edit,name='tuskers_edit'),
+    path('tuskers/update/<str:id>',tuskers_update,name='tuskers_update'),
+    path('tuskers/delete/<str:id>',tuskers_delete,name='tuskers_delete'),
+
 ]
