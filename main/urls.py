@@ -33,12 +33,59 @@ urlpatterns = [
     path('cafein/update/<str:id>',cafein_update,name='cafein_update'),
     path('cafein/delete/<str:id>',cafein_delete,name='cafein_delete'),
 
+    # dna
     path('dna/',dna,name='dna'),
+    path('dna/<str:id>',dna_detail,name='dna_detail'),
+    path('dna/new/',dna_new,name='dna_new'),
+    path('dna/create/',dna_create,name='dna_create'),
+    path('dna/edit/<str:id>',dna_edit,name='dna_edit'),
+    path('dna/update/<str:id>',dna_update,name='dna_update'),
+    path('dna/delete/<str:id>',dna_delete,name='dna_delete'),
+
+    # dussa
     path('dussa/',dussa,name='dussa'),
+    path('dussa/<str:id>',dussa_detail,name='dussa_detail'),
+    path('dussa/new/',dussa_new,name='dussa_new'),
+    path('dussa/create/',dussa_create,name='dussa_create'),
+    path('dussa/edit/<str:id>',dussa_edit,name='dussa_edit'),
+    path('dussa/update/<str:id>',dussa_update,name='dussa_update'),
+    path('dussa/delete/<str:id>',dussa_delete,name='dussa_delete'),
+
+    # kcc
     path('kcc/',kcc,name='kcc'),
+    path('kcc/<str:id>',kcc_detail,name='kcc_detail'),
+    path('kcc/new/',kcc_new,name='kcc_new'),
+    path('kcc/create/',kcc_create,name='kcc_create'),
+    path('kcc/edit/<str:id>',kcc_edit,name='kcc_edit'),
+    path('kcc/update/<str:id>',kcc_update,name='kcc_update'),
+    path('kcc/delete/<str:id>',kcc_delete,name='kcc_delete'),
+
+    # mecs
     path('mecs/',mecs,name='mecs'),
+    path('mecs/<str:id>',mecs_detail,name='mecs_detail'),
+    path('mecs/new/',mecs_new,name='mecs_new'),
+    path('mecs/create/',mecs_create,name='mecs_create'),
+    path('mecs/edit/<str:id>',mecs_edit,name='mecs_edit'),
+    path('mecs/update/<str:id>',mecs_update,name='mecs_update'),
+    path('mecs/delete/<str:id>',mecs_delete,name='mecs_delete'),
+
+    # nsa
     path('nsa/',nsa,name='nsa'),
+    path('nsa/<str:id>',nsa_detail,name='nsa_detail'),
+    path('nsa/new/',nsa_new,name='nsa_new'),
+    path('nsa/create/',nsa_create,name='nsa_create'),
+    path('nsa/edit/<str:id>',nsa_edit,name='nsa_edit'),
+    path('nsa/update/<str:id>',nsa_update,name='nsa_update'),
+    path('nsa/delete/<str:id>',nsa_delete,name='nsa_delete'),
+
+    # marx
     path('marx/',marx,name='marx'),
+    path('marx/<str:id>',marx_detail,name='marx_detail'),
+    path('marx/new/',marx_new,name='marx_new'),
+    path('marx/create/',marx_create,name='marx_create'),
+    path('marx/edit/<str:id>',marx_edit,name='marx_edit'),
+    path('marx/update/<str:id>',marx_update,name='marx_update'),
+    path('marx/delete/<str:id>',marx_delete,name='marx_delete'),
 
     # management
     path('management/',management,name='management'),
@@ -85,11 +132,50 @@ urlpatterns = [
     path('green/',green,name='green'),
     path('korean/',korean,name='korean'),
 
+    # kusa
     path('kusa/',kusa,name='kusa'),
+    path('kusa/<str:id>',kusa_detail,name='kusa_detail'),
+    path('kusa/new/',kusa_new,name='kusa_new'),
+    path('kusa/create/',kusa_create,name='kusa_create'),
+    path('kusa/edit/<str:id>',kusa_edit,name='kusa_edit'),
+    path('kusa/update/<str:id>',kusa_update,name='kusa_update'),
+    path('kusa/delete/<str:id>',kusa_delete,name='kusa_delete'),
+
+    # rich
     path('rich/',rich,name='rich'),
+    path('rich/<str:id>',rich_detail,name='rich_detail'),
+    path('rich/new/',rich_new,name='rich_new'),
+    path('rich/create/',rich_create,name='rich_create'),
+    path('rich/edit/<str:id>',rich_edit,name='rich_edit'),
+    path('rich/update/<str:id>',rich_update,name='rich_update'),
+    path('rich/delete/<str:id>',rich_delete,name='rich_delete'),
+
+    # unsa
     path('unsa/',unsa,name='unsa'),
+    path('unsa/<str:id>',unsa_detail,name='unsa_detail'),
+    path('unsa/new/',unsa_new,name='unsa_new'),
+    path('unsa/create/',unsa_create,name='unsa_create'),
+    path('unsa/edit/<str:id>',unsa_edit,name='unsa_edit'),
+    path('unsa/update/<str:id>',unsa_update,name='unsa_update'),
+    path('unsa/delete/<str:id>',unsa_delete,name='unsa_delete'),
+
+    # frontier
     path('froniter/',frontier,name='frontier'),
+    path('frontier/<str:id>',frontier_detail,name='frontier_detail'),
+    path('frontier/new/',frontier_new,name='frontier_new'),
+    path('frontier/create/',frontier_create,name='frontier_create'),
+    path('frontier/edit/<str:id>',frontier_edit,name='frontier_edit'),
+    path('frontier/update/<str:id>',frontier_update,name='frontier_update'),
+    path('frontier/delete/<str:id>',frontier_delete,name='frontier_delete'),
+
+    # buddha
     path('buddha/',buddha,name='buddha'),
+    path('buddha/<str:id>',buddha_detail,name='buddha_detail'),
+    path('buddha/new/',buddha_new,name='buddha_new'),
+    path('buddha/create/',buddha_create,name='buddha_create'),
+    path('buddha/edit/<str:id>',buddha_edit,name='buddha_edit'),
+    path('buddha/update/<str:id>',buddha_update,name='buddha_update'),
+    path('buddha/delete/<str:id>',buddha_delete,name='buddha_delete'),
 
     path('dust/',dust,name='dust'),
     path('cave/',cave,name='cave'),
@@ -215,10 +301,49 @@ urlpatterns = [
     path('cartoon/',cartoon,name='cartoon'),
     path('rush/',rush,name='rush'),
 
+    # elephente
     path('elephente/',elephente,name='elephente'),
+    path('elephente/<str:id>',elephente_detail,name='elephente_detail'),
+    path('elephente/new/',elephente_new,name='elephente_new'),
+    path('elephente/create/',elephente_create,name='elephente_create'),
+    path('elephente/edit/<str:id>',elephente_edit,name='elephente_edit'),
+    path('elephente/update/<str:id>',elephente_update,name='elephente_update'),
+    path('elephente/delete/<str:id>',elephente_delete,name='elephente_delete'),
+
+    # doomchit
     path('doomchit/',doomchit,name='doomchit'),
+    path('doomchit/<str:id>',doomchit_detail,name='doomchit_detail'),
+    path('doomchit/new/',doomchit_new,name='doomchit_new'),
+    path('doomchit/create/',doomchit_create,name='doomchit_create'),
+    path('doomchit/edit/<str:id>',doomchit_edit,name='doomchit_edit'),
+    path('doomchit/update/<str:id>',doomchit_update,name='doomchit_update'),
+    path('doomchit/delete/<str:id>',doomchit_delete,name='doomchit_delete'),
+
+    # enactus
     path('enactus/',enactus,name='enactus'),
+    path('enactus/<str:id>',enactus_detail,name='enactus_detail'),
+    path('enactus/new/',enactus_new,name='enactus_new'),
+    path('enactus/create/',enactus_create,name='enactus_create'),
+    path('enactus/edit/<str:id>',enactus_edit,name='enactus_edit'),
+    path('enactus/update/<str:id>',enactus_update,name='enactus_update'),
+    path('enactus/delete/<str:id>',enactus_delete,name='enactus_delete'),
+
+    # jam
     path('jam/',jam,name='jam'),
+    path('jam/<str:id>',jam_detail,name='jam_detail'),
+    path('jam/new/',jam_new,name='jam_new'),
+    path('jam/create/',jam_create,name='jam_create'),
+    path('jam/edit/<str:id>',jam_edit,name='jam_edit'),
+    path('jam/update/<str:id>',jam_update,name='jam_update'),
+    path('jam/delete/<str:id>',jam_delete,name='jam_delete'),
+    
+    # qud
     path('qud/',qud,name='qud'),
+    path('qud/<str:id>',qud_detail,name='qud_detail'),
+    path('qud/new/',qud_new,name='qud_new'),
+    path('qud/create/',qud_create,name='qud_create'),
+    path('qud/edit/<str:id>',qud_edit,name='qud_edit'),
+    path('qud/update/<str:id>',qud_update,name='qud_update'),
+    path('qud/delete/<str:id>',qud_delete,name='qud_delete'),
 
 ]

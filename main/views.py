@@ -80,6 +80,7 @@ def likelion_delete(request,id):
     return redirect('main:likelion')
 
 #학술분과
+# cafein
 
 def cafein(request):
     posts = cafein_Post.objects.all().order_by('-date')
@@ -121,38 +122,256 @@ def cafein_delete(request,id):
     cafein_delete_post.delete()
     return redirect('main:cafein')
 
-
-
-
+# dna
 def dna(request):
-    posts = Post.objects.all()
+    posts = dna_Post.objects.all()
     return render(request,'club/dna.html',{'posts':posts})
 
+def dna_detail(request,id):
+    dna_post = get_object_or_404(dna_Post, pk = id)
+    return render(request,'main/dna_detail.html',{'post':dna_post})
+
+def dna_new(request):
+    return render(request,'main/dna_new.html')
+
+def dna_create(request):
+    dna_new_post = dna_Post()
+    dna_new_post.title = request.POST['title']
+    dna_new_post.writer = request.user
+    dna_new_post.date = timezone.now()
+    dna_new_post.body = request.POST['body']
+    dna_new_post.image = request.FILES.get('image')
+    dna_new_post.save()
+    return redirect('main:dna_detail',dna_new_post.id)
+
+def dna_edit(request,id):
+    dna_edit_post = dna_Post.objects.get(id = id)
+    return render(request, 'main/dna_edit.html', {'post':dna_edit_post})
+
+def dna_update(request,id):
+    dna_update_post = get_object_or_404(dna_Post, id = id)
+    dna_update_post.title = request.POST['title']
+    dna_update_post.writer = request.user
+    dna_update_post.date = timezone.now()
+    dna_update_post.body = request.POST['body']
+    dna_update_post.image = request.FILES.get('image')
+    dna_update_post.save()
+    return redirect('main:dna_detail',dna_update_post.id)
+
+def dna_delete(request,id):
+    dna_delete_post = dna_Post.objects.get(id = id)
+    dna_delete_post.delete()
+    return redirect('main:dna')
+
+
+# dussa
 def dussa(request):
-    posts = Post.objects.all()
+    posts = dussa_Post.objects.all()
     return render(request,'club/dussa.html',{'posts':posts})
 
+def dussa_detail(request,id):
+    dussa_post = get_object_or_404(dussa_Post, pk = id)
+    return render(request,'main/dussa_detail.html',{'post':dussa_post})
+
+def dussa_new(request):
+    return render(request,'main/dussa_new.html')
+
+def dussa_create(request):
+    dussa_new_post = dussa_Post()
+    dussa_new_post.title = request.POST['title']
+    dussa_new_post.writer = request.user
+    dussa_new_post.date = timezone.now()
+    dussa_new_post.body = request.POST['body']
+    dussa_new_post.image = request.FILES.get('image')
+    dussa_new_post.save()
+    return redirect('main:dussa_detail',dussa_new_post.id)
+
+def dussa_edit(request,id):
+    dussa_edit_post = dussa_Post.objects.get(id = id)
+    return render(request, 'main/dussa_edit.html', {'post':dussa_edit_post})
+
+def dussa_update(request,id):
+    dussa_update_post = get_object_or_404(dussa_Post, id = id)
+    dussa_update_post.title = request.POST['title']
+    dussa_update_post.writer = request.user
+    dussa_update_post.date = timezone.now()
+    dussa_update_post.body = request.POST['body']
+    dussa_update_post.image = request.FILES.get('image')
+    dussa_update_post.save()
+    return redirect('main:dussa_detail',dussa_update_post.id)
+
+def dussa_delete(request,id):
+    dussa_delete_post = dussa_Post.objects.get(id = id)
+    dussa_delete_post.delete()
+    return redirect('main:dussa')
+
+# kcc
 def kcc(request):
-    posts = Post.objects.all()
+    posts = kcc_Post.objects.all()
     return render(request,'club/kcc.html',{'posts':posts})
 
+def kcc_detail(request,id):
+    kcc_post = get_object_or_404(kcc_Post, pk = id)
+    return render(request,'main/kcc_detail.html',{'post':kcc_post})
+
+def kcc_new(request):
+    return render(request,'main/kcc_new.html')
+
+def kcc_create(request):
+    kcc_new_post = kcc_Post()
+    kcc_new_post.title = request.POST['title']
+    kcc_new_post.writer = request.user
+    kcc_new_post.date = timezone.now()
+    kcc_new_post.body = request.POST['body']
+    kcc_new_post.image = request.FILES.get('image')
+    kcc_new_post.save()
+    return redirect('main:kcc_detail',kcc_new_post.id)
+
+def kcc_edit(request,id):
+    kcc_edit_post = kcc_Post.objects.get(id = id)
+    return render(request, 'main/kcc_edit.html', {'post':kcc_edit_post})
+
+def kcc_update(request,id):
+    kcc_update_post = get_object_or_404(kcc_Post, id = id)
+    kcc_update_post.title = request.POST['title']
+    kcc_update_post.writer = request.user
+    kcc_update_post.date = timezone.now()
+    kcc_update_post.body = request.POST['body']
+    kcc_update_post.image = request.FILES.get('image')
+    kcc_update_post.save()
+    return redirect('main:kcc_detail',kcc_update_post.id)
+
+def kcc_delete(request,id):
+    kcc_delete_post = kcc_Post.objects.get(id = id)
+    kcc_delete_post.delete()
+    return redirect('main:kcc')
+
+# mecs
 def mecs(request):
-    posts = Post.objects.all()
+    posts = mecs_Post.objects.all()
     return render(request,'club/mecs.html',{'posts':posts})
 
+def mecs_detail(request,id):
+    mecs_post = get_object_or_404(mecs_Post, pk = id)
+    return render(request,'main/mecs_detail.html',{'post':mecs_post})
+
+def mecs_new(request):
+    return render(request,'main/mecs_new.html')
+
+def mecs_create(request):
+    mecs_new_post = mecs_Post()
+    mecs_new_post.title = request.POST['title']
+    mecs_new_post.writer = request.user
+    mecs_new_post.date = timezone.now()
+    mecs_new_post.body = request.POST['body']
+    mecs_new_post.image = request.FILES.get('image')
+    mecs_new_post.save()
+    return redirect('main:mecs_detail',mecs_new_post.id)
+
+def mecs_edit(request,id):
+    mecs_edit_post = mecs_Post.objects.get(id = id)
+    return render(request, 'main/mecs_edit.html', {'post':mecs_edit_post})
+
+def mecs_update(request,id):
+    mecs_update_post = get_object_or_404(mecs_Post, id = id)
+    mecs_update_post.title = request.POST['title']
+    mecs_update_post.writer = request.user
+    mecs_update_post.date = timezone.now()
+    mecs_update_post.body = request.POST['body']
+    mecs_update_post.image = request.FILES.get('image')
+    mecs_update_post.save()
+    return redirect('main:mecs_detail',mecs_update_post.id)
+
+def mecs_delete(request,id):
+    mecs_delete_post = mecs_Post.objects.get(id = id)
+    mecs_delete_post.delete()
+    return redirect('main:mecs')
+
+# nsa
 def nsa(request):
-    posts = Post.objects.all()
+    posts = nsa_Post.objects.all()
     return render(request,'club/nsa.html',{'posts':posts})
 
+def nsa_detail(request,id):
+    nsa_post = get_object_or_404(nsa_Post, pk = id)
+    return render(request,'main/nsa_detail.html',{'post':nsa_post})
 
+def nsa_new(request):
+    return render(request,'main/nsa_new.html')
+
+def nsa_create(request):
+    nsa_new_post = nsa_Post()
+    nsa_new_post.title = request.POST['title']
+    nsa_new_post.writer = request.user
+    nsa_new_post.date = timezone.now()
+    nsa_new_post.body = request.POST['body']
+    nsa_new_post.image = request.FILES.get('image')
+    nsa_new_post.save()
+    return redirect('main:nsa_detail',nsa_new_post.id)
+
+def nsa_edit(request,id):
+    nsa_edit_post = nsa_Post.objects.get(id = id)
+    return render(request, 'main/nsa_edit.html', {'post':nsa_edit_post})
+
+def nsa_update(request,id):
+    nsa_update_post = get_object_or_404(nsa_Post, id = id)
+    nsa_update_post.title = request.POST['title']
+    nsa_update_post.writer = request.user
+    nsa_update_post.date = timezone.now()
+    nsa_update_post.body = request.POST['body']
+    nsa_update_post.image = request.FILES.get('image')
+    nsa_update_post.save()
+    return redirect('main:nsa_detail',nsa_update_post.id)
+
+def nsa_delete(request,id):
+    nsa_delete_post = nsa_Post.objects.get(id = id)
+    nsa_delete_post.delete()
+    return redirect('main:nsa')
+
+# marx
 def marx(request):
-    posts = Post.objects.all()
-    return render(request,'club/맑스철학연구회.html',{'posts':posts})
+    posts = marx_Post.objects.all()
+    return render(request,'club/marx.html',{'posts':posts})
+
+def marx_detail(request,id):
+    marx_post = get_object_or_404(marx_Post, pk = id)
+    return render(request,'main/marx_detail.html',{'post':marx_post})
+
+def marx_new(request):
+    return render(request,'main/marx_new.html')
+
+def marx_create(request):
+    marx_new_post = marx_Post()
+    marx_new_post.title = request.POST['title']
+    marx_new_post.writer = request.user
+    marx_new_post.date = timezone.now()
+    marx_new_post.body = request.POST['body']
+    marx_new_post.image = request.FILES.get('image')
+    marx_new_post.save()
+    return redirect('main:marx_detail',marx_new_post.id)
+
+def marx_edit(request,id):
+    marx_edit_post = marx_Post.objects.get(id = id)
+    return render(request, 'main/marx_edit.html', {'post':marx_edit_post})
+
+def marx_update(request,id):
+    marx_update_post = get_object_or_404(marx_Post, id = id)
+    marx_update_post.title = request.POST['title']
+    marx_update_post.writer = request.user
+    marx_update_post.date = timezone.now()
+    marx_update_post.body = request.POST['body']
+    marx_update_post.image = request.FILES.get('image')
+    marx_update_post.save()
+    return redirect('main:marx_detail',marx_update_post.id)
+
+def marx_delete(request,id):
+    marx_delete_post = marx_Post.objects.get(id = id)
+    marx_delete_post.delete()
+    return redirect('main:marx')
 
 #연구분과
 
 #management    
-
 def management(request):
     posts = management_Post.objects.all().order_by('-date')
     return render(request,'club/management.html',{'posts':posts})
@@ -194,7 +413,6 @@ def management_delete(request,id):
     return redirect('main:management')
 
 #economy    
-
 def economy(request):
     posts = economy_Post.objects.all().order_by('-date')
     return render(request,'club/economy.html',{'posts':posts})
@@ -236,7 +454,6 @@ def economy_delete(request,id):
     return redirect('main:economy')
 
 #international    
-
 def international(request):
     posts = international_Post.objects.all().order_by('-date')
     return render(request,'club/international.html',{'posts':posts})
@@ -279,7 +496,6 @@ def international_delete(request,id):
 
 
 #politics    
-
 def politics(request):
     posts = politics_Post.objects.all().order_by('-date')
     return render(request,'club/politics.html',{'posts':posts})
@@ -358,25 +574,210 @@ def korean(request):
     return render(request,'club/한글학교하람.html',{'posts':posts})
 
 # 사회분과
+# kusa
 def kusa(request):
-    posts = Post.objects.all()
+    posts = kusa_Post.objects.all()
     return render(request,'club/kusa.html',{'posts':posts})
 
+def kusa_detail(request,id):
+    kusa_post = get_object_or_404(kusa_Post, pk = id)
+    return render(request,'main/kusa_detail.html',{'post':kusa_post})
+
+def kusa_new(request):
+    return render(request,'main/kusa_new.html')
+
+def kusa_create(request):
+    kusa_new_post = kusa_Post()
+    kusa_new_post.title = request.POST['title']
+    kusa_new_post.writer = request.user
+    kusa_new_post.date = timezone.now()
+    kusa_new_post.body = request.POST['body']
+    kusa_new_post.image = request.FILES.get('image')
+    kusa_new_post.save()
+    return redirect('main:kusa_detail',kusa_new_post.id)
+
+def kusa_edit(request,id):
+    kusa_edit_post = kusa_Post.objects.get(id = id)
+    return render(request, 'main/kusa_edit.html', {'post':kusa_edit_post})
+
+def kusa_update(request,id):
+    kusa_update_post = get_object_or_404(kusa_Post, id = id)
+    kusa_update_post.title = request.POST['title']
+    kusa_update_post.writer = request.user
+    kusa_update_post.date = timezone.now()
+    kusa_update_post.body = request.POST['body']
+    kusa_update_post.image = request.FILES.get('image')
+    kusa_update_post.save()
+    return redirect('main:kusa_detail',kusa_update_post.id)
+
+def kusa_delete(request,id):
+    kusa_delete_post = kusa_Post.objects.get(id = id)
+    kusa_delete_post.delete()
+    return redirect('main:kusa')
+
+# rich
 def rich(request):
-    posts = Post.objects.all()
+    posts = rich_Post.objects.all()
     return render(request,'club/rich.html',{'posts':posts})
 
+def rich_detail(request,id):
+    rich_post = get_object_or_404(rich_Post, pk = id)
+    return render(request,'main/rich_detail.html',{'post':rich_post})
+
+def rich_new(request):
+    return render(request,'main/rich_new.html')
+
+def rich_create(request):
+    rich_new_post = rich_Post()
+    rich_new_post.title = request.POST['title']
+    rich_new_post.writer = request.user
+    rich_new_post.date = timezone.now()
+    rich_new_post.body = request.POST['body']
+    rich_new_post.image = request.FILES.get('image')
+    rich_new_post.save()
+    return redirect('main:rich_detail',rich_new_post.id)
+
+def rich_edit(request,id):
+    rich_edit_post = rich_Post.objects.get(id = id)
+    return render(request, 'main/rich_edit.html', {'post':rich_edit_post})
+
+def rich_update(request,id):
+    rich_update_post = get_object_or_404(rich_Post, id = id)
+    rich_update_post.title = request.POST['title']
+    rich_update_post.writer = request.user
+    rich_update_post.date = timezone.now()
+    rich_update_post.body = request.POST['body']
+    rich_update_post.image = request.FILES.get('image')
+    rich_update_post.save()
+    return redirect('main:rich_detail',rich_update_post.id)
+
+def rich_delete(request,id):
+    rich_delete_post = rich_Post.objects.get(id = id)
+    rich_delete_post.delete()
+    return redirect('main:rich')
+
+# unsa
 def unsa(request):
-    posts = Post.objects.all()
+    posts = unsa_Post.objects.all()
     return render(request,'club/unsa.html',{'posts':posts})
 
-def frontier(request):
-    posts = Post.objects.all()
-    return render(request,'club/프론티어.html',{'posts':posts})
+def unsa_detail(request,id):
+    unsa_post = get_object_or_404(unsa_Post, pk = id)
+    return render(request,'main/unsa_detail.html',{'post':unsa_post})
 
+def unsa_new(request):
+    return render(request,'main/unsa_new.html')
+
+def unsa_create(request):
+    unsa_new_post = unsa_Post()
+    unsa_new_post.title = request.POST['title']
+    unsa_new_post.writer = request.user
+    unsa_new_post.date = timezone.now()
+    unsa_new_post.body = request.POST['body']
+    unsa_new_post.image = request.FILES.get('image')
+    unsa_new_post.save()
+    return redirect('main:unsa_detail',unsa_new_post.id)
+
+def unsa_edit(request,id):
+    unsa_edit_post = unsa_Post.objects.get(id = id)
+    return render(request, 'main/unsa_edit.html', {'post':unsa_edit_post})
+
+def unsa_update(request,id):
+    unsa_update_post = get_object_or_404(unsa_Post, id = id)
+    unsa_update_post.title = request.POST['title']
+    unsa_update_post.writer = request.user
+    unsa_update_post.date = timezone.now()
+    unsa_update_post.body = request.POST['body']
+    unsa_update_post.image = request.FILES.get('image')
+    unsa_update_post.save()
+    return redirect('main:unsa_detail',unsa_update_post.id)
+
+def unsa_delete(request,id):
+    unsa_delete_post = unsa_Post.objects.get(id = id)
+    unsa_delete_post.delete()
+    return redirect('main:unsa')
+
+# frontier
+def frontier(request):
+    posts = frontier_Post.objects.all()
+    return render(request,'club/frontier.html',{'posts':posts})
+
+def frontier_detail(request,id):
+    frontier_post = get_object_or_404(frontier_Post, pk = id)
+    return render(request,'main/frontier_detail.html',{'post':frontier_post})
+
+def frontier_new(request):
+    return render(request,'main/frontier_new.html')
+
+def frontier_create(request):
+    frontier_new_post = frontier_Post()
+    frontier_new_post.title = request.POST['title']
+    frontier_new_post.writer = request.user
+    frontier_new_post.date = timezone.now()
+    frontier_new_post.body = request.POST['body']
+    frontier_new_post.image = request.FILES.get('image')
+    frontier_new_post.save()
+    return redirect('main:frontier_detail',frontier_new_post.id)
+
+def frontier_edit(request,id):
+    frontier_edit_post = frontier_Post.objects.get(id = id)
+    return render(request, 'main/frontier_edit.html', {'post':frontier_edit_post})
+
+def frontier_update(request,id):
+    frontier_update_post = get_object_or_404(frontier_Post, id = id)
+    frontier_update_post.title = request.POST['title']
+    frontier_update_post.writer = request.user
+    frontier_update_post.date = timezone.now()
+    frontier_update_post.body = request.POST['body']
+    frontier_update_post.image = request.FILES.get('image')
+    frontier_update_post.save()
+    return redirect('main:frontier_detail',frontier_update_post.id)
+
+def frontier_delete(request,id):
+    frontier_delete_post = frontier_Post.objects.get(id = id)
+    frontier_delete_post.delete()
+    return redirect('main:frontier')
+
+# buddha
 def buddha(request):
-    posts = Post.objects.all()
-    return render(request,'club/동국불교학생회.html',{'posts':posts})
+    posts = buddha_Post.objects.all()
+    return render(request,'club/buddha.html',{'posts':posts})
+
+def buddha_detail(request,id):
+    buddha_post = get_object_or_404(buddha_Post, pk = id)
+    return render(request,'main/buddha_detail.html',{'post':buddha_post})
+
+def buddha_new(request):
+    return render(request,'main/buddha_new.html')
+
+def buddha_create(request):
+    buddha_new_post = buddha_Post()
+    buddha_new_post.title = request.POST['title']
+    buddha_new_post.writer = request.user
+    buddha_new_post.date = timezone.now()
+    buddha_new_post.body = request.POST['body']
+    buddha_new_post.image = request.FILES.get('image')
+    buddha_new_post.save()
+    return redirect('main:buddha_detail',buddha_new_post.id)
+
+def buddha_edit(request,id):
+    buddha_edit_post = buddha_Post.objects.get(id = id)
+    return render(request, 'main/buddha_edit.html', {'post':buddha_edit_post})
+
+def buddha_update(request,id):
+    buddha_update_post = get_object_or_404(buddha_Post, id = id)
+    buddha_update_post.title = request.POST['title']
+    buddha_update_post.writer = request.user
+    buddha_update_post.date = timezone.now()
+    buddha_update_post.body = request.POST['body']
+    buddha_update_post.image = request.FILES.get('image')
+    buddha_update_post.save()
+    return redirect('main:buddha_detail',buddha_update_post.id)
+
+def buddha_delete(request,id):
+    buddha_delete_post = buddha_Post.objects.get(id = id)
+    buddha_delete_post.delete()
+    return redirect('main:buddha')
 
 # 체육분과
 def dust(request):
@@ -926,23 +1327,208 @@ def rush(request):
     return render(request,'club/애드러쉬.html',{'posts':posts})
 
 # 신규분과
+# elephente
 def elephente(request):
-    posts = Post.objects.all()
-    return render(request,'club/fc엘레펜테.html',{'posts':posts})
+    posts = elephente_Post.objects.all()
+    return render(request,'club/elephente.html',{'posts':posts})
 
+def elephente_detail(request,id):
+    elephente_post = get_object_or_404(elephente_Post, pk = id)
+    return render(request,'main/elephente_detail.html',{'post':elephente_post})
+
+def elephente_new(request):
+    return render(request,'main/elephente_new.html')
+
+def elephente_create(request):
+    elephente_new_post = elephente_Post()
+    elephente_new_post.title = request.POST['title']
+    elephente_new_post.writer = request.user
+    elephente_new_post.date = timezone.now()
+    elephente_new_post.body = request.POST['body']
+    elephente_new_post.image = request.FILES.get('image')
+    elephente_new_post.save()
+    return redirect('main:elephente_detail',elephente_new_post.id)
+
+def elephente_edit(request,id):
+    elephente_edit_post = elephente_Post.objects.get(id = id)
+    return render(request, 'main/elephente_edit.html', {'post':elephente_edit_post})
+
+def elephente_update(request,id):
+    elephente_update_post = get_object_or_404(elephente_Post, id = id)
+    elephente_update_post.title = request.POST['title']
+    elephente_update_post.writer = request.user
+    elephente_update_post.date = timezone.now()
+    elephente_update_post.body = request.POST['body']
+    elephente_update_post.image = request.FILES.get('image')
+    elephente_update_post.save()
+    return redirect('main:elephente_detail',elephente_update_post.id)
+
+def elephente_delete(request,id):
+    elephente_delete_post = elephente_Post.objects.get(id = id)
+    elephente_delete_post.delete()
+    return redirect('main:elephente')
+
+# doomchit
 def doomchit(request):
-    posts = Post.objects.all()
-    return render(request,'club/두둠칫.html',{'posts':posts})
+    posts = doomchit_Post.objects.all()
+    return render(request,'club/doomchit.html',{'posts':posts})
 
+def doomchit_detail(request,id):
+    doomchit_post = get_object_or_404(doomchit_Post, pk = id)
+    return render(request,'main/doomchit_detail.html',{'post':doomchit_post})
+
+def doomchit_new(request):
+    return render(request,'main/doomchit_new.html')
+
+def doomchit_create(request):
+    doomchit_new_post = doomchit_Post()
+    doomchit_new_post.title = request.POST['title']
+    doomchit_new_post.writer = request.user
+    doomchit_new_post.date = timezone.now()
+    doomchit_new_post.body = request.POST['body']
+    doomchit_new_post.image = request.FILES.get('image')
+    doomchit_new_post.save()
+    return redirect('main:doomchit_detail',doomchit_new_post.id)
+
+def doomchit_edit(request,id):
+    doomchit_edit_post = doomchit_Post.objects.get(id = id)
+    return render(request, 'main/doomchit_edit.html', {'post':doomchit_edit_post})
+
+def doomchit_update(request,id):
+    doomchit_update_post = get_object_or_404(doomchit_Post, id = id)
+    doomchit_update_post.title = request.POST['title']
+    doomchit_update_post.writer = request.user
+    doomchit_update_post.date = timezone.now()
+    doomchit_update_post.body = request.POST['body']
+    doomchit_update_post.image = request.FILES.get('image')
+    doomchit_update_post.save()
+    return redirect('main:doomchit_detail',doomchit_update_post.id)
+
+def doomchit_delete(request,id):
+    doomchit_delete_post = doomchit_Post.objects.get(id = id)
+    doomchit_delete_post.delete()
+    return redirect('main:doomchit')
+
+# enactus
 def enactus(request):
-    posts = Post.objects.all()
-    return render(request,'club/인액터스.html',{'posts':posts})
+    posts = enactus_Post.objects.all()
+    return render(request,'club/enactus.html',{'posts':posts})
 
+def enactus_detail(request,id):
+    enactus_post = get_object_or_404(enactus_Post, pk = id)
+    return render(request,'main/enactus_detail.html',{'post':enactus_post})
+
+def enactus_new(request):
+    return render(request,'main/enactus_new.html')
+
+def enactus_create(request):
+    enactus_new_post = enactus_Post()
+    enactus_new_post.title = request.POST['title']
+    enactus_new_post.writer = request.user
+    enactus_new_post.date = timezone.now()
+    enactus_new_post.body = request.POST['body']
+    enactus_new_post.image = request.FILES.get('image')
+    enactus_new_post.save()
+    return redirect('main:enactus_detail',enactus_new_post.id)
+
+def enactus_edit(request,id):
+    enactus_edit_post = enactus_Post.objects.get(id = id)
+    return render(request, 'main/enactus_edit.html', {'post':enactus_edit_post})
+
+def enactus_update(request,id):
+    enactus_update_post = get_object_or_404(enactus_Post, id = id)
+    enactus_update_post.title = request.POST['title']
+    enactus_update_post.writer = request.user
+    enactus_update_post.date = timezone.now()
+    enactus_update_post.body = request.POST['body']
+    enactus_update_post.image = request.FILES.get('image')
+    enactus_update_post.save()
+    return redirect('main:enactus_detail',enactus_update_post.id)
+
+def enactus_delete(request,id):
+    enactus_delete_post = enactus_Post.objects.get(id = id)
+    enactus_delete_post.delete()
+    return redirect('main:enactus')
+
+# jam
 def jam(request):
-    posts = Post.objects.all()
-    return render(request,'club/잼잼.html',{'posts':posts})
+    posts = jam_Post.objects.all()
+    return render(request,'club/jam.html',{'posts':posts})
 
+def jam_detail(request,id):
+    jam_post = get_object_or_404(jam_Post, pk = id)
+    return render(request,'main/jam_detail.html',{'post':jam_post})
+
+def jam_new(request):
+    return render(request,'main/jam_new.html')
+
+def jam_create(request):
+    jam_new_post = jam_Post()
+    jam_new_post.title = request.POST['title']
+    jam_new_post.writer = request.user
+    jam_new_post.date = timezone.now()
+    jam_new_post.body = request.POST['body']
+    jam_new_post.image = request.FILES.get('image')
+    jam_new_post.save()
+    return redirect('main:jam_detail',jam_new_post.id)
+
+def jam_edit(request,id):
+    jam_edit_post = jam_Post.objects.get(id = id)
+    return render(request, 'main/jam_edit.html', {'post':jam_edit_post})
+
+def jam_update(request,id):
+    jam_update_post = get_object_or_404(jam_Post, id = id)
+    jam_update_post.title = request.POST['title']
+    jam_update_post.writer = request.user
+    jam_update_post.date = timezone.now()
+    jam_update_post.body = request.POST['body']
+    jam_update_post.image = request.FILES.get('image')
+    jam_update_post.save()
+    return redirect('main:jam_detail',jam_update_post.id)
+
+def jam_delete(request,id):
+    jam_delete_post = jam_Post.objects.get(id = id)
+    jam_delete_post.delete()
+    return redirect('main:jam')
+
+# qud
 def qud(request):
-    posts = Post.objects.all()
+    posts = qud_Post.objects.all()
     return render(request,'club/qud.html',{'posts':posts})
+
+def qud_detail(request,id):
+    qud_post = get_object_or_404(qud_Post, pk = id)
+    return render(request,'main/qud_detail.html',{'post':qud_post})
+
+def qud_new(request):
+    return render(request,'main/qud_new.html')
+
+def qud_create(request):
+    qud_new_post = qud_Post()
+    qud_new_post.title = request.POST['title']
+    qud_new_post.writer = request.user
+    qud_new_post.date = timezone.now()
+    qud_new_post.body = request.POST['body']
+    qud_new_post.image = request.FILES.get('image')
+    qud_new_post.save()
+    return redirect('main:qud_detail',qud_new_post.id)
+
+def qud_edit(request,id):
+    qud_edit_post = qud_Post.objects.get(id = id)
+    return render(request, 'main/qud_edit.html', {'post':qud_edit_post})
+
+def qud_update(request,id):
+    qud_update_post = get_object_or_404(qud_Post, id = id)
+    qud_update_post.title = request.POST['title']
+    qud_update_post.writer = request.user
+    qud_update_post.date = timezone.now()
+    qud_update_post.body = request.POST['body']
+    qud_update_post.image = request.FILES.get('image')
+    qud_update_post.save()
+    return redirect('main:qud_detail',qud_update_post.id)
+
+def qud_delete(request,id):
+    qud_delete_post = qud_Post.objects.get(id = id)
+    qud_delete_post.delete()
+    return redirect('main:qud')
 
