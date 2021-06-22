@@ -346,4 +346,144 @@ urlpatterns = [
     path('qud/update/<str:id>',qud_update,name='qud_update'),
     path('qud/delete/<str:id>',qud_delete,name='qud_delete'),
 
+    # elf
+    path('elf/',elf,name='elf'),
+    path('elf/<str:id>',elf_detail,name='elf_detail'),
+    path('elf/new/',elf_new,name='elf_new'),
+    path('elf/create/',elf_create,name='elf_create'),
+    path('elf/edit/<str:id>',elf_edit,name='elf_edit'),
+    path('elf/update/<str:id>',elf_update,name='elf_update'),
+    path('elf/delete/<str:id>',elf_delete,name='elf_delete'),
+    
+  # rcy
+    path('rcy/',rcy,name='rcy'),
+    path('rcy/<str:id>',rcy_detail,name='rcy_detail'),
+    path('rcy/new/',rcy_new,name='rcy_new'),
+    path('rcy/create/',rcy_create,name='rcy_create'),
+    path('rcy/edit/<str:id>',rcy_edit,name='rcy_edit'),
+    path('rcy/update/<str:id>',rcy_update,name='rcy_update'),
+    path('rcy/delete/<str:id>',rcy_delete,name='rcy_delete'),
+
+  # road
+    path('road/',road,name='road'),
+    path('road/<str:id>',road_detail,name='road_detail'),
+    path('road/new/',road_new,name='road_new'),
+    path('road/create/',road_create,name='road_create'),
+    path('road/edit/<str:id>',road_edit,name='road_edit'),
+    path('road/update/<str:id>',road_update,name='road_update'),
+    path('road/delete/<str:id>',road_delete,name='road_delete'),
+
+  # hand
+    path('hand/',hand,name='hand'),
+    path('hand/<str:id>',hand_detail,name='hand_detail'),
+    path('hand/new/',hand_new,name='hand_new'),
+    path('hand/create/',hand_create,name='hand_create'),
+    path('hand/edit/<str:id>',hand_edit,name='hand_edit'),
+    path('hand/update/<str:id>',hand_update,name='hand_update'),
+    path('hand/delete/<str:id>',hand_delete,name='hand_delete'),
+
+  # neighbor
+    path('neighbor/',neighbor,name='neighbor'),
+    path('neighbor/<str:id>',neighbor_detail,name='neighbor_detail'),
+    path('neighbor/new/',neighbor_new,name='neighbor_new'),
+    path('neighbor/create/',neighbor_create,name='neighbor_create'),
+    path('neighbor/edit/<str:id>',neighbor_edit,name='neighbor_edit'),
+    path('neighbor/update/<str:id>',neighbor_update,name='neighbor_update'),
+    path('neighbor/delete/<str:id>',neighbor_delete,name='neighbor_delete'),
+
+  # painters
+    path('painters/',painters,name='painters'),
+    path('painters/<str:id>',painters_detail,name='painters_detail'),
+    path('painters/new/',painters_new,name='painters_new'),
+    path('painters/create/',painters_create,name='painters_create'),
+    path('painters/edit/<str:id>',painters_edit,name='painters_edit'),
+    path('painters/update/<str:id>',painters_update,name='painters_update'),
+    path('painters/delete/<str:id>',painters_delete,name='painters_delete'),
+
+  # green
+    path('green/',green,name='green'),
+    path('green/<str:id>',green_detail,name='green_detail'),
+    path('green/new/',green_new,name='green_new'),
+    path('green/create/',green_create,name='green_create'),
+    path('green/edit/<str:id>',green_edit,name='green_edit'),
+    path('green/update/<str:id>',green_update,name='green_update'),
+    path('green/delete/<str:id>',green_delete,name='green_delete'),
+
+  # korean
+    path('korean/',korean,name='korean'),
+    path('korean/<str:id>',korean_detail,name='korean_detail'),
+    path('korean/new/',korean_new,name='korean_new'),
+    path('korean/create/',korean_create,name='korean_create'),
+    path('korean/edit/<str:id>',korean_edit,name='korean_edit'),
+    path('korean/update/<str:id>',korean_update,name='korean_update'),
+    path('korean/delete/<str:id>',korean_delete,name='korean_delete'),
+
+
+ # draw
+    path('draw/',draw,name='draw'),
+    path('draw/<str:id>',draw_detail,name='draw_detail'),
+    path('draw/new/',draw_new,name='draw_new'),
+    path('draw/create/',draw_create,name='draw_create'),
+    path('draw/edit/<str:id>',draw_edit,name='draw_edit'),
+    path('draw/update/<str:id>',draw_update,name='draw_update'),
+    path('draw/delete/<str:id>',draw_delete,name='draw_delete'),
+
+ # literal
+    path('literal/',literal,name='literal'),
+    path('literal/<str:id>',literal_detail,name='literal_detail'),
+    path('literal/new/',literal_new,name='literal_new'),
+    path('literal/create/',literal_create,name='literal_create'),
+    path('literal/edit/<str:id>',literal_edit,name='literal_edit'),
+    path('literal/update/<str:id>',literal_update,name='literal_update'),
+    path('literal/delete/<str:id>',literal_delete,name='literal_delete'),
+
+ # calligraphy
+    path('calligraphy/',calligraphy,name='calligraphy'),
+    path('calligraphy/<str:id>',calligraphy_detail,name='calligraphy_detail'),
+    path('calligraphy/new/',calligraphy_new,name='calligraphy_new'),
+    path('calligraphy/create/',calligraphy_create,name='calligraphy_create'),
+    path('calligraphy/edit/<str:id>',calligraphy_edit,name='calligraphy_edit'),
+    path('calligraphy/update/<str:id>',calligraphy_update,name='calligraphy_update'),
+    path('calligraphy/delete/<str:id>',calligraphy_delete,name='calligraphy_delete'),
+
+
+ # circle
+    path('circle/',circle,name='circle'),
+    path('circle/<str:id>',circle_detail,name='circle_detail'),
+    path('circle/new/',circle_new,name='circle_new'),
+    path('circle/create/',circle_create,name='circle_create'),
+    path('circle/edit/<str:id>',circle_edit,name='circle_edit'),
+    path('circle/update/<str:id>',circle_update,name='circle_update'),
+    path('circle/delete/<str:id>',circle_delete,name='circle_delete'),
+
+
+ # stone
+    path('stone/',stone,name='stone'),
+    path('stone/<str:id>',stone_detail,name='stone_detail'),
+    path('stone/new/',stone_new,name='stone_new'),
+    path('stone/create/',stone_create,name='stone_create'),
+    path('stone/edit/<str:id>',stone_edit,name='stone_edit'),
+    path('stone/update/<str:id>',stone_update,name='stone_update'),
+    path('stone/delete/<str:id>',stone_delete,name='stone_delete'),
+
+
+ # cartoon
+    path('cartoon/',cartoon,name='cartoon'),
+    path('cartoon/<str:id>',cartoon_detail,name='cartoon_detail'),
+    path('cartoon/new/',cartoon_new,name='cartoon_new'),
+    path('cartoon/create/',cartoon_create,name='cartoon_create'),
+    path('cartoon/edit/<str:id>',cartoon_edit,name='cartoon_edit'),
+    path('cartoon/update/<str:id>',cartoon_update,name='cartoon_update'),
+    path('cartoon/delete/<str:id>',cartoon_delete,name='cartoon_delete'),
+
+
+ # rush
+    path('rush/',rush,name='rush'),
+    path('rush/<str:id>',rush_detail,name='rush_detail'),
+    path('rush/new/',rush_new,name='rush_new'),
+    path('rush/create/',rush_create,name='rush_create'),
+    path('rush/edit/<str:id>',rush_edit,name='rush_edit'),
+    path('rush/update/<str:id>',rush_update,name='rush_update'),
+    path('rush/delete/<str:id>',rush_delete,name='rush_delete'),
+
 ]
