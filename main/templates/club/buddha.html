@@ -5,9 +5,9 @@
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/nsa.jpg'%}" width=60% height=70%/>
-        <h1>NSA의 동아리 활동 내역</h1>
-        <a class = "write_icon" href = "{% url 'main:nsa_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
+        <img src="{% static 'images/동국불교학생회.jpg'%}" width=60% height=70%/>
+        <h1>동국불교학생회의 동아리 활동 내역</h1>
+        <a class = "write_icon" href = "{% url 'main:buddha_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>
     </div>
 </div>
@@ -39,7 +39,7 @@
         <div class = "club_activity_body_info">
             <h4>{{post.summary}}…</h4>
             <div class='club_activity_body_info_more'>
-                <button type="button" onclick="location.href='{% url 'main:nsa_detail' post.id %}' ">더보기</button>
+                <button type="button" onclick="location.href='{% url 'main:buddha_detail' post.id %}' ">더보기</button>
             </div>
         </div>
     </div>
