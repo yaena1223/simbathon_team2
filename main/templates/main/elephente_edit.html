@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1>글 수정하기</h1>
-<form action="{% url 'main:edit_update' post.id %}" method='post'enctype = 'multipart/form-data'>
+<form action="{% url 'main:elephente_update' post.id %}" method='post'enctype = 'multipart/form-data'>
     {% csrf_token %}
     <p>제목: <input type= 'text' name ='title' value = "{{post.title}}"></p>
     <p>사진: <input type='file' name='image'></p>
