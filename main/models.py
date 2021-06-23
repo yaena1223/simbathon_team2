@@ -789,3 +789,250 @@ class rush_Post(models.Model):
     
     def summary(self):
         return self.body[:30]
+
+
+# dust
+class dust_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+
+# cave
+class cave_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+
+# action
+class action_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+
+# wind
+class wind_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+# mountatin
+class mountain_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+# water
+class water_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+
+# courtist
+class courtist_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+# dutc
+class dutc_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+# fctoto
+class fctoto_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+
+# lae
+class lae_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+
+# kendo
+class kendo_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+# baduk
+class baduk_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+# arrow
+class arrow_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+# taekwondo
+class taekwondo_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
+
+# tuskers
+class tuskers_Post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    writer =models.ForeignKey(User,on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='post/',blank = True, null = True)
+
+
+    def __str__(self):
+        return self.title
+    
+    def summary(self):
+        return self.body[:30]
