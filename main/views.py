@@ -36,49 +36,6 @@ def social(request):
 def volunteer(request):
     return render(request, 'main/volunteer.html')
 
-
-
-# 멋사
-def likelion(request):
-    likelion_posts = likelion_Post.objects.all().order_by('-date')
-    return render(request,'club/likelion.html',{'posts':likelion_posts})
-
-def likelion_detail(request,id):
-    likelion_post = get_object_or_404(likelion_Post, pk = id)
-    return render(request,'main/likelion_detail.html',{'post':likelion_post})
-
-def likelion_new(request):
-    return render(request,'main/likelion_new.html')
-
-def likelion_create(request):
-    likelion_new_post = likelion_Post()
-    likelion_new_post.title = request.POST['title']
-    likelion_new_post.writer = request.user
-    likelion_new_post.date = timezone.now()
-    likelion_new_post.body = request.POST['body']
-    likelion_new_post.image = request.FILES.get('image')
-    likelion_new_post.save()
-    return redirect('main:likelion_detail',likelion_new_post.id)
-
-def likelion_edit(request,id):
-    likelion_edit_post = likelion_Post.objects.get(id = id)
-    return render(request, 'main/likelion_edit.html', {'post':likelion_edit_post})
-
-def likelion_update(request,id):
-    likelion_update_post = get_object_or_404(likelion_Post, id = id)
-    likelion_update_post.title = request.POST['title']
-    likelion_update_post.writer = request.user
-    likelion_update_post.date = timezone.now()
-    likelion_update_post.body = request.POST['body']
-    likelion_update_post.image = request.FILES.get('image')
-    likelion_update_post.save()
-    return redirect('main:likelion_detail',likelion_update_post.id)
-
-def likelion_delete(request,id):
-    likelion_delete_post = likelion_Post.objects.get(id = id)
-    likelion_delete_post.delete()
-    return redirect('main:likelion')
-
 #학술분과
 # cafein
 
@@ -162,7 +119,6 @@ def dna_delete(request,id):
     dna_delete_post = dna_Post.objects.get(id = id)
     dna_delete_post.delete()
     return redirect('main:dna')
-
 
 # dussa
 def dussa(request):
@@ -494,7 +450,6 @@ def international_delete(request,id):
     international_delete_post.delete()
     return redirect('main:international')
 
-
 #politics    
 def politics(request):
     posts = politics_Post.objects.all().order_by('-date')
@@ -620,9 +575,6 @@ def rcy_delete(request,id):
     rcy_delete_post.delete()
     return redirect('main:rcy')
 
-
-
-
 #road 
 def road(request):
     posts = road_Post.objects.all().order_by('-date')
@@ -707,8 +659,6 @@ def hand_delete(request,id):
     hand_delete_post.delete()
     return redirect('main:hand')
 
-
-
 #neighbor  
 def neighbor(request):
     posts = neighbor_Post.objects.all().order_by('-date')
@@ -749,7 +699,6 @@ def neighbor_delete(request,id):
     neighbor_delete_post = neighbor_Post.objects.get(id = id)
     neighbor_delete_post.delete()
     return redirect('main:neighbor')
-
 
 #painters   
 def painters(request):
@@ -792,7 +741,6 @@ def painters_delete(request,id):
     painters_delete_post.delete()
     return redirect('main:painters')
 
-
 #green   
 def green(request):
     posts = green_Post.objects.all().order_by('-date')
@@ -833,7 +781,6 @@ def green_delete(request,id):
     green_delete_post = green_Post.objects.get(id = id)
     green_delete_post.delete()
     return redirect('main:green')
-
 
 #korean   
 def korean(request):
@@ -1083,7 +1030,9 @@ def buddha_delete(request,id):
     buddha_delete_post.delete()
     return redirect('main:buddha')
 
+
 # 공연분과
+# ajax
 def ajax(request):
     posts = ajax_Post.objects.all().order_by('-date')
     return render(request,'club/ajax.html',{'posts':posts})
@@ -1124,7 +1073,7 @@ def ajax_delete(request,id):
     ajax_delete_post.delete()
     return redirect('main:ajax')
 
-#hola
+# hola
 def hola(request):
     posts = hola_Post.objects.all().order_by('-date')
     return render(request,'club/hola.html',{'posts':posts})
@@ -1165,7 +1114,7 @@ def hola_delete(request,id):
     hola_delete_post.delete()
     return redirect('main:hola')
 
-
+# odc
 def odc(request):
     posts = odc_Post.objects.all().order_by('-date')
     return render(request,'club/odc.html',{'posts':posts})
@@ -1206,7 +1155,7 @@ def odc_delete(request,id):
     odc_delete_post.delete()
     return redirect('main:odc')
 
-
+# opus
 def opus(request):
     posts = opus_Post.objects.all().order_by('-date')
     return render(request,'club/opus.html',{'posts':posts})
@@ -1247,6 +1196,7 @@ def opus_delete(request,id):
     opus_delete_post.delete()
     return redirect('main:opus')
 
+# drama
 def drama(request):
     posts = drama_Post.objects.all().order_by('-date')
     return render(request,'club/drama.html',{'posts':posts})
@@ -1412,7 +1362,6 @@ def arirang_delete(request,id):
     arirang_delete_post = arirang_Post.objects.get(id = id)
     arirang_delete_post.delete()
     return redirect('main:arirang')
-
 
 #eumsem
 
@@ -1925,6 +1874,47 @@ def doomchit_delete(request,id):
     doomchit_delete_post.delete()
     return redirect('main:doomchit')
 
+# likelion
+def likelion(request):
+    likelion_posts = likelion_Post.objects.all().order_by('-date')
+    return render(request,'club/likelion.html',{'posts':likelion_posts})
+
+def likelion_detail(request,id):
+    likelion_post = get_object_or_404(likelion_Post, pk = id)
+    return render(request,'main/likelion_detail.html',{'post':likelion_post})
+
+def likelion_new(request):
+    return render(request,'main/likelion_new.html')
+
+def likelion_create(request):
+    likelion_new_post = likelion_Post()
+    likelion_new_post.title = request.POST['title']
+    likelion_new_post.writer = request.user
+    likelion_new_post.date = timezone.now()
+    likelion_new_post.body = request.POST['body']
+    likelion_new_post.image = request.FILES.get('image')
+    likelion_new_post.save()
+    return redirect('main:likelion_detail',likelion_new_post.id)
+
+def likelion_edit(request,id):
+    likelion_edit_post = likelion_Post.objects.get(id = id)
+    return render(request, 'main/likelion_edit.html', {'post':likelion_edit_post})
+
+def likelion_update(request,id):
+    likelion_update_post = get_object_or_404(likelion_Post, id = id)
+    likelion_update_post.title = request.POST['title']
+    likelion_update_post.writer = request.user
+    likelion_update_post.date = timezone.now()
+    likelion_update_post.body = request.POST['body']
+    likelion_update_post.image = request.FILES.get('image')
+    likelion_update_post.save()
+    return redirect('main:likelion_detail',likelion_update_post.id)
+
+def likelion_delete(request,id):
+    likelion_delete_post = likelion_Post.objects.get(id = id)
+    likelion_delete_post.delete()
+    return redirect('main:likelion')
+
 # enactus
 def enactus(request):
     posts = enactus_Post.objects.all()
@@ -2048,7 +2038,7 @@ def qud_delete(request,id):
     qud_delete_post.delete()
     return redirect('main:qud')
 
-
+# 체육분과
 # dust
 def dust(request):
     posts = dust_Post.objects.all()
