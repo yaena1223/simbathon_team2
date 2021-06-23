@@ -15,7 +15,7 @@ urlpatterns = [
     path('atheletic/', atheletic, name="atheletic"),
     path('social/',social,name='social'),
 
-    # 멋사
+    # likelio
     path('likelion/',likelion,name='likelion'),
     path('likelion/<str:id>',likelion_detail,name='likelion_detail'),
     path('likelion/new/',likelion_new,name='likelion_new'),
@@ -177,22 +177,6 @@ urlpatterns = [
     path('buddha/update/<str:id>',buddha_update,name='buddha_update'),
     path('buddha/delete/<str:id>',buddha_delete,name='buddha_delete'),
 
-    path('dust/',dust,name='dust'),
-    path('cave/',cave,name='cave'),
-    path('action/',action,name='action'),
-    path('wind/',wind,name='wind'),
-    path('mountatin/',mountain,name='mountain'),
-    path('water/',water,name='water'),
-    path('courtist/',courtist,name='courtist'),
-    path('dutc/',dutc,name='dutc'),
-    path('fctoto/',fctoto,name='fctoto'),
-    path('lae/',lae,name='lae'),
-    path('kendo/',kendo,name='kendo'),
-    path('baduk/',baduk,name='baduk'),
-    path('arrow/',dust,name='arrow'),
-    path('taekwondo/',taekwondo,name='taekwondo'),
-    path('tuskers/',tuskers,name='tuskers'),
-
     #ajax
     path('ajax/',ajax,name='ajax'),
     path('ajax/<str:id>',ajax_detail,name='ajax_detail'),
@@ -293,14 +277,6 @@ urlpatterns = [
     path('yeoul/update/<str:id>',yeoul_update,name='yeoul_update'),
     path('yeoul/delete/<str:id>',yeoul_delete,name='yeoul_delete'),
 
-    path('draw/',draw,name='draw'),
-    path('literal/',literal,name='literal'),
-    path('calligraphy/',calligraphy,name='calligraphy'),
-    path('circle/',circle,name='circle'),
-    path('stone/',stone,name='stone'),
-    path('cartoon/',cartoon,name='cartoon'),
-    path('rush/',rush,name='rush'),
-
     # elephente
     path('elephente/',elephente,name='elephente'),
     path('elephente/<str:id>',elephente_detail,name='elephente_detail'),
@@ -355,7 +331,7 @@ urlpatterns = [
     path('elf/update/<str:id>',elf_update,name='elf_update'),
     path('elf/delete/<str:id>',elf_delete,name='elf_delete'),
     
-  # rcy
+    # rcy
     path('rcy/',rcy,name='rcy'),
     path('rcy/<str:id>',rcy_detail,name='rcy_detail'),
     path('rcy/new/',rcy_new,name='rcy_new'),
@@ -364,7 +340,7 @@ urlpatterns = [
     path('rcy/update/<str:id>',rcy_update,name='rcy_update'),
     path('rcy/delete/<str:id>',rcy_delete,name='rcy_delete'),
 
-  # road
+    # road
     path('road/',road,name='road'),
     path('road/<str:id>',road_detail,name='road_detail'),
     path('road/new/',road_new,name='road_new'),
@@ -373,7 +349,7 @@ urlpatterns = [
     path('road/update/<str:id>',road_update,name='road_update'),
     path('road/delete/<str:id>',road_delete,name='road_delete'),
 
-  # hand
+    # hand
     path('hand/',hand,name='hand'),
     path('hand/<str:id>',hand_detail,name='hand_detail'),
     path('hand/new/',hand_new,name='hand_new'),
@@ -382,7 +358,7 @@ urlpatterns = [
     path('hand/update/<str:id>',hand_update,name='hand_update'),
     path('hand/delete/<str:id>',hand_delete,name='hand_delete'),
 
-  # neighbor
+    # neighbor
     path('neighbor/',neighbor,name='neighbor'),
     path('neighbor/<str:id>',neighbor_detail,name='neighbor_detail'),
     path('neighbor/new/',neighbor_new,name='neighbor_new'),
@@ -391,7 +367,7 @@ urlpatterns = [
     path('neighbor/update/<str:id>',neighbor_update,name='neighbor_update'),
     path('neighbor/delete/<str:id>',neighbor_delete,name='neighbor_delete'),
 
-  # painters
+    # painters
     path('painters/',painters,name='painters'),
     path('painters/<str:id>',painters_detail,name='painters_detail'),
     path('painters/new/',painters_new,name='painters_new'),
@@ -400,7 +376,7 @@ urlpatterns = [
     path('painters/update/<str:id>',painters_update,name='painters_update'),
     path('painters/delete/<str:id>',painters_delete,name='painters_delete'),
 
-  # green
+    # green
     path('green/',green,name='green'),
     path('green/<str:id>',green_detail,name='green_detail'),
     path('green/new/',green_new,name='green_new'),
@@ -409,7 +385,7 @@ urlpatterns = [
     path('green/update/<str:id>',green_update,name='green_update'),
     path('green/delete/<str:id>',green_delete,name='green_delete'),
 
-  # korean
+    # korean
     path('korean/',korean,name='korean'),
     path('korean/<str:id>',korean_detail,name='korean_detail'),
     path('korean/new/',korean_new,name='korean_new'),
@@ -418,8 +394,7 @@ urlpatterns = [
     path('korean/update/<str:id>',korean_update,name='korean_update'),
     path('korean/delete/<str:id>',korean_delete,name='korean_delete'),
 
-
- # draw
+    # draw
     path('draw/',draw,name='draw'),
     path('draw/<str:id>',draw_detail,name='draw_detail'),
     path('draw/new/',draw_new,name='draw_new'),
@@ -428,7 +403,7 @@ urlpatterns = [
     path('draw/update/<str:id>',draw_update,name='draw_update'),
     path('draw/delete/<str:id>',draw_delete,name='draw_delete'),
 
- # literal
+    # literal
     path('literal/',literal,name='literal'),
     path('literal/<str:id>',literal_detail,name='literal_detail'),
     path('literal/new/',literal_new,name='literal_new'),
@@ -437,7 +412,7 @@ urlpatterns = [
     path('literal/update/<str:id>',literal_update,name='literal_update'),
     path('literal/delete/<str:id>',literal_delete,name='literal_delete'),
 
- # calligraphy
+    # calligraphy
     path('calligraphy/',calligraphy,name='calligraphy'),
     path('calligraphy/<str:id>',calligraphy_detail,name='calligraphy_detail'),
     path('calligraphy/new/',calligraphy_new,name='calligraphy_new'),
@@ -446,8 +421,7 @@ urlpatterns = [
     path('calligraphy/update/<str:id>',calligraphy_update,name='calligraphy_update'),
     path('calligraphy/delete/<str:id>',calligraphy_delete,name='calligraphy_delete'),
 
-
- # circle
+    # circle
     path('circle/',circle,name='circle'),
     path('circle/<str:id>',circle_detail,name='circle_detail'),
     path('circle/new/',circle_new,name='circle_new'),
@@ -456,8 +430,7 @@ urlpatterns = [
     path('circle/update/<str:id>',circle_update,name='circle_update'),
     path('circle/delete/<str:id>',circle_delete,name='circle_delete'),
 
-
- # stone
+    # stone
     path('stone/',stone,name='stone'),
     path('stone/<str:id>',stone_detail,name='stone_detail'),
     path('stone/new/',stone_new,name='stone_new'),
@@ -466,8 +439,7 @@ urlpatterns = [
     path('stone/update/<str:id>',stone_update,name='stone_update'),
     path('stone/delete/<str:id>',stone_delete,name='stone_delete'),
 
-
- # cartoon
+    # cartoon
     path('cartoon/',cartoon,name='cartoon'),
     path('cartoon/<str:id>',cartoon_detail,name='cartoon_detail'),
     path('cartoon/new/',cartoon_new,name='cartoon_new'),
@@ -476,8 +448,7 @@ urlpatterns = [
     path('cartoon/update/<str:id>',cartoon_update,name='cartoon_update'),
     path('cartoon/delete/<str:id>',cartoon_delete,name='cartoon_delete'),
 
-
- # rush
+    # rush
     path('rush/',rush,name='rush'),
     path('rush/<str:id>',rush_detail,name='rush_detail'),
     path('rush/new/',rush_new,name='rush_new'),
@@ -486,7 +457,7 @@ urlpatterns = [
     path('rush/update/<str:id>',rush_update,name='rush_update'),
     path('rush/delete/<str:id>',rush_delete,name='rush_delete'),
 
-# dust
+    # dust
     path('dust/',dust,name='dust'),
     path('dust/<str:id>',dust_detail,name='dust_detail'),
     path('dust/new/',dust_new,name='dust_new'),
@@ -495,7 +466,7 @@ urlpatterns = [
     path('dust/update/<str:id>',dust_update,name='dust_update'),
     path('dust/delete/<str:id>',dust_delete,name='dust_delete'),
 
-# cave
+    # cave
     path('cave/',cave,name='cave'),
     path('cave/<str:id>',cave_detail,name='cave_detail'),
     path('cave/new/',cave_new,name='cave_new'),
@@ -504,7 +475,7 @@ urlpatterns = [
     path('cave/update/<str:id>',cave_update,name='cave_update'),
     path('cave/delete/<str:id>',cave_delete,name='cave_delete'),
 
-# action
+    # action
     path('action/',action,name='action'),
     path('action/<str:id>',action_detail,name='action_detail'),
     path('action/new/',action_new,name='action_new'),
@@ -513,8 +484,7 @@ urlpatterns = [
     path('action/update/<str:id>',action_update,name='action_update'),
     path('action/delete/<str:id>',action_delete,name='action_delete'),
 
-
-# wind
+    # wind
     path('wind/',wind,name='wind'),
     path('wind/<str:id>',wind_detail,name='wind_detail'),
     path('wind/new/',wind_new,name='wind_new'),
@@ -523,7 +493,7 @@ urlpatterns = [
     path('wind/update/<str:id>',wind_update,name='wind_update'),
     path('wind/delete/<str:id>',wind_delete,name='wind_delete'),
 
-# mountain
+    # mountain
     path('mountain/',mountain,name='mountain'),
     path('mountain/<str:id>',mountain_detail,name='mountain_detail'),
     path('mountain/new/',mountain_new,name='mountain_new'),
@@ -532,7 +502,7 @@ urlpatterns = [
     path('mountain/update/<str:id>',mountain_update,name='mountain_update'),
     path('mountain/delete/<str:id>',mountain_delete,name='mountain_delete'),
 
-# water
+    # water
     path('water/',water,name='water'),
     path('water/<str:id>',water_detail,name='water_detail'),
     path('water/new/',water_new,name='water_new'),
@@ -541,7 +511,7 @@ urlpatterns = [
     path('water/update/<str:id>',water_update,name='water_update'),
     path('water/delete/<str:id>',water_delete,name='water_delete'),
 
-# courtist
+    # courtist
     path('courtist/',courtist,name='courtist'),
     path('courtist/<str:id>',courtist_detail,name='courtist_detail'),
     path('courtist/new/',courtist_new,name='courtist_new'),
@@ -550,8 +520,7 @@ urlpatterns = [
     path('courtist/update/<str:id>',courtist_update,name='courtist_update'),
     path('courtist/delete/<str:id>',courtist_delete,name='courtist_delete'),
 
-
-# dutc
+    # dutc
     path('dutc/',dutc,name='dutc'),
     path('dutc/<str:id>',dutc_detail,name='dutc_detail'),
     path('dutc/new/',dutc_new,name='dutc_new'),
@@ -561,7 +530,7 @@ urlpatterns = [
     path('dutc/delete/<str:id>',dutc_delete,name='dutc_delete'),
 
 
-# fctoto
+    # fctoto
     path('fctoto/',fctoto,name='fctoto'),
     path('fctoto/<str:id>',fctoto_detail,name='fctoto_detail'),
     path('fctoto/new/',fctoto_new,name='fctoto_new'),
@@ -570,7 +539,7 @@ urlpatterns = [
     path('fctoto/update/<str:id>',fctoto_update,name='fctoto_update'),
     path('fctoto/delete/<str:id>',fctoto_delete,name='fctoto_delete'),
 
-# kendo
+    # kendo
     path('kendo/',kendo,name='kendo'),
     path('kendo/<str:id>',kendo_detail,name='kendo_detail'),
     path('kendo/new/',kendo_new,name='kendo_new'),
@@ -579,7 +548,7 @@ urlpatterns = [
     path('kendo/update/<str:id>',kendo_update,name='kendo_update'),
     path('kendo/delete/<str:id>',kendo_delete,name='kendo_delete'),
 
-# lae
+    # lae
     path('lae/',lae,name='lae'),
     path('lae/<str:id>',lae_detail,name='lae_detail'),
     path('lae/new/',lae_new,name='lae_new'),
@@ -588,7 +557,7 @@ urlpatterns = [
     path('lae/update/<str:id>',lae_update,name='lae_update'),
     path('lae/delete/<str:id>',lae_delete,name='lae_delete'),
 
-# baduk
+    # baduk
     path('baduk/',baduk,name='baduk'),
     path('baduk/<str:id>',baduk_detail,name='baduk_detail'),
     path('baduk/new/',baduk_new,name='baduk_new'),
@@ -597,7 +566,7 @@ urlpatterns = [
     path('baduk/update/<str:id>',baduk_update,name='baduk_update'),
     path('baduk/delete/<str:id>',baduk_delete,name='baduk_delete'),
 
-# arrow
+    # arrow
     path('arrow/',arrow,name='arrow'),
     path('arrow/<str:id>',arrow_detail,name='arrow_detail'),
     path('arrow/new/',arrow_new,name='arrow_new'),
@@ -606,7 +575,7 @@ urlpatterns = [
     path('arrow/update/<str:id>',arrow_update,name='arrow_update'),
     path('arrow/delete/<str:id>',arrow_delete,name='arrow_delete'),
 
-# taekwondo
+    # taekwondo
     path('taekwondo/',taekwondo,name='taekwondo'),
     path('taekwondo/<str:id>',taekwondo_detail,name='taekwondo_detail'),
     path('taekwondo/new/',taekwondo_new,name='taekwondo_new'),
@@ -615,7 +584,7 @@ urlpatterns = [
     path('taekwondo/update/<str:id>',taekwondo_update,name='taekwondo_update'),
     path('taekwondo/delete/<str:id>',taekwondo_delete,name='taekwondo_delete'),
 
-# tuskers
+    # tuskers
     path('tuskers/',tuskers,name='tuskers'),
     path('tuskers/<str:id>',tuskers_detail,name='tuskers_detail'),
     path('tuskers/new/',tuskers_new,name='tuskers_new'),
