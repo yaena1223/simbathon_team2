@@ -2,10 +2,85 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:academic'%}" > 학술분과</a>
+            <header>
+                <h1 id = "club_name" >MECS</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/mecs_dongguk/?hl=ko"  target='_blank'><p></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/mecs_activity.jpg'%}"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 
+                    안녕하세요! 중앙영어회화 동아리 MECS입니다🤗 2021년도 1학기를 맞이하여 새로운 42기 회원을 모집하고자 합니다!! 대상은 다음과 같습니다.<br><br>
+
+                    -영어회화실력을 향상 시키고 싶은데 어떻게 해야 할 지 모르겠고 혼자 하기 두려워요 🤯😥<br>
+                    -외국인 친구들, 학교 친구들을 많이 사귀고 싶어요 🏫<br>
+                    -대학교 생활하면서 잊지 못할 추억을 만들고 싶어요 🤤<br>
+                    -이외에도 mecs에 관심있는 모든 분들<br><br>
+
+                <strong>*대면 시 활동 내역*<br></strong>
+                    -매주 목요일 6시! 영어회화스터디 🆎️<br>
+                    -스터디 후 재밌는 뒷풀이 🥘🍺<br>
+                    -OB선배들과 함께하는 연합체육대회⚽️<br>
+                    -꿀잼 동기엠티, 연합 엠티 🏖<br>
+                    -즐거운 추억 쌓고 인생샷도 건지는 소풍 🌉<br>
+                    -동아리방에서 같이 공강시간도 보내기! (보드게임 등등) 🎲<br><br>
+
+                <strong> *유의사항*<br></strong>
+                    저희 동아리에서는 매주 목요일 6시에 지속적으로 스터디 참여가 가능하신 24살 이하 학우분들을 위주로 모집하고 있습니다🙂<br><br>
+
+                <strong> ⭐지원방법⭐<br></strong>
+                    -회장(010-8925-5789) 혹은 부회장(010-5118-7360)에게 문자 또는 카톡하기 📞<br>
+                    -에브리타임 쪽지 📩<br><br>
+
+                <strong>  ⁉️Q&A⁉️<br><br></strong>
+
+                    <strong>Q1: 언제까지 모집하나요? 면접도 있나요?<br></strong>
+                    A: 3월 17일까지이며 별도의 면접은 없습니다😀<br><br>
+
+                <strong>Q2: 비대면 중에는 어떤 활동을 하나요?<br></strong>
+                    A: 현재 비대면으로 진행됨에 따라 목요일 6시에 웹엑스 스터디만을 진행하고 있습니다🥲<br><br>
+
+                <strong> Q3: 현재도 외국인 부원이 있나요?<br></strong>
+                    A: 보통 교환학생으로 오신 학우분들이 동아리에 참여해주셨던 만큼 이번학기에는 기대하기 힘들 것 같습니다😭<br><br>
+
+                <strong>Q4: 스터디는 언제부터 하고 어떻게 진행되나요?<br></strong>
+                    A: 3월 11일에 OT를 진행하고 그 다음주 목요일(3월 18일)부터 바로 스터디를 시작할 예정입니다! <br>
+                    스터디는 한시간 이내로 진행되며 현재 웹엑스로 진행됨에 있어 적당 인원으로 배분하여 진행하고 있기 때문에 조별로 소요시간은 상이할 수 있습니다😉<br><br>
+
+                <strong> Q5. 어느 정도의 영어실력이 필요할까요?<br></strong>
+                    A: 본인의 영어실력이 부족하다고 생각해서, 혹은 자신 없어서 스터디가 걱정되신다는분!<br>
+                     전.혀. 걱정하실 필요 없습니다😂 <br>
+                     다양한 과에서 다양한 실력의 사람들이 모이는 자리인 만큼 서로서로 도와가며 대화를 진행하기 때문에 
+                     본인의 실력 보다는 한마디라도 더 하고싶다는 적극적인 자세가 더 중요하다고 생각합니다ㅎㅎ<br>
+                      또한 여러분들에게 맞추어 주제나 난이도는 매주 바뀌기 때문에 무리는 없을 것으로 생각됩니다😋😋<br><br>
+
+                    더 궁금하신 점 있으시다면 부담없이! 회장이나 부회장에게 연락 또는 에브리타임 쪽지로 언제든 연락주시면 감사하겠습니다👏👏👏<br><br>
+
+                    🔊🔊모집기간은 3월 17일까지입니다 🔊🔊
+                </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/mecs.jpg'%}" width=60% height=70%/>
         <h1>MECS의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:mecs_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

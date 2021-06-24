@@ -1,10 +1,12 @@
 {% extends 'base.html' %} 
 {% load static %} 
 {% block content %}
-<div class = 'button'>      
+
+ <div class = 'button'>      
     <form method="POST" action="{% url 'account_logout' %}">
-        {% csrf_token %} {{ form.as_p }}
-        <input class = 'button' type="submit" value="Logout">
+        {% csrf_token %}
+        <input class = 'button' type="submit" value="Logout" style="border-radius:10px; background-color: #f8585b; color:white; border: white;">
     </form>
 </div>
+    
 {% endblock %}
