@@ -2,10 +2,61 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:volunteer'%}" > 봉사분과</a>
+            <header>
+                <h1 id = "club_name" >E.L.F</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.facebook.com/groups/348801331805826"  target='_blank'><p><i class="fab fa-facebook-f fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/elf_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            <p>
+                <strong>1.활동내용</strong><br>
+                ⭐️봉사활동<br>
+                매주 수요일 6시에는 삼동소년촌(상암동)과 쪼물왕국 지역아동센터(선유도역)에서 봉사활동을 진행합니다! 교육봉사경험이 없어도 쉽게 적응할 수 있는 1:1 멘토링학습 형태입니다. 봉사가 끝난 후엔 꿀잼 뒷풀이도 함께 즐겨요!😝
+            </p>
+            <p> 
+                ⭐️집회<br>
+                매주 금요일에는 6시 30분에는 집회장님의 진행 하에 집회가 열립니다! 학술집회는 주제에 대해 부원들과 생각을 나눠볼 수 있는 시간입니다. 토론, 발표실력이 부족하다고 걱정할 필요는 X❗️ 휴식이 필요할 땐 친목집회(미션게임, 한강나들이 등)가 진행되니 와서 즐겨주세욧🕺🕺
+            </p>
+            <p>
+                ⭐️창립제/체육대회<br>
+                봉사활동과 집회가 재학생들끼리 함께하는 시간이라면 창립제와 체육대회는 재학생과 졸업생이 한자리에 모여 친목을 다질 수 있는 시간이에요! 다양한 분야의 선배님들을 만나볼 수 있는 기회✨라고 할 수 있습니다~
+            </p>
+            <p>
+                ⭐️MT<br>
+                대학생활의 꽃 🌸엠티🌸가 빠질 수가 없죠! 엠티야말로 신입부원들을 위한 자리입니다! 다양한 게임, 유흥거리가 준비되어 있으니 기대해 주세요~
+            </p>
+            <p>
+                <strong>2.모집대상</strong><br>
+                교육, 봉사에 관심있는 신입생/재학생 분들❗️<br>
+                재미로 꽉꽉찬 대학생활을 원하는 신입생/재학생 분들❗️<br>
+            </p>
+            <p>
+                <strong>3.신청방법</strong><br>
+                동아리방(학생회관 옥외지하 분홍색문)오셔서 입부신청서 작성해주시면 됩니다. 방문 전에 미리 연락 부탁드려용😊
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/elf.jpg'%}" width=60% height=70%/>
         <h1>E.L.F의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:elf_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

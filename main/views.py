@@ -616,8 +616,6 @@ def road_delete(request,id):
     road_delete_post.delete()
     return redirect('main:road')
 
-
-
 #hand 
 def hand(request):
     posts = hand_Post.objects.all().order_by('-date')

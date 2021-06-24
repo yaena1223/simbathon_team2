@@ -15,7 +15,7 @@ urlpatterns = [
     path('atheletic/', atheletic, name="atheletic"),
     path('social/',social,name='social'),
 
-    # likelio
+    # likelion
     path('likelion/',likelion,name='likelion'),
     path('likelion/<str:id>',likelion_detail,name='likelion_detail'),
     path('likelion/new/',likelion_new,name='likelion_new'),

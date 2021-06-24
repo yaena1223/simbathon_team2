@@ -5,11 +5,335 @@
 <div class = "container">
 <h1>{{user.username}}</h1>
 
-<div>
-{% for post in posts %} 
-<a href = "{%url 'main:detail' post.id%}" > {{post.title}}</a><hr>
+{% for post in cafein_posts %} 
+<h3>CAFE-IN</h3>
+<a href = "{%url 'main:cafein_detail' post.id%}" > {{post.title}}</a><hr>
+{% endfor %}
+
+{% for post in dna_posts %} 
+<h3>DNA</h3>
+<a href = "{%url 'main:dna_detail' post.id%}" > {{post.title}}</a><hr>
 {%endfor%}
-</div>
+
+{% for post in posts %} 
+<h3>DUSSA</h3>
+<a href = "{%url 'main:dussa_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>KCC</h3>
+<a href = "{%url 'main:kcc_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>MECS</h3>
+<a href = "{%url 'main:mecs_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>NSA</h3>
+<a href = "{%url 'main:nsa_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>맑스철학연구회</h3>
+<a href = "{%url 'main:marx_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>경영학연구회</h3>
+<a href = "{%url 'main:management_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>경제학연구회</h3>
+<a href = "{%url 'main:economy_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>국제통상학연구회</h3>
+<a href = "{%url 'main:international_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>정치학연구회</h3>
+<a href = "{%url 'main:politics_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %}
+<h3>E.L.F</h3>
+<a href = "{%url 'main:elf_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>RCY</h3>
+<a href = "{%url 'main:rcy_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>길</h3>
+<a href = "{%url 'main:road_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>손짓사랑회</h3>
+<a href = "{%url 'main:hand_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>젊은새이웃</h3>
+<a href = "{%url 'main:neighbor_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>CAFE-IN</h3>
+<a href = "{%url 'main:cafein_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>페인터즈</h3>
+<a href = "{%url 'main:painters_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>푸름누리</h3>
+<a href = "{%url 'main:green_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>한글학교하람</h3>
+<a href = "{%url 'main:korean_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>KUSA</h3>
+<a href = "{%url 'main:kusa_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>RICH</h3>
+<a href = "{%url 'main:rich_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>UNSA</h3>
+<a href = "{%url 'main:unsa_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>프론티어</h3>
+<a href = "{%url 'main:frontier_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>동국불교학생회</h3>
+<a href = "{%url 'main:buddha_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>DUST</h3>
+<a href = "{%url 'main:dust_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>동굴탐험연구회</h3>
+<a href = "{%url 'main:cave_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>무법</h3>
+<a href = "{%url 'main:action_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>바람소리</h3>
+<a href = "{%url 'main:wind_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>산악부</h3>
+<a href = "{%url 'main:mountain_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>수중탐험연구회</h3>
+<a href = "{%url 'main:water_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>COURTIST</h3>
+<a href = "{%url 'main:courtist_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>DUTC</h3>
+<a href = "{%url 'main:dutc_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>FC TOTO</h3>
+<a href = "{%url 'main:fctoto_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>L.A.E</h3>
+<a href = "{%url 'main:lae_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>검도부</h3>
+<a href = "{%url 'main:kendo_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>기우회</h3>
+<a href = "{%url 'main:baduk_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>명궁</h3>
+<a href = "{%url 'main:arrow_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>선무부</h3>
+<a href = "{%url 'main:taekwondo_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>터스커스</h3>
+<a href = "{%url 'main:tuskers_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>AJAX</h3>
+<a href = "{%url 'main:ajax_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>CAFE-IN</h3>
+<a href = "{%url 'main:cafein_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>HOLA</h3>
+<a href = "{%url 'main:hola_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>ODC</h3>
+<a href = "{%url 'main:odc_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>OPUS</h3>
+<a href = "{%url 'main:opus_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>극예술연구회</h3>
+<a href = "{%url 'main:draw_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>로터스</h3>
+<a href = "{%url 'main:lotus_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>뭉게구름</h3>
+<a href = "{%url 'main:cloud_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>CAFE-IN</h3>
+<a href = "{%url 'main:cafein_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>아리랑</h3>
+<a href = "{%url 'main:arirang_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>음샘</h3>
+<a href = "{%url 'main:eumsem_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>피어리스던</h3>
+<a href = "{%url 'main:fearless_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>현여울</h3>
+<a href = "{%url 'main:yeoul_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>그리고 그림</h3>
+<a href = "{%url 'main:draw_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>동국문학회</h3>
+<a href = "{%url 'main:literal_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>동국서도회</h3>
+<a href = "{%url 'main:calligraphy_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>동그라미</h3>
+<a href = "{%url 'main:circle_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>디딤돌</h3>
+<a href = "{%url 'main:stone_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>만화얼</h3>
+<a href = "{%url 'main:cartoon_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>애드러쉬</h3>
+<a href = "{%url 'main:rush_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>FC 엘레펜테</h3>
+<a href = "{%url 'main:elephente_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %}
+<h3>두둠칫</h3>
+<a href = "{%url 'main:doomchit_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>멋쟁이 사자처럼</h3>
+<a href = "{%url 'main:likelion_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>인액터스</h3>
+<a href = "{%url 'main:enactus_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>잼잼</h3>
+<a href = "{%url 'main:jam_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
+
+{% for post in posts %} 
+<h3>QUD</h3>
+<a href = "{%url 'main:qud_detail' post.id%}" > {{post.title}}</a><hr>
+{%endfor%}
 </div>
 
 {% endblock %}
