@@ -485,8 +485,33 @@ ul.links {
 .button{
   font-size:30px;
   padding:10px 10px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .club{
   border: 3px solid black;
+}
+
+.holy{
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  margin-top: 100px;
+  text-align: center;
+}
+.holy h1{
+  text-align: center;
+}
+
+.login_btn{
+  justify-content: center;
+}
+
+#ping{
+  font-size: 20px;
 }

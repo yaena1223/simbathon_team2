@@ -2,10 +2,75 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:academic'%}" > 학술분과</a>
+            <header>
+                <h1 id = "club_name" >NSA</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/nsa_dongguk/?hl=ko"  target='_blank'><p></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/nsa_activity.jpg'%}"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 
+                <strong>🔭💫중앙천문동아리 NSA 💫🔭 </strong><br><br>
+
+                        중앙천문동아리 NSA에서 신입회원을 모집합니다!<br><br>
+
+                    <strong>🌟모집대상</strong><br>
+                         별을 좋아하시는 모든 학생분들<br><br>
+
+                    <strong>🌟모집기간</strong><br>
+                        상시모집<br><br>
+
+                    <strong>🌟동아리방 위치</strong> <br>
+                    학생회관 3층 안쪽 복도 자연과학연구회 (동방에는 컴퓨터, 프린터기, 에어컨, 침대, 전자레인지, 휴대폰 충전기, 보드게임 등 다양한 편의 시설이 있습니다🤩)<br><br>
+
+                <strong>🌟지원서</strong><br>
+                        <a href ="https://forms.gle/Vs3aMTG7KyJcZWSr9">지원서 작성하기</a><br><br>
+
+                    <strong>🌟2020년 이전 활동내용</strong><br>
+                        1. 학기 중 학교에서 비정기적인 관측회 (날씨 좋은 날 번개모임으로 관측 활동을 합니다!)<br>
+                        2. 학기 중 엠티<br>
+                        3. 학기 중 세미나<br>
+                        4. 방학 중 관측회 (1박 2일로 다른 지역으로 가서 관측 활동을 합니다!)<br>
+                        5. 봄/가을 소풍 (벚꽃/단풍을 보러 한강 등으로 소풍을 갑니다!)<br><br>
+
+                    <strong>🌟2020년 활동내용</strong><br>
+                        1. 세미나<br>
+                        2. 카톡 방탈출 게임 (오픈채팅방 암호를 푸는 게임입니다!)<br>
+                        3. 달 사진 이벤트 (추석 기념으로 달과 비슷한 사물을 찍어 보았습니다!)<br>
+                        4. 간식 행사<br>
+                        현재 코로나로 인해 2020년 이전에 진행했던 활동을 제대로 하지 못하고 있습니다😢<br>
+                        그 대신에 비대면으로 할 수 있는 활동을 추가했고 올해에는 더 다양한 활동을 진행하기 위해 구상하고 있습니다!<br><br>
+
+                        인스타 dgu_nsa / 페이스북 동국대 N.S.A 에서 활동 사진을 볼 수 있습니다🤓<br><br>
+
+                        더 궁금하신 점은 <댓글>이나 아래의 카카오톡 오픈채팅으로 연락주세요!🙌<br><br>
+
+                        🌟오픈채팅
+                        <a href=" https://open.kakao.com/o/sPIk2lUc">오픈채팅 주소</a>
+                </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/nsa.jpg'%}" width=60% height=70%/>
         <h1>NSA의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:nsa_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

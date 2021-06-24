@@ -2,10 +2,77 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:academic'%}" > 학술분과</a>
+            <header>
+                <h1 id = "club_name" >KCC</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/kcc_dongguk/?hl=ko"  target='_blank'><p></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/kcc_activity.jpg'%}"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 
+                    📣연합/중앙 학술 동아리 한국상경학회 (KCC)에서 신입회원을 모집합니다!!📣<br><br>
+
+                    안녕하세요!! 동국대학교 연합/중앙 학술동아리 한국상경학회(Korean Commercial-economic Conference)에서 신입회원을 모집하고 있습니다!<br><br>
+
+                <strong>🔊 한국상경학회(KCC)는<br></strong>
+                    순수한 학술 연구 단체로서 경영, 경제와 관련된 학술 활동을 하는 동아리입니다!☺ <br>
+                    1963년부터 지금까지 연혁이 이어져왔으며 고려대학교, 동국대학교, 성균관대학교, 숙명여자대학교, 연세대학교, 이화여자대학교 6개의 학교가 연합해서 활동을 합니다! <br>
+                    이번년도에는 졸업하신 KCC 선배님의 강연, 신문 스크랩, 모의투자, 주제 토론 등의 다양한 학술 활동이 준비되어 있습니다! 물론 학술동아리라고 해서 학술활동만 하는 것은 아닙니다. <br>
+                    야유회, 체육대회, MT와 같은 다양한 친목행사도 준비되어 있으니 학술과 친목 모두 챙겨가세요! (보다 자세한 활동 설명은 밑의 카드뉴스를 참고해주세요!!)<br><br>
+
+                <strong>🔊 모집대상은?<br></strong>
+                    경영,경제에 관심이 많고 꾸준히 활동할 1학년 신입생분들과 2학년 재학생분들을 모집하고 있습니다!!<br><br>
+
+                <strong>🔊 활동기간은?<br></strong>
+                    동아리의 [신입회원]은 1년간 학회원으로서 다양한 학술 및 친목행사와 선배와의 교류에 참석합니다.<br>
+                     [신입회원으로서 활동을 마친 정회원]은 1년간 스태프로서 학술 및 각종 프로그램 기획, 운영합니다.<br><br>
+
+                    <strong> 🔊 모임날짜 및 시간<br></strong>
+                    수/목 7시<br>
+                    🎶수요일: 6개의 학교가 연합해서 진행하는 본부 활동<br>
+                    🎶목요일: 동국대학교만의 지부 활동<br><br>
+
+                <strong>🔊 모집기간 및 지원방법<br><br></strong>
+
+            <strong> 📕 모집기간</strong><br>
+             ‼️오늘 자정까지‼️<br>
+                    합격자에 한해 3월 14일 (일)에 개별 연락드리겠습니다! 면접은 지원자가 몰릴 경우 진행합니다!<br><br>
+
+                <strong>📕 지원방법</strong><br>
+                    <a href = "http://naver.me/GfadNC9r"><strong>네이버폼 작성하기</strong></a><br><br>
+ 
+
+                    ❤ 문의: 동국대 지부장 변효진 010-5356-3607<br>
+                    문의는 위에 기재된 번호로만 해주세요!<br><br>
+
+                    ❤ 동아리방 위치: 학생회관 5층<br><br>
+
+                    ❤ 본부스텝들이 매주 회의하며 동아리 활동을 기획하고 있습니다! <br>
+                    이번년도에는 동국대 지부와 성균관대 지부가 같이 하는 집회(a.k.a 유불전) 등의 활동들이 예정되어 있으니 많은 관심 부탁드립니다!!<br>
+                </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/kcc.jpg'%}" width=60% height=70%/>
         <h1>KCC의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:kcc_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

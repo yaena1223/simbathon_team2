@@ -2,13 +2,25 @@
 {% load static %}
 
 {% block content %}
-<h1>글 수정하기</h1>
-<form action="{% url 'main:likelion_update' post.id %}" method='post'enctype = 'multipart/form-data'>
+
+{% if user.is_authenticated %}
+<div class = "edit_text"><h1>글 수정하기</h1></div>
+
+<div class = "edit" >
+<form action="{% url 'main:likelion_update' post.id %}" method='post'enctype = 'multipart/form-data' >
     {% csrf_token %}
-    <p>제목: <input type= 'text' name ='title' value = "{{post.title}}"></p>
-    <p>사진: <input type='file' name='image'></p>
-    <p>내용: <textarea type= 'text' name ='body' id ='' cols='30' rows='10'>{{post.body}}</textarea></p>
-    <button type = "submit">제출</button>
+    <p>제목: <input type= 'text' name ='title' style = width:500px;font-size:16px;font-family:NanumBarunGothic value = "{{post.title}}"></p>
+    <p>사진: <input type='file' style = width:510px; name='image'></p>
+    <p><label style=vertical-align:top;>내용:</label> <textarea type= 'text' name ='body' id ='' cols='30' rows='10' style = width:500px;height:500px;font-size:16px;font-family:NanumBarunGothic>{{post.body}}</textarea></p>
+    <button id = "bt" type = "submit"   >Upload</button>
 </form>
+</div>
+{% else %} 
+<div class = "authentication">
+    <h3> 로그인 후 글 수정 가능</h3>
+    <a href = "{% url 'account_login' %}"  class="btn btn-warning">로그인</button></a>
+    <a href = "{% url 'account_signup' %}" class="btn btn-warning">회원가입</a>
+</div>
+{% endif %}
 
 {% endblock %}

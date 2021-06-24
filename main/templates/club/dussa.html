@@ -2,10 +2,67 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:academic'%}" > 학술분과</a>
+            <header>
+                <h1 id = "club_name" >DUSSA</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/dussa_dongguk/?hl=ko"  target='_blank'><p></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/dussa_activity.jpeg'%}" /></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 
+                    👊🏻DUSSA로 여러분을 초대합니다👊🏻<br>
+                    일단, 20학번 신입생 여러분 입학을 환영합니다👏🏻 중앙동아리 학술분과에 속해있는 저희 동아리를 소개하고자 합니다!<br><br>
+                    “두싸가 뭐하는 곳인데??”<br><br>
+                    저희 DUSSA(두싸)는 Dongguk University Student Statistic Association, 통계조사연구회의 약자로, 
+                    매학기마다 교내 혹은 교외에서 대학생들을 대상으로 정치, 문화, 사회, 여가 등 다양한 분야를 다루며 인식조사를 합니다. <br>
+                    이러한 인식 조사들을 통해서 동아리 조원들끼리 친해질 수 있는 기회를 만들며, 매주 목요일 집회를 통해서 친목을 다집니다❗️<br><br>
+                    나는 중앙동아리에서 타과 사람들을 만나보고싶다! 하시는 분들께서는 망설이지말고 얼른 두싸에 들어오세요!☺️<br><br>
+                    학술 동아리라 “내가 동아리마저 공부와 관련된 것을 해야하나?”라는 많이 고민이 되실수 있는데, 저희는 할땐 하고 놀땐 노는 동아리라고 정말 자부할 수 있습니다!<br>
+                    다소 힘든 대학생활을 활기차게 보낼 수 있도록 학년, 학번 상관없이 누구든지, 언제든지 여러분을 두싸에 환영합니다!🥰‼️<br>
+                    문의사항이 있으시거나 아직 잘 모르겠다 하시는 분들께서는 회장에게 연락을 주셔서 마음껏 질문을 하셔도 됩니다! <br>
+                    또한 3월 17일 화요일과 3월 18일 수요일날 예정되어있는 동아리 박람회 기간동안 저희 부스에 방문해주셔서 문의 주신다면 누구보다 친절하게 설명드리겠습니다‼️<br>
+                    확실하게 판단이 안 선다면 3월 19일 목요일 6시부터 진행되는 저희 두싸 개강총회에 오셔서 설명도 들으시고 뒤풀이에 가서 선배 혹은 동기들과 친해질 수 있는 기회를 가져도 됩니다!<br><br>
+
+
+
+                    <strong>📊지원자격</strong><br>
+                     관심있는분 누구나!!<br><br>
+
+                   <strong>📊지원/문의 방법</strong>  <br>
+                   회장 번호로 연락주시거나 동아리 박람회 기간 3/17-3/18 방문<br><br>
+
+                    <strong>📊동아리방 위치</strong> <br>
+                    학생회관 3층 (문에 두싸라고 붙어있습니다!)<br><br>
+
+                    <strong>📊문의사항</strong> <br>
+                    회장_ 조윤아 010-8962-0436<br>
+                    부회장_정승언 010-4750-8160<br><br>
+
+                <strong>📊입회비: </strong>15000원 예상, 동아리 박람회 이후 다시 공지할 예정<br><br>
+                </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/dussa.jpg'%}" width=60% height=70%/>
         <h1>DUSSA의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:dussa_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

@@ -7,7 +7,7 @@
 <div class = "edit_text"><h1>글 수정하기</h1></div>
 
 <div class = "edit" >
-<form action="{% url 'main:nolaw_update' post.id %}" method='post'enctype = 'multipart/form-data' >
+<form action="{% url 'main:action_update' post.id %}" method='post'enctype = 'multipart/form-data' >
     {% csrf_token %}
     <p>제목: <input type= 'text' name ='title' style = width:500px;font-size:16px;font-family:NanumBarunGothic value = "{{post.title}}"></p>
     <p>사진: <input type='file' style = width:510px; name='image'></p>

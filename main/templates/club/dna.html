@@ -2,10 +2,85 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:academic'%}" > 학술분과</a>
+            <header>
+                <h1 id = "club_name" >DNA</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/dna_dongguk/?hl=ko"  target='_blank'><p></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/dna_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> <strong>1. 동아리 명</strong><br>
+                    DNA (Dongguk Network-user’s Association)<br><br>
+                    
+                     
+                    
+                    <strong>2. 동아리 한줄소개</strong><br>
+                    IT 학술 동아리, 리눅스 유저 그룹 DNA입니다. IT 분야에 관심이 있는 회원들끼리 모여 친목을 도모하고, 그룹 스터디 및 프로젝트를 진행하는 동아리입니다.<br><br>
+                    
+                    
+                    <strong>3. 동아리 소개</strong><br>
+                    안녕하세요, Dongguk Network-user's Association, DNA입니다. DNA는 동국대의 리눅스 유저그룹으로 리눅스 뿐만 아니라 소프트웨어 등 다양한 IT주제에 대해 
+                    정보를 공유하고 친목을 도모하는 IT 학술 동아리입니다.<br>
+                    DNA는 각 학기마다 신입생 및 비전공자를 대상으로 C / Linux 기초 스터디(멘토링) 등을 진행하며, 
+                    그 외에도 관심 분야의 지원자를 받아 C++, Android, Web등 다양한 분야의 스터디를 진행하고 있습니다. <br>
+                    그 외에도 IT관련 프로젝트(해커톤, 코딩대회 등) 에 관련한 활발한 정보교류가 이루어 지고 있으며, 이를 함께 진행하기 위한 학우들을 만나기 위한 최적의 장소가 될 수 있을 것입니다.<br><br>
+                    
+                    ‘나는 아직 모르는게 많은데...’ ‘어렵지 않을까?’ 🥺 혹시 망설이고 계신가요? 걱정할 필요 없어요. <br>
+                    이곳은 완성된 숙련자들을 위한 IT프로젝트의 장이 아닙니다. 관심은 가지고 있지만 어떻게 시작해야할지 모르는 학생들을 위한 정보교류 및 친목도모 동아리니까요. <br>
+                    학술연구 뿐만 아니라 친목도모를 위한 행사들도 많이 준비되어 있으니 부담없이 들러주시기 바라요 🤗<br><br>
+                    
+                     
+                    
+                    <strong>현재 활동인원</strong><br>
+                    약 40명<br><br>
+                    
+
+                   <strong>5. 지원방법</strong> <br>
+                    -자격<br>
+                    IT, 소프트웨어 분야에 관심이 있는 동국대 학생이라면 누구나!🤗<br><br>
+                    
+                    -모집인원<br>
+                    열정과 흥미가 있다면 DNA는 가입자 수를 제한하지 않습니다<br><br>
+                    
+                    -모집일정<br>                   
+                    1차 모집 : 3월 9일 ~ 3월 27일<br>     
+                    위는 스터디 일정 조율을 위한 모집일정이며, 차후에도 가입이 가능하지만 일부 스터디에는 참여에 어려움이 있을 수도 있는 점 양해바랍니다.<br><br>
+                    
+                    -지원방법<br>                   
+                    회장 혹은 부회장 연락처로 문의하거나 학생회관 2층 DNA 동아리방에 방문해주세요🤗<br><br>
+                    
+                    -문의<br>                    
+                    회 장 : 김민수 (연락처: 010-9495-6144)<br>
+                    부회장 : 이윤우 (연락처: 010-5368-9814)<br>
+                    동아리방 : 학생회관 2층 DNA<br><br>
+                    
+                     
+                    
+                   <strong> 6. 회장의 한마디</strong><br>
+                    관심사가 맞는 친구들끼리 모여 좋아하는 무언가에 다 같이 몰두하는 그런 낭만이 있으신가요? 그렇다면 망설이지 마세요! 🤗<br></p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/dna.jpg'%}" width=60% height=70%/>
         <h1>DNA의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:dna_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

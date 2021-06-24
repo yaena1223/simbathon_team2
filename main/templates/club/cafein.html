@@ -2,11 +2,65 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:academic'%}" > 학술분과</a>
+            <header>
+                <h1 id = "club_name" >Cafe-in</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/dg_cafein/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/cafein_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 저희 중앙요리동아리 카페인은 매주 부원들과 함께 요리하고 식품 박람회나 봉사 등 다양한 활동을 진행하고 있습니다.<br><br>
+
+                    카페인은 동국대학교 식품생명공학과 소모임에서 시작된 동아리로 현재 중앙동아리로 학생회관 4층 동아리방에서 도란도란 요리하고 친목도 쌓는 요리동아리입니다. 요리 좋아하시는 동국대 학생이라면 모두 환영합니다🧑🏻‍🍳👩🏻‍🍳<br><br>
+                    
+                    🥺. 요리를 잘 못하는데 괜찮을까요?<br>
+                    🤗. 요리를 좋아하시기만 한다면 정말정말 괜찮습니다!!<br><br>
+                    
+                    🤔. 코로나 때문에 활동 못하는거 아닌가요?<br>
+                    🤗. 대면활동이 불가능할 때 까지는 웹엑스를 통해 비대면으로 진행될 예정입니다! 비대면 활동을 위해 많이 준비하고 있으니 많은 지원 부탁드려요~<br><br>
+                    
+                    
+                    카페인은<br>
+                    🍳요리에 관심있으신분<br>
+                    🍳요리를 배워보고 싶으신분<br>
+                    🍳프로 자취러가 되고싶으신분<br>
+                    모두 모두 환영합니다!!🥳🥳<br><br>
+                    
+                    요리 못하셔도 괜찮아요! 관심만 있으시다면 언제나 환영입니다👍<br><br>
+                    
+                    ⭐지원기간: ~ 3월 10일 수요일 저녁6시⭐<br><br>
+                    
+                    🍎지원조건: 한학기 이상 성실히 참여하실 신입생 및 재학생 여러분<br>
+                    🍐 <a href = "http://naver.me/xuIPtJhJ"><strong> 지원하기</strong><br></a><br>
+                    네이버폼 작성해주시면 됩니다🤗<br>
+                    🍊동아리 모임시간: 매주 화요일 6시반 4층 동아리방 또는 웹엑스<br>
+                    🍑문의사항 : 회장 진희은 010-7297-3929로 궁금한점이 있으시다면 편하게 연락주세요😊<br>
+                    또는 게시글에 댓글 남겨주시면 바로 달려오겠습니다😄<br>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/cafein.jpg'%}" width=60% height=70%/>
-        <h1>CAFE-IN의 동아리 활동 내역</h1>
+        <h1>Cafe-In의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:cafein_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>
     </div>
