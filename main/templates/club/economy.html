@@ -2,10 +2,49 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:research'%}" > &#60;&#60;연구분과</a>
+            <header>
+                <h1 id = "club_name" >경제학연구회</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = ""></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/경제학연구회.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 62년의 역사를 자랑하는 동국대학교 경제학 연구회(FODE)!<br><br>
+                    동아리 내 주요 활동<br>
+                    논문집 발간을 진행하며, 재학생 조별 멘토링과 공모전 및 스터디 참가<br>
+                    MT, 야유회,소풍 등의 다양한 친목 활동<br><br>
+
+                    동아리 가입 시 프린트, 컴퓨터 지원, 개인 책상 및 사물함을 제공<br>
+                    대학생활을 보람차게 보내고 싶으신 분<br>
+                    선후배들과의 교류활동을 원하시는 분<br>
+                    지원해주세요!<br><br>
+
+                    신입생 여러분들의 많은 지원 바랍니다.<br><br>
+
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/경제학연구회.jpg'%}" width=60% height=70%/>
         <h1>경제학연구회의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:economy_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

@@ -2,10 +2,60 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:art'%}" > &#60;&#60;예창분과</a>
+            <header>
+                <h1 id = "club_name">동그라미</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/dgrm_gallery/"  target='_blank'></a><i class="fab fa-instagram fa-2x "></i></li>    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/circle_activity.jpeg'%}" width="700px"></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 사진을 잘 찍고 싶은 분!<br>
+                    사진에 잘 나오는 방법이 궁금하신 분!<br>
+                    이미 사진에 대해 잘 알고 있으신 분!<br>
+                    모두모두 환영합니다~📸<br><br>
+
+                    😗활동<br>
+                    ✔️ 정기적인 출사로 직접 사진을 찍으러 가요! 사진도 찍고~ 예쁜 코스도 배우고~<br>
+                    ✔️ 기술강좌로 배우는 전문적인 사진! 카메라를 전혀 모르더라도, 단기완성!<br>
+                    ✔️ 카메라 달랑 들고 떠나는 여행! 방학기간 다 같이 출사여행~<br>
+                    ✔️ 찍은 사진으로 품평도 하고, 전시도 하고~<br>
+                    ✔️ 디지털/필름 모두 배울 수 있는 동그라미~<br><br>
+
+                    😗가입조건 없음!<br>
+                    새내기, 헌내기, 카메라 뉴비부터, 고인물까지! 모두 환영해요 ^-^<br><br>
+
+                    🙄가입은 어떻게 해요?<br>
+                    아래링크 설명글을 읽고, 가입원서를 제출 해 주세요!<br>
+                    가입원서 제출 시 톡방을 통해 안내해드려요~<br><br>
+
+                    <a href="https://docs.google.com/document/d/1YP8EqKuqQkjrVQTVUlEbu6sACg7eVxg0JkDYaA3p3qA/edit?usp=sharing">지원하기</a><br><br>
+
+                    온라인 상시 모집입니다~<br>
+                    부담없이 가입&질문 해 주세요~😄<br>
+                    연락처: 010-7271-2923
+                 </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/동그라미.jpg'%}" width=60% height=70%/>
         <h1>동그라미의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:circle_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

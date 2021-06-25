@@ -2,10 +2,62 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:art'%}" > &#60;&#60;예창분과</a>
+            <header>
+                <h1 id = "club_name">애드러쉬</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.facebook.com/comicspirit/"  target='_blank'></a></li>    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/rush_activity.jpeg'%}" width="700px"></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 🖤동국대학교의 30년 전통 중앙광고동아리 애드러쉬에서 회원을 모집합니다!🐘🖤<br><br>
+
+                    📌 매주 모임 및 스터디 & 1학기 특강 진행<br>
+                    (원하는 사람에 한해 자유 참여이며, 기초부터 진행하니 아무 것도 몰라도 괜찮아용😊정말임... 저도 모름...)<br><br>
+
+                    📌 2021년도 1학기에는 수도권 학교 연합 광고단에서 기업 공모전 진행 예정 !<br>
+                     (연합 광고단은 여러 학교가 모여서 정해진 주제로 기업에 맞게 광고를 직접 제작하고 기업에게 제안하여 후원을 받는 활동입니다!😆 <br><br>
+
+                    📌 올해에도 수도권 학교 연합 광고제 진행!<br>
+                    (모집 요강에 2020년도에 진행한 광고제에 관한 내용이 나와있으니 참고해 주세요!🥰 )<br><br>
+
+                    📌 현재 광고 분야에서 활발히 활동하시는 분들의 강연과 기획서 작성 세션을 들을 수 있는 기회! 🤩🤩<br><br>
+
+                    📌 최근 리모델링을 마친 편안하고 모던한 남산뷰의 동방까지!!🏡💖<br>
+
+                    🖤어려운 동아리 아니에요! (그랬으면 안 들어왔어요 ..) 경쟁률 높지않아요!!<br>
+                    모두가 즐길 수 있는 분위기에서 어렵지 않은, 재밌는 활동들 많이 할 예정이니까 부담없이 지원해 주세요~!🥳<br><br>
+
+                    ✔ 지원자격 : 광고에 관심있거나, 배워 보고 싶은 화목한 분위기에서 어울려 놀고싶은 남녀노소 누구나!<br>
+                    ✔ 모집 인원 : 50명<br>
+                    ✔ 모집 일정 : 3월 2일~ 3월 12일<br>
+                    ✔ 지원 방법 : 첨부된 구글폼 양식에 빠르고 쉽게! 작성만 하면 끝!<br>
+                    ✔ 문의 : 회장 손주환 010-5048-2363<br>
+                    ⬆️부담스럽다면 댓글 문의도 좋아요!🥰<br>
+
+                    지원서 링크: <a href="https://forms.gle/EYpftR9YuAydazy57">지원하기</a>
+                 </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/애드러쉬.jpg'%}" width=60% height=70%/>
         <h1>애드러쉬의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:rush_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

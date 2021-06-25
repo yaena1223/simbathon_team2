@@ -2,11 +2,70 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:performance'%}" > &#60;&#60;공연분과</a>
+            <header>
+                <h1 id = "club_name" >HOLA</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/hola__official/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/hola_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 🌹문화/축제 기획 동아리 HOLA에서 신입회원 모집을 시작합니다!🌹<br><br>
+                    
+                    아쉽게 정규모집을 놓치신 지원을 희망하시는 분들은 밑의 공지사항들을 잘 읽어보시고 지금 바로 지원해주세요🔥<br>
+                    👇🏻지원서 링크👇🏻<br>
+                    <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSc5PjwyKCL64_8MD5coRBcLlDdBrBE7OPeah1TKsmJEPWsm8A/viewform?usp=sf_link'>지원하기</a><br><br>
+                    
+                    ● Hola는 이런 분들과 함께하고 싶어요.<br>
+
+                    1. 새롭고 획기적인 문화의 선두주자가 되고 싶다.<br>
+                    2. 전시 및 다양한 문화행사를 직접 기획하고 참여하고 싶다.<br>
+                    3. EDM·힙합·락·인디 등의 음악을 좋아한다.<br>
+                    4. 각종 페스티벌 및 공연을 즐긴다.<br>
+                    5. 다양한 문화예술에 관심 있다.<br>
+                    6. 영상 제작과 미디어 제작에 관심 있다.<br>
+                    7. 포토샵, 디제잉, 사진촬영에 자신이 있다.<br>
+                    8. 타대학 파티팀과 활발하게 교류하며 다양한 사람들을 만나고 싶다.<br>
+                    9. 끼와 아이디어가 넘치지만 발산할 기회가 없었다.<br><br>
+                    
+                    
+                    ● 올라인이라면 무궁무진한 혜택이 가득!<br>
+                    1. 페스티벌, 파티 및 다양한 문화행사를 직접 기획하며 실행할 수 있는 기회<br>
+                    2. 포토샵, 사진촬영, 디제잉 등의 스펙 향상의 기회<br>
+                    3. 대학생파티연합동아리 UPA를 통해 타대학 간의 활발한 교류<br><br>
+                    
+                    ● 지원자격<br>
+                    - 서울에서 활동 가능한 모든 대학생<br>
+                    - 적극적이고 열정 있는 사람<br>
+                    - 문화/축제기획 분야에 관심이 있는 사람<br>
+                    - 02년도 이전출생자 ( 빠른 03년생은 지원이 불가합니다)<br>
+                    - [필수] 매주 금요일 오후6시 동국대에서 회의 참석이 가능한 사람 (회의 or 행사 3번 이상 결석시 제명)<br>
+
+                    - [우대] DSLR 개인 장비 보유자, 기획팀 관련 경력자, 개발팀 관련 경력자<br>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/hola.jpg'%}" width=60% height=70%/>
-        <h1>Hola의 동아리 활동 내역</h1>
+        <h1>HOLA의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:hola_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>
     </div>

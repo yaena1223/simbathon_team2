@@ -2,10 +2,70 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:volunteer'%}" > &#60;&#60;봉사분과</a>
+            <header>
+                <h1 id = "club_name" >RCY</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.facebook.com/groups/348801331805826"  target='_blank'><p></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/rcy_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            <p>
+            <strong>1. 동아리명 : RCY<br><br> </strong>
+
+        <strong>2. 동아리 한줄소개<br> </strong>
+                
+                동국대학교 중앙동아리 및 연합동아리로 활동하고 있는 봉사동아리 RCY입니다.<br> <br> 
+                
+                 
+            <strong> 3. 동아리 소개<br> </strong>
+                
+                동국대학교 RCY는 대한적십자사 서울협의회 소속으로 타학교와의 교류를 가지는 대학생 연합 봉사동아리입니다. <br> 
+                농사활동과 같은 의미있고 다양한 봉사활동을 통해 경험과 친목 또한 다질 수 있는 동아리로 재학생 여러분들의 많은 관심 부탁드립니다.<br> <br> 
+                
+                 
+            <strong> 4. 현재 활동인원<br> </strong>
+                
+                -60여명<br> <br> 
+                
+                 
+                
+            <strong>5. 지원방법<br> </strong>
+                
+                자격 : 동국대학교 재학생 누구나  <br>              
+                모집인원 : 00           <br>      
+                모집일정 : 4/3(금) 17:00까지       <br>          
+                지원방법 : 하단에 기재된 연락처로 지원     <br>            
+                문의        <br>        
+                → 회장 : 김유탁 (01046634955)     <br>          
+                → 부회장 : 김창준 (01029398835)<br> <br> 
+                
+                 
+            <strong>  6. 회장의 한마디<br> </strong>
+                의무적으로 하던 봉사활동에서 벗어나 능동적으로 참여하는 봉사, 바쁜 현대인으로서의 삶에서 벗어나 주변을 둘러보며 도움을 줄 수 있는 사람. RCY에서 이루시길 바랍니다.<br> 
+            
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/rcy.jpg'%}" width=60% height=70%/>
         <h1>RCY의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:rcy_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

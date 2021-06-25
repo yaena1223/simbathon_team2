@@ -2,10 +2,57 @@
 {% load static %}
 
 {% block content %}
+
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:performance'%}" > &#60;&#60;공연분과</a>
+            <header>
+                <h1 id = "club_name" >아리랑</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/arirang_2021/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/arirang_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 올해로 🎉창립 40주년🎉을 맞이한 밴드 ❣아리랑❣에서 신입 부원을 모집합니다!<br><br>
+
+                    🙋‍♂️밴드부 활동은 하고 싶은데 오디션이 걱정돼요!<br>
+                    🙋‍♀️내 실력을 동국대 만천하에 알리고 싶어요!<br>
+                    🙋여러 장르를 다루고 싶어요!<br><br>
+                    
+                    🙆‍♂️그러면 ❣아리랑❣으로 오세요!🙆‍♀️<br><br>
+                    
+                    밴드 부원을 뽑기 위한 🚫오디션은 일절 없습니다.🚫<br><br>
+                    
+                    아래에 있는 신청 양식만 작성하면 당신은 🎤아리랑 부원! 🎤<br><br>
+                    
+                    아리랑에는 대면수업 시에는 활발한 💿공연 및 대면 합주📀를 하며, 코시국에도 보컬이나 기타 클래스, 카페에서 자기 연주 영상을 올리는 등 여러 💻비대면 활동💻을 하고 있습니다!<br><br>
+
+                    문의사항은 아래 연락처로 해 주시길 바랍니다!<br><br>
+
+                    ☎️ 윤여민(회장): 010-2733-5739<br>
+                    ☎️ 김수인(부회장): 010-9322-2899<br>
+
+                    ✒신청 양식✒: <a href='https://forms.gle/6QV35MtkdL11DDfs8' target='_blank'>https://forms.gle/6QV35MtkdL11DDfs8</a><br><br>
+            </p>
+            
+        </div>
+    </div>
+</div>
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/아리랑.jpg'%}" width=60% height=70%/>
         <h1>아리랑의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:arirang_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

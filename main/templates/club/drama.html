@@ -2,11 +2,75 @@
 {% load static %}
 
 {% block content %}
+
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:performance'%}" > &#60;&#60;공연분과</a>
+            <header>
+                <h1 id = "club_name" >극예술연구회</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/dgu_act/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/drama_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 🌟동국대학교 중앙연극동아리 ✨극예술연구회✨에서 신입생을 모집합니다!!🌟<br><br>
+
+                    안녕하세요, 동대극회입니다!<br><br>
+                    
+                    극예술연구회는 1974년 창단되어 꾸준히 이어져 내려오고 있는 교내 유일 중앙 연극동아리입니다. 학생회관 5층에 동아리방과 전용 소극장을 보유하고 있으며, 1년에 신입생 환영공연과 신입생 워크샵을 포함한 4회의 정기공연을 올리고 있습니다.<br>
+                    (극회에 대한 자세한 내용은 첨부한 이미지를 참고하세요!)<br><br>
+                    
+                    연극의 다양한 분야에 관심이 있고,<br>
+                    연극에 대한 열정과 배울 의지를 가지고 끝까지 함께할 마음이 있다면 망설이지 말고 지원해 주세요!<br><br>
+                    
+                    *장기 활동이 가능한 분을 우대하며,<br>
+                    신입생은 타 동아리와 중복 가입이 불가능하고<br>
+                    신입생 워크샵 연습 일정에 참여할 수 있는 사람만 가입이 가능합니다.<br><br>
+
+                    📌Q&A<br><br>
+
+                    Q. 연습 일정은 어떻게 되나요?<br>
+
+                    신입생 워크샵을 포함한 정기 공연은 평일 저녁 연습을 기본으로 하고 있으며, 이번 신입생 워크샵 역시 평일 저녁에 진행될 예정입니다.<br>
+                    그러나 공연팀의 내부 협의와 연습 진행에 따라 요일과 시간, 횟수 등은 변경될 수 있습니다. 또한 개인 사정에 따라 사전에 협의 시 일부 조정이 가능합니다!<br><br>
+
+
+                    Q. 공연 일정은 어떻게 되나요?<br>
+
+                    기말고사 전, 5월 말에서 6월 초 공연 예정입니다!<br><br>
+
+
+                    Q. 회비는 어느정도 되나요?<br>
+
+                    입부 첫 학기 3만원, 이후 학기당 2만원입니다.<br><br>
+
+
+                    Q. 워크샵 이후 공연 참여는 어떻게 이루어지나요?<br>
+
+                    워크샵 이후에는 활동하는 극회원 전체를 대상으로 공연팀 모집이 진행되면 원하는 포지션으로 자유롭게 참여 가능합니다! 단, 입부 이후 워크샵을 포함한 8개의 정기공연 중 3회의 공연에 참여하셔야 합니다. (워크샵 제외 2회)<br><br>
+
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/극예술.jpg'%}" width=60% height=70%/>
-        <h1>극예술 연구회의 동아리 활동 내역</h1>
+        <h1>극예술연구회의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:drama_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>
     </div>

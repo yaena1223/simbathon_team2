@@ -2,10 +2,65 @@
 {% load static %}
 
 {% block content %}
+
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:performance'%}" > &#60;&#60;공연분과</a>
+            <header>
+                <h1 id = "club_name" >로터스</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = ""  target='_blank'><p></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/lotus_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 🔥마술&타로 중앙동아리 LOTUS💕<br><br>
+
+                    마술&타로 동아리 🍀LOTUS🍀에서 21기 신규 부원을 모집합니다!! 🙋‍♂️<br><br>
+                    
+                    ♠️ 'Live Only for The Utmost Show'를 줄여 만든 LOTUS는 마술과 타로를 한꺼번에 배우고 볼 수 있는 동아리입니다.<br><br>
+                    
+                    ♥️마술이나 타로를 처음 접하거나 하나도 할 줄 모르는 분들도 학년, 학번 상관없이 누구나 마술과 타로를 배우고 싶다면 언제나 환영합니다!! (이건 안비밀인데 신입생/재학생 모두 환영해효~)<br><br>
+                    
+                    ♣️ 《학생회관 2층 끝》에 동아리방이 있어서 찾기 쉬워요~ 《매주 목요일 6시》에 특정 강의실을 대관하여 정기모임 시간을 갖지만 전혀 필참은 아니니 마술과 타로에 🔥흥미와 열정🔥을 가지신 만큼 편하게 놀러 오시면 됩니다.<br><br>
+
+                    👏자주하는 질문 Q&A !!👏<br><br>
+
+
+                    👨‍💼 : 혹시 마술만 배우고 싶은데 타로도 필수로 배워야하나요?<br>
+
+                    ➡️ 둘 다 배우실 수도 있고, 둘 중 하나만 골라서 배우실 수 있습니다! 😀<br><br>
+
+
+                    👧 : 올해 공연일정은 어떻게 되나요?<br>
+
+                    ➡️ 코로나가 하루빨리 해결된다면!! 1년에 한번 하는 정기공연을 2학기 중에 할 수 있을거에요 😊 (이외에도 타학교 공연관람과 학교 축제 기간에 타로 봐주는 부스활동 등 다양한 활동들도 예정되어있어요 속닥속닥) 여러분들이 열심히 배우신다면 이런 멋진 무대의 주인공이 될 수 있답니다💕<br><br>
+
+
+                    👱‍♂️ : 혹시 공연하는 것도 필수인가요?<br>
+
+                    ➡️ 전혀 강요안합니다~ 로터스는 공연분과 동아리이기 때문에 매년 공연을 하는거에요 아마두 마술을 배우시다가 자연스레 늘어버린 입담을 쏟을 곳을 찾다가 공연을 하겠다고 손을 들고 있는 자신🙌을 발견하게 되실 겁니다 ㅎㅎ<br><br>
+
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/로터스.jpg'%}" width=60% height=70%/>
         <h1>로터스의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:lotus_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

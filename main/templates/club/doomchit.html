@@ -2,10 +2,68 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:fresh'%}" > &#60;&#60;신규분과</a>
+            <header>
+                <h1 id = "club_name" >두둠칫</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/_do_doom_chit_/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/doomchit_activity.jpg'%}" width="600" height="600"/></div>
+
+            <div class = club_int_text>
+            
+            <p>
+
+            🎵두둠칫은 교내 K-Pop 위주 커버댄스 중앙동아리입니다. <br>
+            우리 두둠칫은 K-pop아이돌 댄스와 힙합은 물론 다양한 장르의 춤을 커버하고 영상을 만들어 
+            페이스북, 유튜브, 인스타그램 등 SNS에 업로드를 하며, 교내외 각종 찬조공연, 축제 동아리공연, 두둠칫 정기공연 등 다수의 무대에 오르고 있습니다.<br><br>
+
+            🎵K-Pop을 좋아하시는 분들, 춤에 관심 있으신 분들, 새로운 취미를 가져보고 싶으신 분들, <br>
+            나만이 간직했던 취미를 함께 즐기실 분들, 누구나 주저하지 말고 연락주세요!! 즐겁게 활동합시다😀<br><br>
+
+            ❕신입 기수는 의무적으로 가입 후 1년 활동을 해야 합니다.(개인사정으로 최초 1년 활동을 채우지 못할 시 탈퇴 후 추후 재가입 가능)<br>
+            ❕오디션을 보는 이유는 기본적인 안무 습득 능력을 파악하기 위함입니다. 춤을 잘 추지 않아도 충분히 가입이 가능하니 부담 갖지 않으셔도 됩니다.<br>
+            ❕우리 두둠칫은 정기모임 이외에도 소풍, 엠티 등 다양한 친목도모 행사가 준비되어 있으니 같이 즐겨보아요!<br>
+            ❕현재 우리 두둠칫은 정부의 사회적 거리두기 지침을 최우선시하고 있습니다. 정부의 지침이 변경될 때까지 5인 이상의 연습 및 모임은 불가합니다.<br><br>
+
+            <strong> 🔅지원자격 <br></strong>
+             매 달 1회 목요일 18시 30분 정기모임에 참여 가능한 사람(현재 코로나19로 인한 온라임 모임 횟수 변동 가능)<br><br>
+            <strong> 🔅모집기간 <br></strong>
+             3월 22일(월) ~ 3월 26일(금)<br>
+            ❗춤 영상 제출도 같은 기간입니다.❗<br><br>
+        <strong> 🔅지원방법 <br></strong>
+            ‼️면접 날짜 - 3월 28일(일) 15시 이후 순차적으로 webex면접 진행‼️(개별 연락 예정)<br>
+            ❕ 오디션 시간이 맞지 않는 분들은 개인적으로 연락바랍니다.<br>
+            ❕춤 영상은 자신있는 곡 1절 분량으로 준비해주세요!<br><br>
+
+            🔅지원 폼 링크 : <a href ="http://naver.me/xnKa47sp">지원폼</a><br>
+
+            🔅기타 문의는 문자, 카톡 모두 가능합니다!<br>
+            궁금하신 부분은 언제든지 문의주세요😆<br><br>
+
+            🔅회장 한지은 : 010-5037-4993<br>
+            부회장 조남현 : 010-3982-9309<br>
+              
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/두둠칫.jpg'%}" width=60% height=70%/>
         <h1>두둠칫의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:doomchit_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

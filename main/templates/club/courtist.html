@@ -2,11 +2,52 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:atheletic'%}" > &#60;&#60;체육분과</a>
+            <header>
+                <h1 id = "club_name" >courtist</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.facebook.com/duac1958/"  target='_blank'><p></a></li>    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/courtist_activity.jpeg'%}" width="700px"></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 안녕하세요~ 아마추어 농구회 COURTIST 입니다!<br><br>
+
+                    학관 1층 끝에 있는 아늑한 동방!<br><br>
+
+                    매주 실내체육관에서 농구 훈련 및 시합!<br><br>
+
+                    유쾌한 부원들까지~<br><br>
+
+                    4년 학교 생활하면서 집처럼 편하게 지낼 수 있는 동아리입니다 ^^<br><br>
+
+                    여자 매니저들도 운동할겸 농구 훈련 와서 게임 할 수 있구요!! 방학때는 숙명 여대와 교류하면서 농구 했습니다!<br><br>
+
+                    꼭 들러주셔용~~<br><br>
+
+                    카톡 아이디 twglhk<br><br>
+                 </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/courtist.jpg'%}" width=60% height=70%/>
-        <h1>COURTIST의 동아리 활동 내역</h1>
+        <h1>courtist의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:courtist_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>
     </div>

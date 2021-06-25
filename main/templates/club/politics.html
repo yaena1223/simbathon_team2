@@ -2,10 +2,57 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:research'%}" > &#60;&#60;연구분과</a>
+            <header>
+                <h1 id = "club_name" >정치학연구회</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "" ></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/politics_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p>
+                    1. 동아리 소개 :<br>
+                    
+                    정치학 연구실은 정치학에 관심이 있는 학생들이 정치학을 기본으로 다양한 학문 지식을 쌓는 것을 목표로 하고 있는 학술동아리입니다. 구체적인 활동으로는 학술세미나와 논문발표회가 있으며, 구성원들의 친목을 다질 수 있는 여러 활동들도 진행합니다. 때로는 졸업하신 선배들과의 만남을 주선하여 구성원들끼리의 가족 같은 분위기를 통해 즐겁고 활기찬 대학생활을 추구하기도 합니다.<br><br>
+                    
+                    2. 현재 활동인원 : 21명<br><br>
+                    
+                    3. 지원방법<br>
+                    
+                    자격 : (2020년-1학기 기준) 1, 2학년 재학생<br>
+                    
+                    모집인원 : 미정<br>
+                    
+                    지원방법 : 010-4910-5470으로 문자 또는 카톡 문의<br>
+                    
+                    문의 : 서준엽, 010-4910-5470 / 동국대학교 사회과학관 M동 5층<br><br>
+                    
+                    4. 회장의 한마디 :<br>
+                    
+                    정치에 관한 지식이 없다고 지원을 망설이지 마세요. 정치학 연구실에서 함께 배워나가요~~<br><br>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/정치학연구회.jpg'%}" width=60% height=70%/>
         <h1>정치학연구회의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:politics_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

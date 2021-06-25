@@ -2,10 +2,98 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:atheletic'%}" > &#60;&#60;체육분과</a>
+            <header>
+                <h1 id = "club_name" >동굴탐험연구회</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/likelion_dongguk/?hl=ko"  target='_blank'><p></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/cave_activity.jpeg'%}" width="700px"></div>
+
+            <div class = club_int_text>
+            
+            
+                <p>
+                    동굴탐험연구회에서 멋진 활동들을 함께할 54기를 찾습니다!😊😊<br><br>
+
+                    젊은 날들을 너무 지루하게만 보내고 있다고 생각된다면❗<br>
+                    익스트림한 활동으로 열정을 불태우고 싶다면❗<br>
+                    어디에서도 경험 못 할 특별한 경험들을 하고 싶다면❗<br><br>
+
+                    🔥열정 있는 그대여 동굴탐구연구회로 오라!🔥<br><br>
+
+                    🌱동아리 소개<br><br>
+
+                    안녕하세요!! 국내 최고의 탐험동아리 동굴탐험연구회입니다!💁<br>
+                    저희 동굴탐험연구회는 국내의 크고 작은 아름다운 동굴들을 탐사, 조사하여 기록하여<br>
+                    한국동굴환경학회에 많은 자료들을 제공하고, 받고 있습니다.🤝🏻<br>
+                    이외에도 탐험 동아리답게 다양한 활동들을 즐기고 있습니다. 환상적인 인생 샷들은 덤!!😳<br>
+                    동굴탐험연구회에서는 동아리원들과 친목교류를 통해 즐겁고 꿈에 그리던 대학생활을 할 수 있습니다.👀<br>
+                    또한 50년이 넘는 역사를 가진 동아리로서<br>
+                    OB선배님들과의 연이 깊어 신입부원들의 다양한 활동을 지원해주십니다.😲<br><br>
+
+                    🌱활동<br><br>
+
+                    ⛰ 정기탐험<br>
+                    🏕춘계 - 2박3일<br>
+                    🔥하계 - 총 14박 15일<br>
+                    🌄추계 - 2박 3일<br>
+                    ❄동계 - 9박 10일<br><br>
+
+                    ☝🏻춘계나 추계로는 강원도 지역이나 충북 쪽으로 자주 갑니다!<br><br>
+
+                    ✌🏻하계와 동계는 많은 지역을 오가면 제주도, 울릉도, 강원도 등 전국적으로 이동하며 탐험과 캠핑을 합니다!<br><br>
+
+                    👏🏻탐험비로는 선배분들의 지원비로<br>
+                    춘계, 추계 2만원<br>
+                    하계, 동계 5-7만원 정도가 소비됩니다!<br><br>
+
+                    🧗일반 활동<br>
+                    클라이밍, 암벽등반, 등산 그리고 탐험에 필요한 여러 훈련을 자주 합니다.<br>
+                    겨울에는 희망자에 한해 빙벽 훈련도 진행하고 있습니다.<br><br>
+
+                    🚴자유 활동<br>
+                    이외에도 백패킹, 캠핑, 국토대장정, 요트, 래프팅, 자전거종주, 등반, 마라톤, 배낭여행, 패러글라이딩 등<br>
+                    다양한 활동들을 합니다.<br>
+                    어떤 활동이든 마음만 맞으면 다 가능합니다.🙆‍♀️😆<br><br>
+
+
+                    (활동은 대부분 학교 외부에서 진행됩니다.)<br>
+
+                    🌱회비<br>
+                    입회비 2만원<br>
+                    월회비 1만원<br><br>
+
+                    🌱지원 자격<br>
+                    열정과 도전정신을 가진 동국대학교 학생(신입생, 휴학생, 복학생, 재학생, 편입생) 중 누구나!🙋🙋‍♀️🙋‍♂️<br>
+                    (학년, 나이 제한없이 최소 4학기 이상 활동 가능하셔야 합니다!)<br>
+
+                    🌿문의 및 위치<br>
+                    궁금한 점이 있으시면 자유롭게 오픈채팅방으로 문의해주세요🤗<br><br>
+
+                    오픈채팅 : <a href="https://open.kakao.com/o/sENn2Xfb">클릭</a><br><br>
+
+                    위치 : 학생회관 지하 1층 동굴탐험연구회실<br>
+                </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/탐험.jpg'%}" width=60% height=70%/>
         <h1>동굴탐험연구회의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:cave_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

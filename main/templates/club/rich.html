@@ -2,10 +2,88 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:social'%}" > &#60;&#60;사회분과</a>
+            <header>
+                <h1 id = "club_name" >RICH</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/dgu_rich/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/rich_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 🌈동국대학교 유일 금융투자동아리 [RICH]에서 신입부원을 모집합니다!🌈<br><br>
+
+                    안녕하세요! 동국대 유일의 금융투자동아리 RICH입니다!😊<br>
+                    저희 RICH는 신문스터디, 정기세미나, 투자대회, 각종 공모전 등에 활발히 참여하고 있으며 은행, 증권사, 보험(국민은행, 우리은행, 기업은행, 삼성증권, 한국투자증권, 교보증권, 신한금융투자, 손해보험협회 등)에 진출해 계신 많은 선배님들과도 다양한 이야기를 나눌 수 있습니다.<br><br>
+                    
+                    세미나 등 많은 유익한 활동과 함께 친목도모를 할 수 있는 동국대 유일의 금융투자 동아리 RICH와 함께 하세요!😃<br><br>
+                    
+                    1. 모집대상<br><br>
+                    
+                    ☞경제, 금융, 주식, 투자에 관심이 있는 동국대학교 학생 누구나!🙆‍♀️<br>
+                    ☞금융권 취업을 목표로 하고 있는 누구나!🙆‍♀️<br>
+                
+                    (학번, 나이, 학과, 휴학생 상관 X)<br>
+                    (단, 3학기 활동 가능한자)<br>
+
+                    2. 주요활동<br><br>
+
+                    신문스터디 | 평일 오전 8시~9시<br>
+                    (신입기수 기준 주 4회, 시험기간 제외)<br>
+
+                    정기세미나 | 매주 토요일 14:00~18:00<br>
+                    기업분석 레포트, 포트폴리오 설계 등<br>
+                    (시험기간 제외)<br><br>
+
+                    기타활동 | 스터디 운영, 각종 대외활동, 친목활동, 각종 투자대회 참가<br><br>
+
+                    <최근 RICH 주요활동 ><br>
+                    2021 매일경제TV 방송 <호주머니> 대학생 패널 출연<br>
+                    2021 매일경제TV 투자정보 어플리케이션 <주머니> 레포트 업로드<br>
+                    2021 DB 금융투자공모전 참여<br>
+                    2020 CFA Research Challenge 출품<br>
+                    2020 대학 연합 학술제 기업분석 세미나 진행<br>
+                    2020 유안타 증권 실전투자대회 1등<br>
+                    2020 GAPs 투자대회 본선 진출<br>
+                    2019 유안타 증권 실전투자대회 3등<br>
+                    2019 GAPs 투자대회 최다 본선 진출 동아리<br>
+                    2019 GAPs 투자대회 수익률 우수 Top 20 (참가팀 540팀)<br>
+
+                    금융권 대외활동, 인턴쉽 참가<br>
+                    UIC (전국대학생투자동아리연합회) 연합세션<br>
+                    리치인의 밤<br>
+                    현직 선배들과의 만남<br><br>
+
+                    3. 문의사항<br>
+
+                    회장 이재혁 : 010-2375-7764<br>
+                    부회장 이승호 : 010-9927-4274<br>
+                    부회장 양찬희 : 010-5470-7992<br><br>
+
+                    더 궁금하신 사항있으면 부담 갖지 마시고 연락주세요!!<br>
+                    리치는 여러분 모두를 환영합니다!<br><br>
+                </p>
+                                
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/rich.jpg'%}" width=60% height=70%/>
         <h1>RICH의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:rich_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

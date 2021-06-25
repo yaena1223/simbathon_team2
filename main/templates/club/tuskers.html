@@ -2,11 +2,91 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:atheletic'%}" > &#60;&#60;체육분과</a>
+            <header>
+                <h1 id = "club_name">Tuskers</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/dongguktuskers/"  target='_blank'></a><i class="fab fa-instagram fa-2x "></i></li>    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/tuskers_activity.jpeg'%}" width="700px"></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> Ready, down, set, hut!👊 터스커스와 함께할 새로운 선수와 매니저를 찾습니다!<br><br>
+
+                    나는 미식축구를 해 봤다, 해보진 않았으나 알고는 있다, 색다른 스포츠가 궁금하다,<br>
+                     근육빵빵 멋진몸매가 되고싶다, 스포츠 동아리 매니저를 해보고싶다, <br>
+                     새 친구와 선배를 알고싶다 등등!🔥<br><br>
+
+                    그 누구라도, 어떤 이유라도 좋습니다. 터스커스는 여러분을 환영합니다!🎉<br><br>
+
+
+                    🏈 TUSKERS 선수가 된다면?<br><br>
+
+                    ✔️ 서울 16개 대학이 참가하는 대학 미식축구 리그전 출전<br>
+                    ✔️ 감독님, 코치님들의 지도 하에 진행되는 체계적 훈련<br>
+                    ✔️ 부원들과 함께 하는 자율 훈련<br>
+                    ✔️ 다른 학교 사람들과 친해질 수 있는 연합 합숙<br>
+                    ✔️ 국가대표 선수가 될 수 있는 기회<br><br>
+
+
+                    🏈 TUSKERS 매니저가 된다면?<br><br>
+
+                    ✔️ 훈련 진행과 대회경기 참여 서포트<br>
+                    ✔️ 훈련과 경기 영상 촬영<br>
+                    ✔️ SNS관리, 홍보물 제작 등 터스커스 홍보 담당<br>
+                    ✔️ 함께 체력 증진 운동을 배울 수 있는 기회<br><br>
+
+
+                    🏈 미식축구를 해보지도 않았고, 룰도 모르는데 괜찮을까요?<br><br>
+
+                    지금 터스커스와 함께하는 부원들 대부분이 이렇게 시작했답니다!<br>
+                    기초 체력 훈련부터 멋진 전술 훈련까지! 천천히 배워나가기 때문에 걱정하지 않으셔도 괜찮습니다😉<br><br>
+
+
+                    🏈 미식축구를 하기 위해 필요한 물품이 있을까요?<br><br>
+
+                    헬멧, 유니폼, 장비 등 개인이 준비하기 부담스러운 물품들은 전부 구비되어있습니다!👍<br><br>
+
+
+                    🏈 언제 활동을 하나요?<br><br>
+
+                    2021년 1학기 정기훈련은 매 주 금요일 18시, 일요일 16시에 진행하기로 결정되었습니다🙌<br>
+                    (코로나 사태로 인해 훈련 재개일은 아직 미정입니다)<br><br>
+
+
+                    🏈 운동만 하나요?<br><br>
+
+                    운동 외에도 친목을 위한 다양한 활동을 계획하고 있습니다!<br>
+                    정기적인 활동 외에도 부원끼리 자율적으로 모여 놀기도 한답니다🌸<br><br>
+
+
+                    🏈 지원은 어떻게 하나요?<br><br>
+
+                    학생회관 1층 가장 끝 방<br><br>
+
+                    입부신청서 <a href="https://forms.gle/sXDbAwvkSJX8D29V9">지원하기</a>
+                 </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/터스커스.jpg'%}" width=60% height=70%/>
-        <h1>터스커스의 동아리 활동 내역</h1>
+        <h1>tuskers의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:tuskers_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>
     </div>

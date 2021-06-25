@@ -2,10 +2,58 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:social'%}" > &#60;&#60;사회분과</a>
+            <header>
+                <h1 id = "club_name" >UNSA</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "" ></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/unsa_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+                <p> ✨UNSA 신입부원 모집합니다✨<br><br>
+
+                    안녕하세요! 동국대학교 중앙동아리 <UNSA>입니다!!<br>
+                    21학번 아코 여러분들의 입학을 진심으로 축하합니다~~ 🎉<br>
+                    신나고 보람찬 대학 생활을 꿈꾸시나요?<br>
+                    그렇다면 우리 UNSA(운사)를 소개합니다👏🏻👏🏻<br><br>
+                    
+                    UNSA는 'United Nations Students Association' 의 약자로 UN한국학생연합입니다! 중앙동아리이자 연합동아리인 UNSA에는 아주 다양한 활동들이 기다리고 있습니다 🙆‍♂️<br><br>
+                    
+                    모의유엔총회, 연합세미나, 농활 등의 학술적인 활동은 물론 봉사활동 역시 합니다. 모의유엔총회를 하면서 영어실력을 향상시킬수도 있으며, 국내외적인 내용들을 토대로 연설을 하는만큼 공부와 스펙 쌓기가 동시에 !!<br><br>
+                    
+                    이렇게 딱딱한 활동들만 있는 건 절~대 아닙니다!! 걱정하지 마세요!<br><br>
+                    
+                    국내 최대규모의 연합동아리로서 다른 학교와의 다양한 연합 활동을 즐길 수 있답니다🙌 서울 소재 대학 (성균관대, 경희대, 건국대, 성신여대 등) 연합 동아리로 교내, 교외적으로도 인맥을 쌓을 수 있는 기회가 될 것입니다👍🏻<br><br>
+                    
+                    운사는 언제나 여러분들을 기다리고 있어요!! 이런 재밌고 유익한 기회 놓치지 마세요! 환영합니다 🙋🏻‍♀️🙋🏻<br><br>
+                    
+                    부담갖지말고 질문 및 문의 주세요<br>
+                    지원 및 문의 방법 :<br>
+                    회장 양다은 01025824713<br><br>
+                    
+                    (ˊᗜˋ*) 연락주시면 지원 방법 안내해드립니다 (•̀ᴗ•́) ̑̑<br><br>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/unsa.jpg'%}" width=60% height=70%/>
         <h1>UNSA의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:unsa_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

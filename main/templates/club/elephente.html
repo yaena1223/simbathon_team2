@@ -2,11 +2,82 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:fresh'%}" > &#60;&#60;신규분과</a>
+            <header>
+                <h1 id = "club_name" >FC엘레펜테</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/fc_elephente/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/elephente_activity.jpg'%}" width="600" height="600"/></div>
+
+            <div class = club_int_text>
+            
+            <p>
+
+                💁축구를 한 번도 안해봤는데 괜찮겠냐구요? 열정만 있다면 ok<br>
+                💁코로나 시국에 집에만 있는 것에 지쳤ㅇㅓ… 열정을 되찾고 싶다면?<br>
+                💁여러 학과 친구, 선배들과 친해지고 싶다면? 들어와서 축구 한 판 하면 가족 되는 건 한 순간!<br>
+                💁공을 어느 정도 찰 줄은 알지만, 코치님께 훈련을 받으면서 실력이 더 나아지고 싶어!<br><br>
+
+                이러한 분들을 비롯한 모든분들을 환영합니다❤️(학과, 학번, 휴학생, 가리지 않고 모두 지원 가능합니다)<br><br>
+
+            <strong>🌟🌟모집 기간: ~3/24까지🌟🌟<br></strong>
+                (여자축구연맹 일정에 따라 불가피하게 신입 모집 기간이 단축되었습니다! 지원하실 분들은 빠르게 지원 부탁드립니다!!!!)<br><br>
+
+
+            <strong>⚽️활동 날짜<br></strong>
+                 매주 금요일 오후 6시~8시(상황에 따른 시간 변동 가능)<br><br>
+                <strong>⚽️활동 장소 <br></strong>동국대학교 대운동장, 인근 풋살장<br>
+            <strong>⚽️활동 내용</strong><br>
+                - 코치님과 함께하는 정기 훈련 프로그램<br>
+                - 엘레펜테 자체 꿀잼보장 번개 풋살전<br>
+                - 타대학팀들과의 친선 경기 및 공식 대회 참여<br><br>
+
+
+                지원 방법: 아래 폼을 작성해서 제출하시면 끝!<br>
+
+                <a href="http://naver.me/FXZZK9tU">네이버 폼</a><br><br>
+
+
+                ——————————————————————————————————————————<br>
+
+            <strong>Q&A <br><br></strong>
+
+                Q. 축구화나 풋살화가 따로 없는데 필수인가요?<br>
+                A. 엘레펜테 자체 훈련에서는 필수가 아닙니다. 하지만 공식 대회나 친선 경기에 출전하시려면 필수 사항입니다! <br>
+                주로 축구화보다는 풋살화가 적합한 장소가 많기 때문에 혹시 구매를 고려하시고 계시다면 풋살화를 추천드립니다!<br><br>
+
+                Q. 축구를 한 번도 해본 적이 없는데… 혹시 가서 폐만 끼치는거 아닐까요🥲<br>
+                A. 전혀 아닙니다! 열정만 있으시다면 친절하신 코치님, 감독님과 훈련 담당 부원, 등 열정 넘치는 선생님들이 열심히 가르쳐 주십니다💪 같이 재밌게 공 차요 우리!<br><br>
+
+                Q. 회비는 얼마인가요?<br>
+                A. 신입 부원들의 경우 한 학기 기준 25000원입니다!<br><br>
+
+                *이외 문의 사항은 인스타그램 DM이나 아래 회장, 부회장 번호로 연락주세요!<br><br>
+
+                회장: 구민지 010-6563-1419<br>
+                부회장: 이유미 010-7192-4172<br>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/fc.jpg'%}" width=60% height=70%/>
-        <h1>FC 엘레펜테의 동아리 활동 내역</h1>
+        <h1>FC엘레펜테의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:elephente_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>
     </div>

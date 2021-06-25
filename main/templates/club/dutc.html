@@ -2,11 +2,61 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:atheletic'%}" > &#60;&#60;체육분과</a>
+            <header>
+                <h1 id = "club_name" >dutc</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/.dutc_seoul_1973/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/dutc_activity.jpeg'%}" width="700px"></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 중앙 테니스 동아리 dutc에서 신입부원을 모집합니다!<br><br>
+
+                    ✔️모집기간 : 상시모집<br>
+                    ✔️지원자격 : 동국대학생 누구나<br>
+                    ✔️활동(훈련)시간 : 월 화 목 금 오후 5:00~6:30<br>
+                    ✔️테니스코트 위치 : 대운동장 아래 조소건물 앞<br>
+                    ✔️동아리방 위치 : 학생회관 4층<br><br>
+
+                    ‼️훈련 시 준비물<br>
+                    -밑바닥이 평평한 신발(컨버스 반스 제외)만 신고 오시면됩니다.<br>
+                    공이랑 테니스 라켓은 코트오시면 다 구비되어 있습니다~<br><br>
+
+                    🙋‍♀️테니스한번도 안쳐봐도 괜찮은가요?<br>
+                    -요일마다 훈련부장이 있어서 기본자세부터 하나하나씩 누구나 배울 수 있게 가르쳐드립니다!<br>
+                    코로나로 요일마다 인원을 제한해서 진행할 예정입니다!<br><br>
+
+                    🙋훈련시간마다 전부 나와야하나요?<br>
+                    -자유롭게 시간 되시는 날짜에 원하는 만큼 나오셔도 돼서 매일 안나오셔도 돼요!<br><br>
+
+                    원래는 각종 대회들과 mt,회식이 있었는데 코로나의 여파로 인해 당분간은 진행하지 않는걸로 하게됐습니다.<br>
+                    앞으로 상황을 봐서 따로 공지해드릴 예정입니다.<br><br>
+
+                    남회장 김도해 010-7186-8576<br>
+                    여회장 송가연 010-3944-3595<br>
+                 </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/dutc.jpg'%}" width=60% height=70%/>
-        <h1>DUTC의 동아리 활동 내역</h1>
+        <h1>dutc의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:dutc_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>
     </div>

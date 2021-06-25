@@ -2,10 +2,60 @@
 {% load static %}
 
 {% block content %}
+
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:performance'%}" > &#60;&#60;공연분과</a>
+            <header>
+                <h1 id = "club_name" >음샘</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = ""  target='_blank'></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/eumsem_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 상시모집!!! 🎸동국대학교 중앙밴드동아리 음샘🎸<br><br>
+
+                    오래 기다리셨죠?? 안녕하세요! 동국대학교 중앙동아리 공연분과 음샘입니다! 2021년 1학기를 맞아 신입부원을 모집하기 위해 홍보글을 남깁니다! 잘 봐주시고 궁금한 점은 언제든 물어봐주세요~😀<br><br>
+                    
+                    음샘은 1988년 공대소모임으로 시작해 올해로 34살을 맞은 동국대학교의 중앙 밴드동아리입니다! 초기 창립멤버 중 한 명은 동국대학교의 교수님으로 계셨을 정도로 꽤 깊은 역사를 지닌 동국대학교의 동아리입니다.<br><br>
+                    
+                    현재 코로나 사태로 인해 비대면으로 진행되는 음샘의 주요활동들은 다음과 같습니다!<br><br>
+                    
+                    👉계절마다 진행하는 음샘의 정기공연 (현재 진행하지 않음)<br>
+                    👉매월 마지막주 금요일 5시 웹엑스를 통한 동아리 운영을 위한 정기회의 및 친목<br>
+                    👉악기를 처음 다루시는 분들을 위한 비대면 스터디 진행<br>
+                    👉새로 기획된 진행예정인 뮤직토크, 음악활동 외 크고 작은 소모임 등이 있습니다.<br><br>
+                    
+                    음샘의 모든 활동은 필수참여가 아닌 '선택참여'이기에 모든 분들이 부담없이 음샘을 즐기실 수 있습니다!<br><br>
+                    
+                    
+                    음샘의 가장 큰 장점은 자유로움이 아닐까 싶습니다. 위에서도 말씀드렸듯이 모든 활동은 선택참여이고 입부하실 때 오디션이나 면접은 진행하지 않습니다! 또한 기수제로 운영되지 않으며 모두 같은 위치에서 활동하기에 선후배간 동기간 편하게 지내실 수 있습니다.<br><br>
+                    
+                    코로나 이후 악기가 없으시더라도 음샘 동방에는 여러 악기와 앰프, 관리용품이 있으니 놀러오셔서 편하게 연주하실 수 있습니다!<br><br>
+                    
+                    일산캠분들을 위해 말씀드리자면 매학기 신입부원을 모집할 때 일산캠분들도 항상 지원해주십니다! 평일에 서울캠에서 진행하는 모든 행사에 참여하시기에 어려운 점은 저희도 잘 알고있습니다 ㅜㅜ 그래도 공연에도 많이 참여해주시고 잘 즐기고 계십니다!<br><br>
+                    
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/음샘.jpg'%}" width=60% height=70%/>
         <h1>음샘의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:eumsem_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

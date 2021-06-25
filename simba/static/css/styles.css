@@ -232,10 +232,12 @@ body{
 }
 
 .club{
-  border-top: black;
-  padding-top: 50px;
   display: flex;
+  border-top: solid 5px black;
+  margin-left:100px;
+  margin-right: 100px;
 }
+
 .club_left{
   width:25%;
 }
@@ -251,7 +253,6 @@ body{
 }
 .club_activity{
   padding: 5% 10%;
-  border: 1px solid black;
   border-bottom-width: 0;
 }
 .club_activity_head_2{
@@ -335,6 +336,11 @@ body{
 .faq__content{
   font-family: 'NanumBarunGothic';
 }
+
+.faq__content a:visited{
+  color:black;
+}
+
 summary {
   font-family: 'Do Hyeon', sans-serif;
   font-size: 1.25rem;
@@ -405,14 +411,15 @@ ol, ul {
 
 
 #club_name {
-  color: #3d4449;
+  color: black;
   font-family:'Do Hyeon', sans-serif;
   font-weight: 700;
   line-height: 1.5;
-  margin: 0 0 1em 0; 
+  margin: 0 0 0 0; 
   font-size: 4em;
-  margin: 0 0 0.5em 0;
-  line-height: 1.3; }
+  line-height: 1.3;
+ }
+
 
 
 /* Main */
@@ -427,11 +434,12 @@ ol, ul {
 
 /* Header */
 #header {
+  font-family: 'Do Hyeon', sans-serif;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  border-bottom: solid 5px #f56a6a;
+  border-bottom: solid 5px black;
   padding-top : 30px;
   position: relative; }
   #header > * {
@@ -451,7 +459,7 @@ ol, ul {
 }
 
 .image_main{
-  margin-top: 10px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -459,7 +467,6 @@ ol, ul {
   width: 800px;
   padding-right: 25%;
   padding-left: 25%;
-  
 }
 
 p{
@@ -489,10 +496,6 @@ ul.links {
   margin-top: 50px;
 }
 
-.club{
-  border: 3px solid black;
-}
-
 .holy{
   display: flex;
   justify-content: center;
@@ -515,3 +518,21 @@ ul.links {
 #ping{
   font-size: 20px;
 }
+
+#header a{
+  color:black;
+  font-size:30px;
+}
+
+#header a:visited{
+  color:black;
+}
+
+.club_int_text a{
+  color:black;
+}
+
+.club_int_text a:visited{
+  color:black;
+}
+
