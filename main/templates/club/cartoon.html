@@ -2,10 +2,70 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:art'%}" > &#60;&#60;예창분과</a>
+            <header>
+                <h1 id = "club_name">만화얼</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.facebook.com/comicspirit/"  target='_blank'></a><i class="fab fa-facebook fa-2x "></i></li>    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/cartoon_activity.jpeg'%}" width="700px"></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 📣 만화얼 소개<br>
+                    만화얼은 만화와 애니메이션을 좋아하는 사람들이 모여 친목을 다지고 창작활동을 하는 동아리입니다.<br>
+                    사회적 거리두기로 외롭게 덕질하기 지치신 분들, 취향이 맞는 사람들과 창작활동을 하고 싶으신 분들 모두 환영합니다!<br><br>
+
+                    📣 소모임<br>
+                    거리두기로 인해 대면하여 활동하기 어려운 만큼 작년부터 온라인으로 소모임들을 이어나가고 있습니다.<br>
+                    자신의 취향에 맞는 소모임에 자유롭게 가입하셔서 활동하시면 됩니다!<br>
+                    뜻이 맞는 회원들끼리 모여 새로운 소모임을 만드실 수도 있습니다!<br><br>
+
+                    -🎨그림 스터디 [실기 소모임]<br>
+                    -📚만화,애니메이션 정보 편집 및 리뷰를 진행하는 [월간만화 사업부]<br>
+                    -🎲보드게임 모임 [아셴테]<br>
+                    -📖[독서토론 모임]<br><br>
+
+                    📣 회지 발간<br>
+                    만화얼에서 가장 중요한 활동인 회지 작업입니다! 부원들의 만화, 일러스트, 칼럼 등 창작 작품들을 매년 말에 회지에 실어서 발간합니다.<br><br>
+
+                    📣 단체 활동<br>
+                    코로나로 인하여 현재로서는 어렵지만, 원래 학기별 최소 두 번 이상의 총회, 창립제, 그림전시회, 정기상영회,<br>
+                    신입생 환영회, 춘계 MT, 봄 소풍, 하계 MT 등의 각종 행사를 진행합니다.<br>
+                    이와 같은 다양한 활동들은 코로나 안정 후 오프라인 전환시 재개될 예정입니다!<br><br>
+
+                    📣 동아리방 소개<br>
+                    회원들의 쉼터이자 모임 장소로 안성맞춤인 [얼실]! 공강시간에 들려 휴식을 취하기 편-안한 소파와 침대,<br>
+                    책상은 물론 더불어 만화얼의 자랑인 수백권의 만화책까지 자유롭게 이용하실 수 있습니다. 거기에 각종 보드게임과 플스까지 있는건 비밀~<br><br>
+
+                    동아리에 대해 궁금해하실 부분들은 언제든지 아래의 연락처로 물어봐주세요!<br>
+
+
+                    👣동아리방 위치: 학생회관 3층 만화얼<br>
+                    📞전화 문의: 김동우 01089289885<br>
+                    이대연 01088562620<br>
+                    📲카톡문의: 김동우 morley01david<br>
+                    이대연 daelee123<br>
+                 </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/만화얼.jpg'%}" width=60% height=70%/>
         <h1>만화얼의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:cartoon_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

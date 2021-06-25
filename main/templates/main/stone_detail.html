@@ -18,10 +18,16 @@
             <h3>{{post.body}}</h3>
         </div>
     </div>
+    {% if user.is_authenticated %}
     <div class = 'post detail_post'>
         <a class = 'post_a' href = "{% url 'main:stone_edit' post.id%}">수정하기</a>
         <a class = 'post_a' href = "{% url 'main:stone_delete' post.id%}">삭제하기</a>
         <a class = 'post_a' href = "{% url 'main:stone'%}">돌아가기</a>
     </div>
+    {% else %} 
+    <div class = 'post detail_post'>
+        <a class = 'post_a' href = "{% url 'main:stone'%}">돌아가기</a>
+    </div>
+    {% endif %}
 </div>
 {% endblock %}

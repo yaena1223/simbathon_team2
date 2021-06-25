@@ -2,10 +2,68 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:atheletic'%}" > &#60;&#60;체육분과</a>
+            <header>
+                <h1 id = "club_name" >수중탐험연구회</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.facebook.com/duac1958/"  target='_blank'><p><i class="fab fa-facebook fa-2x "></i></a></li>    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/water_activity.jpeg'%}" width="700px"></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 교내 중앙동아리인 수중탐험연구회에서 신입부원을 모집합니다.<br>
+                    저희 동아리는 스킨스쿠버 활동을 기반으로, 수중정화활동 등을 진행하고 있습니다.<br><br>
+
+                    프리다이빙도 곧 할 예정입니다.<br><br>
+
+                    - 지원자격 : 4학기 이상 활동가능하신 분<br><br>
+
+                    - 입회비 : 2만원<br><br>
+
+                    - 활동비 : 매달 1만원 2회로 나누어내거나 한번에 내면 됩니다.<br><br>
+
+                    - 정기활동 : 제한수역 훈련 및 개방수역 다이빙(모든 활동은 방역수칙 및 SDI/TDI/ERDI의 메뉴얼을 준수하여 진행됩니다!<br><br>
+
+                    - 활동지역 : 강릉 제주도 울릉도 포항 부산 필리핀<br>
+                    일년에 3번 탐사는 필수입니다. 필리핀은 가고싶은 사람만 따로 받습니다 (코로나 때문에 잠정 중단 되었습니다)<br><br>
+
+                    탐사후 맛있는 것도 먹고 여행하는 식으로 돌아다니기도 합니다!<br><br>
+
+
+                    •일년 후 자격증요건 충족시 자격증 발급이 됩니다<br>
+                    (탐사 3번 가면 충족됩니다.)<br>
+                    •수영을 잘하면 좋지만 못하셔도 스쿠버다이빙을 하는데에 문제 없습니다.<br>
+                    •다이빙교육은 스쿠버다이빙협회의 강사 자격증을 가진 OB선배님들과 재학생들이 안전하게 진행합니다.<br>
+                    •자체적으로 교육을 진행하며 다이빙 장비는 동아리실에 구비되어 있으므로<br>
+                    학교 밖에서 다이빙을 하는것보다는 합리적으로 다이빙을 진행할 수 있습니다.<br>
+                    (보통 단기탐험인 춘계와 추계의 경우 10~20만원 정도들며, 장기탐험인 추계와 동계의 경우 5~60정도 듭니다.)<br><br>
+
+
+
+                    추가적으로 궁금한게 있으시거나 동아리에 관심있으신 분들은 아래의 오픈채팅방 링크로 연락주세용~<br><br>
+
+                    오픈채팅: <a href="https://open.kakao.com/o/sAcJjKZc">클릭</a>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/수중.jpg'%}" width=60% height=70%/>
         <h1>수중탐험연구회의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:water_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

@@ -2,10 +2,78 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:volunteer'%}" >&#60;&#60; 봉사분과</a>
+            <header>
+                <h1 id = "club_name" >한글학교하람</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/dgu_haram/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/korean_activity.jpg'%}" width="900" height="600"/></div>
+
+            <div class = club_int_text>
+            
+            <p>
+
+                🍀한글학교 하람은 한국에 거주하고 있는 외국인 유학생들을 위해 매주 토요일 한글수업을 진행하는 교육봉사 동아리입니다.<br><br>
+                
+                🤔 한글 교육이나 교육봉사에 관심이 있다면?<br>
+                🤔 외국인 친구들을 많이 사귀어 보고 싶다면?<br>
+                🤔 다양한 학과의 친구들을 많이 사귀어 보고 싶다면?<br>
+                🤔 외국인 친구들과 대화하며 자연스럽게 외국어 실력도 늘려보고 싶다면?<br>
+                🤔 외국인 유학생을 위한 나만의 한글 수업을 꾸려보고 싶다면?<br>
+                🤔 그 누구보다 의미 있고 값진 3학기를 보내보고 싶다면?<br>
+                🤗이 모든 것을 채워줄 한글학교 하람으로 오세요!!🤗<br><br>
+                
+            <strong>🍀활동 안내<br></strong>
+                1. 매주 토요일 10시 30분 ~ 14시 (수업 후 외국인 친구들과 점심 식사 포함 / 온라인 활동 시 10시 50분 ~ 13시)<br>
+                2. 매달 한 번은 수업 대신 이벤트데이로 즐거운 문화 체험🌸<br>
+                3. 신입생 환영 OT 및 MT - 중요🌟<br>
+                📢(*OT는 하람의 전반적인 활동계획에 대해서 이야기하는 자리로, 신입기수분들의 동아리 진행에 대한 이해를 돕기 위해 본래 필참을 권장하였습니다. <br>
+                하지만 코로나 19 여파로 많은 사람이 모이는 부분을 걱정하시는 분들을 위하여 ❗온라인OT❗로 대체하겠습니다. 또한 신입생 환영 MT 연기되었음을 알려드립니다.)📣<br>
+                4. 동아리 부원들과 모두 친해질 수 있는 다양한 프로그램까지!😍<br><br>
+                
+            <strong> 🍀모집 안내<br></strong>
+                1. 지원 기간: 2021.02.23 ~ 2021.03.19<br>
+                2. ❗면접 일정: 2021.03.22 ~ 2021.03.23❗<br>
+                3. 합격자 발표일: 03월 24일<br><br>
+                
+            <strong> 🍀모집 대상<br></strong>
+                1. 외국인 친구를 만들고 싶은, 한글 교육 봉사에 관심이 많은 동국대생🙆🏻 ♂️<br>
+                2. ⭐방학 포함 3학기 동안의 의무활동⭐이 가능한 6학기 이하 학부생🙆🏻 ♂️<br><br>
+                
+                + 📢 학기 중에는 5번, 방학 중에는 4번 결석을 하실 수 있습니다. 또한 중간,기말고사 기간에 각 1번씩 휴강을 하기 때문에 활동에 너무 부담 갖지 않으셔도 됩니다 :) <br>
+                만일 지정된 결석 횟수를 초과하시면 탈퇴처리가 된다는 점, 유의 부탁드립니다.😣<br>
+                + 📢 졸업 요건 중 ‘교육봉사’에 포함되지 않습니다. 봉사 시간을 부여하는 일반적인 교육 봉사입니다.<br><br>
+                
+            <strong> 📢 더 많은 활동내용과 사진들을 보고 싶다면?<br></strong>
+                📣 하람 지원서를 작성하고 싶다면?<br>
+                ✅ <a href ="http://www.donggukharam.com/com_free/806309">하람 사이트 지원하러 가기</a> <br><br>
+                
+                📢 코로나 19 여파로 인하여 ❗면접 일정이 2일로 변경❗되었습니다. <br>
+                지원서에 면접 가능 날짜를 작성해주실 때, ❗22일 월요일과 23일 화요일❗ 양일 중에 가능한 시간대를 모두 작성해주시면 감사하겠습니다.🙇🏻 ♂️<br><br>
+                
+                🍀기타 문의사항은 포스터에 기재된 연락처로 문의주시면 빠르게 답변 해드리겠습니다.🙆🏻 ♂️<br>
+                많은 지원 부탁드립니다!🙂👏<br>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/하람.jpg'%}" width=60% height=70%/>
         <h1>한글학교하람의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:korean_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

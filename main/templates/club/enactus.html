@@ -2,10 +2,88 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:fresh'%}" > &#60;&#60;신규분과</a>
+            <header>
+                <h1 id = "club_name" >인액터스</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/enactus_dgu/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/enactus_activity.jpg'%}" width="900" height="700"/></div>
+
+            <div class = club_int_text>
+            
+            <p>
+
+            <strong>🧡인액터스🧡</strong><br><br>
+    
+                인액터스는 기업가 정신의 실천을 통해 세상의 변화를 만들고자 하는 글로벌 대학 연합 단체입니다. <br>
+                서울대, 연세대, 한국외대 등 전국 30개 대학 내에 팀을 두고 있으며, 전 세계 36여개국 1700여개의 대학과 현대해상 등 우수 기업의 파트너십을 이루고 있습니다.<br><br>
+                
+                인액터스 멤버들은 “비즈니스”를 통해 사회문제의 지속가능한 해결을 목표로, 각 프로젝트에서 직접 비즈니스 솔루션을 도출 및 실행하고 있습니다. <br>
+                인액터스 프로젝트로 시작하여 실제 창업을 하게 된 사례로 고요한 택시, 119레오, 마리몬드 등이 있습니다.<br><br>
+                
+                인액터스는 “비즈니스”를 통해 사회문제를 해결하지만, 학과 제한은 없습니다. <br>
+                현재 인액터스에는 수학과, 경영정보학과, 사회복지학과, 경제학과, 산업시스템공학과 등 다양한 학과 학생들이 있습니다.<br><br>
+                
+            <strong> ✨인액터스에서 배울 수 있는 것✨</strong><br>
+                1️⃣ 사회 문제를 발견하고 정의, 솔루션을 만들고 실행하는 인액터스 활동을 통해 비판적인 관점&비즈니스 관점으로 바라보는 능력<br>
+                2️⃣ 각 프로젝트에서 이뤄지는 기획, 영업, 회계, 마케팅 등 자신에게 맞는 직무 탐색 및 경험 쌓기 가능<br>
+                3️⃣ 인액터스 코리아와 스폰서 기업(현대해상 등)의 후원을 바탕으로 이루어지는 실무자 멘토링&다양한 교육<br><br>
+                
+            <strong>✨인액터스 출신 기업✨</strong><br>
+                1️⃣고요한 택시<br>
+                2️⃣119 REO<br>
+                3️⃣마리몬드<br>
+                4️⃣동구밭<br>
+                5️⃣두손컴퍼니<br>
+                6️⃣끌림<br><br>
+            
+                세상을 바꾸는 비즈니스, 인액터스와 함께 세상을 바꿀 당신을 기다립니다🧡<br><br>
+
+                자세한 사항은 인액터스 공식 홈페이지에서 확인해보세요!<br>
+                👉 <a href = "https://bit.ly/enactusdgu26">공식홈페이지 </a> <br><br>
+        
+
+            <strong>✔️지원 자격</strong><br>
+                방학기간을 포함하여 1년 이상 활동이 가능하고 매주 월요일 6시 30분 정기회의 참석이 가능하신 분<br><br>
+
+            <strong>✔️지원서 다운로드</strong><br>
+                <a href ="https://bit.ly/enactusdgu26">지원서 다운로드</a><br><br>
+
+            <strong>✔️지원서 제출</strong><br>
+                enactus.donggukuniv@gmail.com<br>
+
+            <strong>✔지원서 제출 기간</strong><br>
+                2021년 02.22 ~ 03.12 18:00시까지<br>
+                *제출 기한 엄수<br><br>
+
+            <strong>✔정기회의</strong><br>
+                매주 월요일 6시 30분<br>
+                ❗️현재 코로나19로 인해 온라인으로 진행합니다❗️<br><br>
+
+            <strong>✔문의</strong><br>
+                회장 김동하(010-4755-1357)<br><br>
+
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/인액터스.jpg'%}" width=60% height=70%/>
         <h1>인액터스의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:enactus_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

@@ -2,10 +2,85 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:atheletic'%}" > &#60;&#60;체육분과</a>
+            <header>
+                <h1 id = "club_name">선무부</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/taekwondo_activity/"  target='_blank'></a><i class="fab fa-instagram fa-2x "></i></li>    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/taekwondo_activity.jpeg'%}" width="700px"></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 안녕하세요! 동국대학교 태권도 동아리 선무부입니다<br><br>
+
+                    ✔️모집기간: ~3월 10일<br><br>
+
+                    ✔️지원자격: 태권도를 하고 싶은 동국대생 누구나!!<br><br>
+
+                    ✔️운동시간: 주중 6시 이후<br><br>
+
+                    ✔️동아리 위치: 학생회관 4층<br><br>
+
+                    ✔️운동장소: 체육관<br><br>
+
+                    --> 운동 시간과 장소는 코로나로 인해 변경될 수 있습니다.<br><br>
+
+                    ❗️주요행사<br><br>
+
+                    5월 연무시범<br>
+                    학기 중에 연습한 품새 및 격파, 각종 태권도 자세 등을 팔정도에서 선보이는 행사입니다.<br><br>
+
+                    6월 낙산하계훈련<br>
+                    종강 이후 약 5-6일 정도 양양에 위치한 학교 산하의 낙산학사에서 겨루기 및 체력운동을 하면서 2학기에 있을 겨루기 대회를 준비<br><br>
+
+                    11월 전국 태권도 대회<br>
+                    학기 중에 연습한 겨루기 및 품새 등을 겨루는 대회<br><br>
+
+                    12월 카니발<br>
+                    한해를 마무리 하면서 선후배님들과 함께하는 일종의 연말파티<br><br>
+
+                    그 밖에도 체육대회, 대학 간 교류운동, 엠티 등도 준비 되어있습니다❗️❗️<br>
+
+                    ***지원방법: 네이버 폼 지원 <a href="http://naver.me/5s95TDvb">클릭</a><br><br>
+
+
+                    Q&A🧐<br><br>
+
+                    Q태권도를 한 번도 안 해봐서 신청하기 부담스러운데..<br>
+                    A 기초적인 자세에서부터 시작하기 때문에 걱정 할 필요 없습니다.<br><br>
+
+                    Q운동은 매일 해야나요?<br>
+                    A 매일 나오면 좋지만 개인 일정상 참여를 못할 수도 있기 때문에 주 2~3회를 권장합니다.<br><br>
+
+                    Q체력이 약한데 운동이 빡세면 어떡하죠?<br>
+                    A 선수를 배출하는 것이 목적이 아니라 서로 운동하면서 하루를 마무리 하는 것이 목표이기 때문에 걱정❌<br><br>
+
+                    선무부에 관심 있거나 궁금한 점 있으면 아래 번호로 연락주세요!<br>
+                    부장 김동민 010 4530 9805<br>
+                    차장 손은비 010 9296 5953<br><br>
+
+                    참고로 선무부는 70년 된 동아리다 보니 졸업하신 선배들과의 소통 할 수 있는 기회가 많아요!<br>
+                 </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/선무부.jpg'%}" width=60% height=70%/>
         <h1>선무부의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:taekwondo_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

@@ -2,10 +2,54 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:performance'%}" > &#60;&#60;공연분과</a>
+            <header>
+                <h1 id = "club_name" >AJAX</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/ajax_dgu/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/ajax_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 저희 동아리는 1999년을 시작으로 21년째 뿌리를 지켜왔습니다🌱<br>
+                    동아리에서 진행할 프로그램들은 아래와 같습니다🐵<br>
+                    1년에 2번 교내 축제 무대 🎤<br>
+                    1년을 마무리하는 자체 정기 공연 🏆<br>
+                    교내 동아리 & 타 대학 동아리와의 연합 공연 🎭<br>
+                    음원 제작 및 유튜브 영상 제작 🎥<br>
+                    텐션 보장 MT와 충무로 정복 뒤풀이🤡<br>
+                    선배 기수와 신입 기수들이 팀을 이루어 진행하는 경연👻<br>
+                    (이 외에 외부 공연(클럽, 행사)도 많이 들어와요!)<br><br>
+
+                    래퍼. 보컬, 프로듀서분들, 힙합을 사랑하시는 분들, 막연하게 해보고 싶다고 생각하셨던 분들, 같이 무대를 즐길 수 있는 분들,<br>
+                    본인이 좀 hip 🎶하다 생각하시는 모든 분들 에이잭스와 함께 갈 수 있습니다❤️<br>
+                    동아리방은 학생회관 3층에 위치하고, 정기모임은 매주 화요일 6시에 진행됩니다😀<br><br>
+                    
+                    가입을 희망하신다면 아래 폼의 양식에 맞게 신청서를 작성해주시면 감사하겠습니다🧡<br>
+
+                    <a href='https://docs.google.com/forms/d/1mQB3D8ROXlBOpOLkSg96hIkB7jV-Wpc8d6fcXrTgV_I/viewform?edit_requested=true'>지원하기</a>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/ajax.jpg'%}" width=60% height=70%/>
         <h1>AJAX의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:ajax_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

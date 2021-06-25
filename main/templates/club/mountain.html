@@ -2,10 +2,74 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:atheletic'%}" > &#60;&#60;체육분과</a>
+            <header>
+                <h1 id = "club_name" >산악부</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.facebook.com/duac1958/"  target='_blank'><p><i class="fab fa-facebook fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/mountain_activity.jpeg'%}" width="700px"></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 🖐안녕하세요! 자연 속에서 낭만을 꿈꾸는 당신👏<br>
+                    등산, 트래킹을 좋아하세요? 클라이밍으로 남들과는 다른 높은 곳에 오르고 싶으세요?<br><br>
+
+                    ⚡산악부와 함께라면 여러분의 꿈은 현실이 됩니다!<br>
+                    🤗동국대학교 산악부에서 함께해요!!<br><br>
+
+
+                    🌿정기집회<br>
+                    👉평일 주 1회<br>
+                    👉학생회관 지하 1층 산악부실에 모여 산행 계획을 세우고 등반관련 지식을 습득합니다.<br>
+                    (상황에 따라 온라인으로 진행할 수도 있습니다)<br><br>
+
+                    🌿정기산행<br>
+                    👉한달에 1번 주말<br>
+                    👉(도봉산, 북한산, 불암산, 수락산 등)서울 근교로 떠나는 산행입니다. 부원 모두가 참석합니다!!<br><br>
+
+                    🌿번개산행<br>
+                    👉매주 주말<br>
+                    👉(아차산, 용마산, 청계산 등)서울 근교로 떠나는 간단한 산행입니다. 시간 맞는 인원이 자유롭게 참석합니다.<br><br>
+
+                    🌿암벽등반<br>
+                    👉실내 / 실외 클라이밍을 산악부 선배들이 체계적이고 안전하게 가르쳐드립니다.<br><br>
+
+                    🌿하계·동계 종주<br>
+                    👉여름방학과 겨울방학 기간을 이용해 지리산, 설악산, 소백산 등지로 떠나요!!⛺️<br><br>
+
+                    😁산악부 부실에는 클라이밍, 캠핑 등 산악 관련 장비들이 구비되어 있어 개인적으로 👟등산화👟만 준비하시면 됩니다!<br>
+
+
+                    [지원 자격]<br>
+                    학년, 나이 상관없이 4학기 이상 활동하실 수 있는 분!<br><br>
+
+                    ♦주요 활동은 주말에 이루어질 예정입니다.<br>
+                    ♦집회 요일은 부원들의 상황에 맞게 의논하여 정할 예정입니다!<br>
+                    👋가입 또는 문의사항은 아래 오픈카톡으로 연락 주세요~!!<br><br>
+
+                    <a href="https://open.kakao.com/o/s9LlkO0c">오픈카톡</a><br>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/산악부.jpg'%}" width=60% height=70%/>
         <h1>산악부의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:mountain_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

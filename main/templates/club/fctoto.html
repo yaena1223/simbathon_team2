@@ -2,11 +2,46 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:atheletic'%}" > &#60;&#60;체육분과</a>
+            <header>
+                <h1 id = "club_name" >fc toto</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/fctoto.dgu/?igshid=1f0kq0ufaiv98"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/fctoto_activity.jpeg'%}" width="700px"></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> ⚽️ 저희는 매주 수요일 저녁 5-7시에 정기 연습을 실시하고 주말에는 대회연습 및 다른 팀들과의 시합을 실시하고 있습니다!<br><br>
+
+                    ⚽️ 교내 대회로는 토토배축구리그를 개최하고 동국 챔피언스리그에 참가하고 있으며, 교외 대회로는 서울권대학축구리그 SUFA컵에 참가하고 있습니다!<br><br>
+
+                    ⚽️ 매년 OB&YB 행사를 진행하여 선후배간의 돈독한 관계를 형성하고 매년 MT를 진행하여 부원들과의 화합을 도모합니다!<br><br>
+
+                    ⚽️ 그동안 축구를 하고 싶어 안달이 난분! 축구를 좋아하고 배우고 싶으신 분들! 모두 환영합니다~~ 축구를 좋아하고 배우고 싶으신 여성분들도 매니저로 지원해주세요~!<br><br>
+
+                    ⚽️ 지원방법은 사진에 나와있는 회장 또는 부회장에게 개별적으로 연락주시면 자세한 사항 알려드리겠습니다!
+                 </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/fctoto.jpg'%}" width=60% height=70%/>
-        <h1>FC TOTO의 동아리 활동 내역</h1>
+        <h1>fc toto의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:fctoto_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>
     </div>

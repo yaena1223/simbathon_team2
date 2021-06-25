@@ -2,10 +2,69 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:atheletic'%}" > &#60;&#60;체육분과</a>
+            <header>
+                <h1 id = "club_name">명궁</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/dongguk_kumdo/"  target='_blank'></a></li>    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/arrow_activity.jpeg'%}" width="700px"></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> "🏹너의 번뇌를 쏴라!🏹”<br><br>
+
+                    안녕하세요! 우리의 전통 활 국궁을 배우는 동아리 ‘명궁’입니다! (❌양궁이 아니에요!❌)<br><br>
+
+                    🎯주요 활동 : 30M 근사, 144M 원사, 서울국궁대학생연합 교류활동 등!<br><br>
+
+                    🎯활동 시간 : 매주 화~금 3시부터 5시까지!<br>
+                    필참이 아니니 편한 시간에만 오셔도 괜찮아요😊<br><br>
+
+                    🎯활동 장소 : 남산 활터 ‘석호정’에서 주로 활동해요.<br>
+                    상록원 옆 산책로로 10분정도 걸려요!<br><br>
+
+                    🎯회비 : 2만원 예정입니다☺ 회비와 관련한 상세한 내용은 추후 공지할 예정입니다.<br><br>
+
+                    🎯기타 사항<br>
+                    - 동아리 내 활과 화살로 연습을 나가기 때문에 개인 장비 필요 없어요!<br>
+                    - 보드게임, 골든벨, MT 등 동아리 내 여러 친목 활동도 진행하고 있어요.🎉🎉<br><br>
+
+                    🎯문의<br>
+                    - https://open.kakao.com/o/sHR1r8Sc (카카오톡 오픈채팅)<br>
+                    - 010-2769-7685로 전화, 문자, 카카오톡 문의도 가능해요!😊<br><br>
+
+                    🎯모집 기간 : ❗상시 모집❗입니다. 언제든 편하게 연락해주세요.😁<br>
+
+                    다소 생소할 수도 있는 🏹국궁🏹이지만,<br>
+                    그만큼 이색적인 활동이 가능한 체육 중앙동아리입니다.<br>
+                    서울 대학생 국궁 연합회 소속으로 다른 대학 국궁 동아리와도 활발하게 교류하고 있어요.🔥🔥<br>
+                    다양한 국궁 관련 대회 또한 참가하고 있습니다!<br><br>
+
+
+                    새로운 도전을 하고 싶으시다면 언제든 연락주세요! 🥰🥰<br><br>
+
+                    ❗코로나 바이러스로 인해 1학기 활동 계획에 변동이 있을 수 있습니다❗<br>
+                 </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/명궁.jpg'%}" width=60% height=70%/>
         <h1>명궁의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:arrow_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

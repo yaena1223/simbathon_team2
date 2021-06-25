@@ -2,10 +2,78 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:fresh'%}" > &#60;&#60;신규분과</a>
+            <header>
+                <h1 id = "club_name" >잼잼</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/jam_dgu/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/jam_activity.jpg'%}" width="650" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            <p>
+
+                동국대학교 유일무이 뮤지컬 중앙동아리<br>
+                🍯잼잼 JamJam🍯 입니다😆<br><br>
+                
+                2021년 2학기를 맞이해 8기 신입 부원을 모집합니다🎉<br>
+            <strong>🍯모집 기간<br></strong>
+                2021년 6월 15일 (화) ~ 6월 25일 (금)<br><br>
+            <strong>🍯비대면 면접<br></strong>
+                2021년 6월 26일 (토) ~ 6월 27일 (일)<br><br>
+                
+                
+                뮤지컬을 사랑하는 분❤<br>
+                뮤지컬에 관심이 있는 분🥰<br>
+                뮤지컬을 잘 모르지만 알아가고 싶은 분🤔<br>
+                잼잼이들과 함께 무대를 만들어가고 싶으신 분🙋🏻‍♀️<br>
+                학과, 학번 무관! 모두모두 환영합니다🥳<br>
+                연출, 무대, 기획, 음향, 연기, 조명 등 뮤지컬 및 관련 분야에 관심이 있거나 뮤지컬을 좋아하고 함께 즐기고 싶은 분이라면?<br>
+                망설이지 말고 지원서 작성 GO GO👉🏻<br><br>
+                
+                
+            <strong>⚠️ 지원서 작성 전 체크체크 ⚠️<br></strong>
+                ✔ 주 1회 정기 모임 - 기존 부원과 신입 부원의 투표로 결정<br>
+                (1학기는 월, 토 6-10시로 나누어 진행)<br>
+                ✔ 2학기 정기 공연 대비 여름방학 동안 주 1~2회 연습 예정<br>
+                ✔ 정기 공연은 11월 중순 경으로 예상하고 있습니다.<br>
+                ✔ 이번 학기는 거리두기 방침을 준수하여<br>
+                온라인과 오프라인 활동을 병행할 예정입니다.<br>
+                ✔ 면접 예정일: 6월 28일 or 29일 (날짜, 시간 선택 가능)<br>
+                ✔ 지원 결과는 개별로 연락드립니다.<br>
+                ✔ 자세한 사항은 모두 지원서에 안내되어 있습니다!<br>
+                지원서를 잘 읽고 작성해주세요!<br><br>
+                
+                모두 읽어보셨나요?<br>
+                이제 지원서 작성 버튼을 클릭해주세요 🥳<br>
+                📎 http://naver.me/FFvw4RDt<br><br>
+                
+                
+            <strong>🍯문의 사항은 이쪽으로!🍯<br></strong>
+                <a href = "https://open.kakao.com/me/jamjam_official">오픈 카카오톡</a>
+ 
+           
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/잼잼.jpg'%}" width=60% height=70%/>
         <h1>잼잼의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:jam_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

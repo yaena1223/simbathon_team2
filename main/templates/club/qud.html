@@ -2,10 +2,56 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:fresh'%}" > &#60;&#60;신규분과</a>
+            <header>
+                <h1 id = "club_name" >QUD</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://ko-kr.facebook.com/qud.dongguk/"  target='_blank'><p><i class="fab fa-facebook-f fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/qud_activity.jpg'%}" width="700" height="700"/></div>
+
+            <div class = club_int_text>
+            
+            <p>
+
+            <strong>🔥QUD 소개<br></strong>
+                QUD은 'QUeer in Dongguk'의 약자로, 2016년 기존에 있던 동국대학교 내 성소수자 모임을 통합해 만든 중앙동아리입니다. <br>
+                저희 QUD은 학내 고립된 성소수자에게 쉼터와 접근 가능한 공동체 역할을 하고 있습니다.<br>
+                 뿐만 아니라 대학청년성소수자모임연대 QUV에 소속되어 타 대학 성소수자 동아리 및 모임과도 함께 어울리며 다양한 대외활동을 진행하고 있습니다.<br><br>
+                
+                <strong> 🔥활동 내용<br></strong>
+                MT, 퀴어영화상영회, 먹부림파티, QUD친소(QUD의 친구를 소개합니다!) 등 친목도모를 위한 활동과, 인권세미나 및 스터디와 같은 
+                성소수자 인권 보호 및 증진을 위한 활동을 겸하고 있습니다.<br><br>
+                
+            <strong>🔥모집대상<br></strong>
+                모든 성소수자를 모집대상으로 합니다. LGBT뿐만 아니라 무성애자, 폴리아모리, 젠더퀴어 등 모든 성소수자는 QUD에 오실 수 있습니다!<br><br>
+                
+            <strong>🔥가입문의<br></strong>
+                상단에 있는 페이스북 아이콘을 눌러 주시거나 하단의 오픈 카카오로 연락주세요! <br>
+                편히 가입 문의 주시길 바라겠습니다!<br>
+                
+                *<a href= "http://pf.kakao.com/_xoGxcPxb">오픈 카카오톡</a> 
+
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/qud.jpg'%}" width=60% height=70%/>
         <h1>QUD의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:qud_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

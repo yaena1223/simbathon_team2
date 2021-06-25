@@ -2,10 +2,58 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:performance'%}" >&#60;&#60;공연분과</a>
+            <header>
+                <h1 id = "club_name" >ODC</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/odc_streetdance/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/odc_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 📣안녕하세요!! 동국대학교 중앙 스트릿 댄스 동아리 ODC입니다!📣<br>
+                    저희 ODC에서 새로운 ❤25기❤ 여러분을 모집하려고 해요!😊😊<br><br>
+                    
+                    ❗춤에 관심은 있는데.. 오디션 볼 자신도 없고ㅠㅠ 걱정이 되시는 분들!<br>
+                    ❗또 동아리에 들어가 자신의 춤 실력을 과감하게 뽐내고 싶은 분들!<br>
+                    ❗ODC는 여러분 모두에게 "활짝" 열려 있습니다<br><br>
+
+                    ODC - One Dance Club은 동국대 유일한 🔥'중앙' 스트릿 댄스 동아리🔥로<br>
+                    "코레오그래피(얼반), 걸스힙합, 왁킹, 하우스, 비보이, 크럼프, 락킹, 힙합" 이렇게 8장르를 전문으로 진행하고 있습니다!! 저희 ODC는 축제, 정기공연 등 교내 행사는 물론 외부 대회와 공연까지 활발하게 활동하고 있습니다!<br><br>
+
+                    ✔지원 자격은 춤에 관심이 있는 분들이라면 누구나 지원 가능합니다!! 구글폼 형식으로 받고 있으니 부담이❌😉😉<br>
+                    ✔춤을 한 번도 배운 적 없으시다구요?? 괜찮습니다!! 저희 ODC는 오디션이나❌ 면접 없이❌ 간단한 문서⭕ 작성만으로 신입부원을 모집합니다!<br>
+                    ✔ODC의 더 많은 활동을 보고 싶다면 유튜브와 인스타, 페이스북에 많이 놀러와주세요!!>_<<br>
+                    ✔️코로나 19때문에 걱정이 되시나요? 걱정하지 마세요! 연습 전 열체크+손소독은 물론 마스크는 필수! 🥺🥺 유동적으로 바뀌는 사회적 거리두기 단계에 맞춰 코로나 방역수칙을 준수하며 연습합니다!🙋🏻‍♀️<br><br>
+
+                    ❗️신청방법 : 구글폼 작성❗️<br>
+                    <a href= 'https://forms.gle/wJVQke7iK9rkD9MP9'>지원하기</a><br><br>
+
+                    🐾동아리방 위치 : 학생회관 5층 맨 끝, ODC포스터가 붙어있는 동아리방<br>
+                    🐾정기연습시간 : 화,금 18:00-21:00<br>
+                    🐾문의사항 : 회장 최화인: 010-7611-9475, 부회장 김민규: 010-9330-1689<br>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/odc.jpg'%}" width=60% height=70%/>
         <h1>ODC의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:odc_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>

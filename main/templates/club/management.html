@@ -2,10 +2,74 @@
 {% load static %}
 
 {% block content %}
+<div id="club_main">
+    <div class="inner">
+
+    <!-- Header -->
+        <header id="header">
+            <a href="{%url 'main:research'%}" > &#60;&#60;연구분과</a>
+            <header>
+                <h1 id = "club_name" >경영학연구회</h1>
+            </header>
+            <ul class="icons">
+               
+                <li><a href = "https://www.instagram.com/dgu_barc/"  target='_blank'><p><i class="fab fa-instagram fa-2x "></i></a></li>
+    
+            </ul>
+        </header>
+
+    <!-- Content -->
+            <div class = image_main><img src="{% static 'images/activity/management_activity.jpg'%}" width="800" height="500"/></div>
+
+            <div class = club_int_text>
+            
+            
+                <p> 안녕하세요! 동국대학교 중앙동아리 경영학연구회 BARC입니다!😀<br><br>
+
+                    # BARC의 자랑💡<br>
+                    1️⃣ 69학번 선배님들부터 시작된 역사가 길고 전통 있는 동아리🎖<br>
+                    👉 선후배간 끈끈한 인적네트워크가 구축되어있습니다!<br>
+                    
+                    2️⃣우수한 인재와 자원 존재🧠<br>
+                    👉 18, 19, 20년도 졸업생 기준 기업은행, 우리은행, 현대자동차, 미래에셋, 한영회계법인 등 국내 유수의 대기업 합격 및 신용보증기금 공기업 합격!🏢🏦<br>
+                    👉 19, 20년도 경영학과 최우수졸업생👩‍🎓👨‍🎓을 배출해내기도 하였습니다! 또한 19, 20년도 1학기와 2학기 과수석 배출도 하였습니다.🏆✨<br><br>
+                    
+                    3️⃣실질적으로 도움이 되는 학술활동 진행📝<br>
+                    👉 경제신문스터디, 기업분석, 시사퀴즈대회 등을 진행하고, 전년도 졸업생 선배들의 생생한 취업 팁 공유와 취업설명회, 경영학과 윤선중교수님의 세세한 지도까지👨🏫<br><br>
+                    
+                    4️⃣그럼 공부만 하는 동아리?? NO!! 놀때는 노는 동아리🔥<br>
+                    👉 MT, 체육대회, 한강, 놀이공원 탐방 등 다채로운 모임으로 친목활동 도모합니다!🃏<br><br>
+                    
+                    5️⃣리모델링한 편안하고 안락한 동아리방🏡<br>
+                    👉 경영관 지하 1층 그루터기 옆에 위치하고 있고 개인사물함과 침대, 독서실 책상 등 보유해 자유롭게 사용가능합니다! 추가로 전공책/재무용계산기 대여사업까지‼️<br><br>
+                    
+                    # 모집대상💡<br>
+                    ✔️ 비대면 수업이지만 동아리 생활을 경험해보고 싶은 21학번 새내기들!<br>
+                    ✔️몇학기동안 학교를 다녔더니 이제 학교생활이 지겹고 새로운 것을 원하는 헌내기들!<br>
+                    ✔️군대 다녀오니 동기들 모두 졸업반이 된 고학번 친구들!<br>
+                    ✔️그 외, 학교에서 즐거움을 찾고 싶고, 새로운 친구를 사귀고 싶고, 전공·학점·취업 모두를 잡고 싶은 학생분들까지~!<br><br>
+                    
+                    # 모집조건💡<br>
+                    📌BARC에 관심있는 동국대 3학년 이하 재학생/휴학생 모두! (학번/나이 상관 NO, 타과/복전/편입생 환영✨)<br>
+                    *단, 3학기 이상 활동 가능한 분!<br>
+                    📌매주 목요일 오후 6시 반부터 진행되는 회의에 참여 가능한 분 (필참입니다!)<br>
+                    
+                    # 문의사항💡<br>
+                    📌경영학연구회 오픈카톡방<br>
+                    📍회장 : <a href = 'https://open.kakao.com/o/s6GDMOYc'>https://open.kakao.com/o/s6GDMOYc</a><br>
+                    📍총무 : <a href = 'https://open.kakao.com/o/sGn83OYc'>https://open.kakao.com/o/sGn83OYc</a><br><br>
+
+                    💚질문사항이 있으신 경우 자유롭게 오픈 카톡방에서 문의해 주시고 자세한 내용은 PPT 첨부하니 많은 관심 부탁드립니다!💚<br><br>
+
+            </p>
+            
+        </div>
+    </div>
+</div>
+
 <div class="club">
     <div class="club_left"></div>
     <div class="club_center">
-        <img src="{% static 'images/경영학연구회.jpg'%}" width=60% height=70%/>
         <h1>경영학연구회의 동아리 활동 내역</h1>
         <a class = "write_icon" href = "{% url 'main:management_new'%}"><p><i class="far fa-edit fa-3x"></i></p></a>
         <p>글 작성하기</p>
