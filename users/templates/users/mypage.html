@@ -16,324 +16,516 @@
     </tr>
   </thead>
   <tbody>
-    {% for post in posts %} 
+    {% for post in likelion_posts %} 
     <tr>
       <th scope="row">멋쟁이 사자처럼</th>
       <td><a href="{%url 'main:likelion_detail' post.id%}">{{post.title}}</a></td>
       <td>{{post.date}}</td>
     </tr>
     {%endfor%}
+
+    {% for post in cafein_posts %} 
+    <tr>
+      <th scope="row">CAFE-IN</th>
+      <td><a href="{%url 'main:cafein_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in dna_posts %} 
+    <tr>
+      <th scope="row">DNA</th>
+      <td><a href="{%url 'main:dna_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in dussa_posts %} 
+    <tr>
+      <th scope="row">DUSSA</th>
+      <td><a href="{%url 'main:dussa_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in kcc_posts %} 
+    <tr>
+      <th scope="row">KCC</th>
+      <td><a href="{%url 'main:kcc_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in mecs_posts %} 
+    <tr>
+      <th scope="row">MECS</th>
+      <td><a href="{%url 'main:mecs_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in nsa_posts %} 
+    <tr>
+      <th scope="row">NSA</th>
+      <td><a href="{%url 'main:nsa_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in marx_posts %} 
+    <tr>
+      <th scope="row">맑스철학연구회</th>
+      <td><a href="{%url 'main:marx_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in management_posts %} 
+    <tr>
+      <th scope="row">경영학연구회</th>
+      <td><a href="{%url 'main:management_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in economy_posts %} 
+    <tr>
+      <th scope="row">경제학연구회</th>
+      <td><a href="{%url 'main economy_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in international_posts %} 
+    <tr>
+      <th scope="row">국제통상학연구회</th>
+      <td><a href="{%url 'main:international_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in politics_posts %} 
+    <tr>
+      <th scope="row">정치학연구회</th>
+      <td><a href="{%url 'main:politics_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in elf_posts %} 
+    <tr>
+      <th scope="row">E.L.F</th>
+      <td><a href="{%url 'main:elf_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in rcy_posts %} 
+    <tr>
+      <th scope="row">RCY</th>
+      <td><a href="{%url 'main:rcy_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in road_posts %} 
+    <tr>
+      <th scope="row">길</th>
+      <td><a href="{%url 'main:road_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in hand_posts %} 
+    <tr>
+      <th scope="row">손짓사랑회</th>
+      <td><a href="{%url 'main:hand_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in neighbor_posts %} 
+    <tr>
+      <th scope="row">젊은새이웃</th>
+      <td><a href="{%url 'main:neighbor_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in painters_posts %} 
+    <tr>
+      <th scope="row">페인터즈</th>
+      <td><a href="{%url 'main:painters_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in green_posts %} 
+    <tr>
+      <th scope="row">푸름누리</th>
+      <td><a href="{%url 'main:green_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in korean_posts %} 
+    <tr>
+      <th scope="row">한글학교하람</th>
+      <td><a href="{%url 'main:korean_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in kusa_posts %} 
+    <tr>
+      <th scope="row">KUSA</th>
+      <td><a href="{%url 'main:kusa_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in rich_posts %} 
+    <tr>
+      <th scope="row">RICH</th>
+      <td><a href="{%url 'main:rich_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in unsa_posts %} 
+    <tr>
+      <th scope="row">UNSA</th>
+      <td><a href="{%url 'main:unsa_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in frontier_posts %} 
+    <tr>
+      <th scope="row">FRONTIER</th>
+      <td><a href="{%url 'main:frontier_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in buddha_posts %} 
+    <tr>
+      <th scope="row">동국불교학생회</th>
+      <td><a href="{%url 'main:buddha_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in dust_posts %} 
+    <tr>
+      <th scope="row">DUST</th>
+      <td><a href="{%url 'main:dust_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in cave_posts %} 
+    <tr>
+      <th scope="row">동국탐험연구회</th>
+      <td><a href="{%url 'main:cave_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in action_posts %} 
+    <tr>
+      <th scope="row">무법</th>
+      <td><a href="{%url 'main:action_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in wind_posts %} 
+    <tr>
+      <th scope="row">바람소리</th>
+      <td><a href="{%url 'main:wind_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in mountain_posts %} 
+    <tr>
+      <th scope="row">산악부</th>
+      <td><a href="{%url 'main:mountain_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in water_posts %} 
+    <tr>
+      <th scope="row">수중탐험연구회</th>
+      <td><a href="{%url 'main:water_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in courtist_posts %} 
+    <tr>
+      <th scope="row">COURTIST</th>
+      <td><a href="{%url 'main:courtist_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in dutc_posts %} 
+    <tr>
+      <th scope="row">DUTC</th>
+      <td><a href="{%url 'main:dutc_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in fctoto_posts %} 
+    <tr>
+      <th scope="row">FC TOTO</th>
+      <td><a href="{%url 'main:fctoto_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in lae_posts %} 
+    <tr>
+      <th scope="row">L.A.E</th>
+      <td><a href="{%url 'main:lae_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in kendo_posts %} 
+    <tr>
+      <th scope="row">검도부</th>
+      <td><a href="{%url 'main:kendo_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in baduk_posts %} 
+    <tr>
+      <th scope="row">기우회</th>
+      <td><a href="{%url 'main:baduk_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in arrow_posts %} 
+    <tr>
+      <th scope="row">명궁</th>
+      <td><a href="{%url 'main:arrow_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in taekwondo_posts %} 
+    <tr>
+      <th scope="row">선무부</th>
+      <td><a href="{%url 'main:taekwondo_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in tuskers_posts %}
+    <tr>
+      <th scope="row">터스커스</th>
+      <td><a href="{%url 'main:tuskers_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in ajax_posts %} 
+    <tr>
+      <th scope="row">AJAX</th>
+      <td><a href="{%url 'main:ajax_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in hola_posts %} 
+    <tr>
+      <th scope="row">HOLA</th>
+      <td><a href="{%url 'main:hola_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in odc_posts %} 
+    <tr>
+      <th scope="row">ODC</th>
+      <td><a href="{%url 'main:odc_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in opus_posts %} 
+    <tr>
+      <th scope="row">OPUS</th>
+      <td><a href="{%url 'main:opus_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in drama_posts %} 
+    <tr>
+      <th scope="row">극예술연구회</th>
+      <td><a href="{%url 'main:drama_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in lotus_posts %} 
+    <tr>
+      <th scope="row">로터스</th>
+      <td><a href="{%url 'main:lotus_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in cloud_posts %} 
+    <tr>
+      <th scope="row">뭉게구름</th>
+      <td><a href="{%url 'main:cloud_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in arirang_posts %} 
+    <tr>
+      <th scope="row">아리랑</th>
+      <td><a href="{%url 'main:arirang_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in eumsem_posts %} 
+    <tr>
+      <th scope="row">음샘</th>
+      <td><a href="{%url 'main:eumsem_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in fearless_posts %} 
+    <tr>
+      <th scope="row">피어리스던</th>
+      <td><a href="{%url 'main:fearless_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in yeoul_posts %} 
+    <tr>
+      <th scope="row">현여울</th>
+      <td><a href="{%url 'main:yeoul_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in draw_posts %} 
+    <tr>
+      <th scope="row">그리고그림</th>
+      <td><a href="{%url 'main:draw_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in literal_posts %} 
+    <tr>
+      <th scope="row">동국문학회</th>
+      <td><a href="{%url 'main:literal_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in calligraphy_posts %} 
+    <tr>
+      <th scope="row">동국서도회</th>
+      <td><a href="{%url 'main:calligraphy_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in circle_posts %} 
+    <tr>
+      <th scope="row">동그라미</th>
+      <td><a href="{%url 'main:circle_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in stone_posts %} 
+    <tr>
+      <th scope="row">디딤돌</th>
+      <td><a href="{%url 'main:stone_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in cartoon_posts %} 
+    <tr>
+      <th scope="row">만화얼</th>
+      <td><a href="{%url 'main:cartoon_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in rush_posts %} 
+    <tr>
+      <th scope="row">애드러쉬</th>
+      <td><a href="{%url 'main:rush_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in elephente_posts %} 
+    <tr>
+      <th scope="row">FC엘레펜테</th>
+      <td><a href="{%url 'main:elephente_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in doomchit_posts %} 
+    <tr>
+      <th scope="row">두둠칫</th>
+      <td><a href="{%url 'main:doomchit_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in enactus_posts %} 
+    <tr>
+      <th scope="row">인액터스</th>
+      <td><a href="{%url 'main:enactus_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in jam_posts %} 
+    <tr>
+      <th scope="row">잼잼</th>
+      <td><a href="{%url 'main:jam_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+    {% for post in qud_posts %} 
+    <tr>
+      <th scope="row">QUD</th>
+      <td><a href="{%url 'main:qud_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+
+
+
+
+
+
   </tbody>
 </table>
 
 {% endblock %}
-
-<!-- {% for post in cafein_posts %} 
-<h3>CAFE-IN</h3>
-<a href = "{%url 'main:cafein_detail' post.id%}" > {{post.title}}</a><hr>
-{% endfor %}
-
-{% for post in dna_posts %} 
-<h3>DNA</h3>
-<a href = "{%url 'main:dna_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>DUSSA</h3>
-<a href = "{%url 'main:dussa_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>KCC</h3>
-<a href = "{%url 'main:kcc_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>MECS</h3>
-<a href = "{%url 'main:mecs_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>NSA</h3>
-<a href = "{%url 'main:nsa_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>맑스철학연구회</h3>
-<a href = "{%url 'main:marx_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>경영학연구회</h3>
-<a href = "{%url 'main:management_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>경제학연구회</h3>
-<a href = "{%url 'main:economy_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>국제통상학연구회</h3>
-<a href = "{%url 'main:international_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>정치학연구회</h3>
-<a href = "{%url 'main:politics_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %}
-<h3>E.L.F</h3>
-<a href = "{%url 'main:elf_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>RCY</h3>
-<a href = "{%url 'main:rcy_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>길</h3>
-<a href = "{%url 'main:road_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>손짓사랑회</h3>
-<a href = "{%url 'main:hand_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>젊은새이웃</h3>
-<a href = "{%url 'main:neighbor_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>CAFE-IN</h3>
-<a href = "{%url 'main:cafein_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>페인터즈</h3>
-<a href = "{%url 'main:painters_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>푸름누리</h3>
-<a href = "{%url 'main:green_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>한글학교하람</h3>
-<a href = "{%url 'main:korean_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>KUSA</h3>
-<a href = "{%url 'main:kusa_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>RICH</h3>
-<a href = "{%url 'main:rich_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>UNSA</h3>
-<a href = "{%url 'main:unsa_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>프론티어</h3>
-<a href = "{%url 'main:frontier_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>동국불교학생회</h3>
-<a href = "{%url 'main:buddha_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>DUST</h3>
-<a href = "{%url 'main:dust_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>동굴탐험연구회</h3>
-<a href = "{%url 'main:cave_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>무법</h3>
-<a href = "{%url 'main:action_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>바람소리</h3>
-<a href = "{%url 'main:wind_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>산악부</h3>
-<a href = "{%url 'main:mountain_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>수중탐험연구회</h3>
-<a href = "{%url 'main:water_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>COURTIST</h3>
-<a href = "{%url 'main:courtist_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>DUTC</h3>
-<a href = "{%url 'main:dutc_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>FC TOTO</h3>
-<a href = "{%url 'main:fctoto_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>L.A.E</h3>
-<a href = "{%url 'main:lae_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>검도부</h3>
-<a href = "{%url 'main:kendo_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>기우회</h3>
-<a href = "{%url 'main:baduk_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>명궁</h3>
-<a href = "{%url 'main:arrow_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>선무부</h3>
-<a href = "{%url 'main:taekwondo_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>터스커스</h3>
-<a href = "{%url 'main:tuskers_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>AJAX</h3>
-<a href = "{%url 'main:ajax_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>CAFE-IN</h3>
-<a href = "{%url 'main:cafein_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>HOLA</h3>
-<a href = "{%url 'main:hola_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>ODC</h3>
-<a href = "{%url 'main:odc_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>OPUS</h3>
-<a href = "{%url 'main:opus_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>극예술연구회</h3>
-<a href = "{%url 'main:draw_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>로터스</h3>
-<a href = "{%url 'main:lotus_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>뭉게구름</h3>
-<a href = "{%url 'main:cloud_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>CAFE-IN</h3>
-<a href = "{%url 'main:cafein_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>아리랑</h3>
-<a href = "{%url 'main:arirang_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>음샘</h3>
-<a href = "{%url 'main:eumsem_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>피어리스던</h3>
-<a href = "{%url 'main:fearless_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>현여울</h3>
-<a href = "{%url 'main:yeoul_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>그리고 그림</h3>
-<a href = "{%url 'main:draw_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>동국문학회</h3>
-<a href = "{%url 'main:literal_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>동국서도회</h3>
-<a href = "{%url 'main:calligraphy_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>동그라미</h3>
-<a href = "{%url 'main:circle_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>디딤돌</h3>
-<a href = "{%url 'main:stone_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>만화얼</h3>
-<a href = "{%url 'main:cartoon_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>애드러쉬</h3>
-<a href = "{%url 'main:rush_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>FC 엘레펜테</h3>
-<a href = "{%url 'main:elephente_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %}
-<h3>두둠칫</h3>
-<a href = "{%url 'main:doomchit_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%} -->
