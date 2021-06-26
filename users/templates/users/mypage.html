@@ -2,10 +2,33 @@
 {% load static %} 
 {% block content %} 
 
-<div class = "container">
-<h1>{{user.username}}</h1>
+<div class = "container" id="mypage">
 
-{% for post in cafein_posts %} 
+<h1>{{user.username}}</h1>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">동아리</th>
+      <th scope="col">제목</th>
+      <th scope="col">작성시간</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for post in posts %} 
+    <tr>
+      <th scope="row">멋쟁이 사자처럼</th>
+      <td><a href="{%url 'main:likelion_detail' post.id%}">{{post.title}}</a></td>
+      <td>{{post.date}}</td>
+    </tr>
+    {%endfor%}
+  </tbody>
+</table>
+
+{% endblock %}
+
+<!-- {% for post in cafein_posts %} 
 <h3>CAFE-IN</h3>
 <a href = "{%url 'main:cafein_detail' post.id%}" > {{post.title}}</a><hr>
 {% endfor %}
@@ -313,27 +336,4 @@
 {% for post in posts %}
 <h3>두둠칫</h3>
 <a href = "{%url 'main:doomchit_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>멋쟁이 사자처럼</h3>
-<a href = "{%url 'main:likelion_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>인액터스</h3>
-<a href = "{%url 'main:enactus_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>잼잼</h3>
-<a href = "{%url 'main:jam_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-
-{% for post in posts %} 
-<h3>QUD</h3>
-<a href = "{%url 'main:qud_detail' post.id%}" > {{post.title}}</a><hr>
-{%endfor%}
-</div>
-
-{% endblock %}
+{%endfor%} -->
